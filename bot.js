@@ -30,7 +30,7 @@ const fs = require('fs').promises;
 
         // TYPE IN CLIENT DATA AND SEARCH
         await iframe.waitForSelector('#CD_USUARIO_PLANO');
-        await iframe.type('#CD_USUARIO_PLANO', '02223167000166001');
+        await iframe.type('#CD_USUARIO_PLANO', '02223167000189001');
         await page.keyboard.press('Tab');
         await iframe.$eval('#btnConsultar', (button) => button.click());
 
@@ -45,6 +45,35 @@ const fs = require('fs').promises;
         // CLICK TO EVALUATE
         const btnConfirma = await page.$('#btnConfirma');
         await btnConfirma.click();
+
+        // SELECT BOXES SETTING
+        const selectEval = 'select';
+        await page.waitForSelector(selectEval);
+        const selectBoxes = await page.$$(selectEval);
+        for (const selectBox of selectBoxes) {
+          await selectBox.select('3');
+        }
+
+        // INPUT BOXES SETTING
+        const inputTextSelector = 'input[type="text"]';
+        await page.waitForSelector(inputTextSelector);
+        const inputTexts = await page.$$(inputTextSelector);
+        for (const inputText of inputTexts) {
+          await inputText.evaluate((input) => (input.value = '1'));
+        }
+
+        // CLICK TO EVALUATE
+        const btnConfirmaGuia = await page.$('input[type="button"]');
+        await btnConfirmaGuia.click();
+
+        // CLICK TO LEAVE EVALUATE FEEDBACK
+        await page.waitForSelector('input[type="button"]');
+        const btnVoltar = await page.$$('input[type="button"]');
+        for (const btnBack of btnVoltar) {
+          await btnBack.evaluate((button) => button.click());
+          console.log('clicked');
+        }
+        
       }
     }
   } catch (error) {
