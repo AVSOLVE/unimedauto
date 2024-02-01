@@ -1,8 +1,8 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 
-(async () => {
-  console.clear();
+const evaluateClients = async (clientInfoCard) => {
+  const logFilePath = 'log.txt';
   const browser = await puppeteer.launch({
     headless: false,
     defaultViewport: null,
@@ -30,62 +30,70 @@ const fs = require('fs').promises;
 
         // TYPE IN CLIENT DATA AND SEARCH
         await iframe.waitForSelector('#CD_USUARIO_PLANO');
-        await iframe.type('#CD_USUARIO_PLANO', '02223167000189001');
+        await iframe.type('#CD_USUARIO_PLANO', clientInfoCard);
         await page.keyboard.press('Tab');
         await iframe.$eval('#btnConsultar', (button) => button.click());
 
         // CHECKBOXES
         const checkboxesSelector = 'input[type="checkbox"]';
-        await page.waitForSelector(checkboxesSelector);
-        const checkboxes = await page.$$(checkboxesSelector);
-        for (const checkbox of checkboxes) {
-          await checkbox.click();
+        try {
+          await page.waitForSelector(checkboxesSelector, { timeout: 1000 });
+          const checkboxes = await page.$$(checkboxesSelector);
+          for (const checkbox of checkboxes) {
+            await checkbox.click();
+          }
+          await page.waitForTimeout(2000);
+
+          // CLICK TO EVALUATE
+          const btnConfirma = await page.$('#btnConfirma');
+          await btnConfirma.click();
+
+          // SELECT BOXES SETTING
+          const selectEval = 'select';
+          await page.waitForSelector(selectEval);
+          const selectBoxes = await page.$$(selectEval);
+          for (const selectBox of selectBoxes) {
+            await selectBox.select('3');
+          }
+          await page.waitForTimeout(2000);
+
+          // INPUT BOXES SETTING
+          const inputTextSelector = 'input[type="text"]';
+          await page.waitForSelector(inputTextSelector);
+          const inputTexts = await page.$$(inputTextSelector);
+          for (const inputText of inputTexts) {
+            await inputText.evaluate((input) => (input.value = '1'));
+          }
+          await page.waitForTimeout(2000);
+
+          // CLICK TO EVALUATE
+          const btnConfirmaGuia = await page.$('input[type="button"]');
+          await btnConfirmaGuia.click();
+          await page.waitForTimeout(2000);
+
+          // CLICK TO LEAVE EVALUATE FEEDBACK
+          await page.waitForSelector('input[type="button"]');
+          const btnVoltar = await page.$$('input[type="button"]');
+          for (const btnBack of btnVoltar) {
+            await btnBack.evaluate((button) => button.click());
+          }
+          await page.waitForTimeout(2000);
+
+          const timestamp = new Date().toLocaleString();
+          const logMessage = `Guia: ${code.trim()} - ${timestamp}\n`;
+          await fs.appendFile(logFilePath, logMessage);
+
+        } catch (error) {
+          console.log('Não há requisições pendentes para este beneficiário.');
+          await fs.appendFile(logFilePath, `Não há requisições pendentes para a guia: ${clientInfoCard}\n`);
+          return;
         }
-
-        // CLICK TO EVALUATE
-        const btnConfirma = await page.$('#btnConfirma');
-        await btnConfirma.click();
-
-        // SELECT BOXES SETTING
-        const selectEval = 'select';
-        await page.waitForSelector(selectEval);
-        const selectBoxes = await page.$$(selectEval);
-        for (const selectBox of selectBoxes) {
-          await selectBox.select('3');
-        }
-
-        // INPUT BOXES SETTING
-        const inputTextSelector = 'input[type="text"]';
-        await page.waitForSelector(inputTextSelector);
-        const inputTexts = await page.$$(inputTextSelector);
-        for (const inputText of inputTexts) {
-          await inputText.evaluate((input) => (input.value = '1'));
-        }
-
-        // CLICK TO EVALUATE
-        const btnConfirmaGuia = await page.$('input[type="button"]');
-        await btnConfirmaGuia.click();
-
-        // CLICK TO LEAVE EVALUATE FEEDBACK
-        await page.waitForSelector('input[type="button"]');
-        const btnVoltar = await page.$$('input[type="button"]');
-        for (const btnBack of btnVoltar) {
-          await btnBack.evaluate((button) => button.click());
-          console.log('clicked');
-        }
-        
       }
     }
   } catch (error) {
     console.error('Error:', error);
   } finally {
-    // await browser.close();
+    await browser.close();
   }
-})();
-
-// const url = 'https://portal.unimedpalmas.coop.br/pls_principalPrestador.jsp'
-// await page.goto(url, { waitUntil: 'networkidle0' });
-// https://portal.unimedpalmas.coop.br/montaTelaLogin.action?item_0=:
-// index_pls.jsp
-// principal (login.action)
-// paginaPrincipal (pls_montarTelaExecucaoRequisicao.action)
+};
+module.exports = evaluateClients;
