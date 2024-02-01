@@ -80,12 +80,13 @@ const evaluateClients = async (clientInfoCard) => {
           await page.waitForTimeout(2000);
 
           const timestamp = new Date().toLocaleString();
-          const logMessage = `Guia: ${code.trim()} - ${timestamp}\n`;
+          const logMessage = `Guia: ${clientInfoCard} - ${timestamp}\n`;
           await fs.appendFile(logFilePath, logMessage);
 
         } catch (error) {
-          console.log('Não há requisições pendentes para este beneficiário.');
-          await fs.appendFile(logFilePath, `Não há requisições pendentes para a guia: ${clientInfoCard}\n`);
+          const timestamp = new Date().toLocaleString();
+          const logMessage = `Não há requisições pendentes para a guia: ${clientInfoCard} - ${timestamp}\n`;
+          await fs.appendFile(logFilePath, logMessage);
           return;
         }
       }

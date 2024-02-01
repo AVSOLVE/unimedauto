@@ -2,16 +2,23 @@
   "name": "unimedauto",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "reader.js",
+  "bin": {
+    "your-app": "reader.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "AVSOLVE",
+  "license": "ISC/MIT License",
   "dependencies": {
     "jsdom": "^24.0.0",
     "nodemon": "^3.0.3",
     "puppeteer": "^21.10.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.5.1"
   }
+  
 }
