@@ -1,6 +1,8 @@
 const puppeteer = require('puppeteer');
+const fs = require('fs').promises;
 
 (async () => {
+  console.clear();
   const browser = await puppeteer.launch({
     headless: false,
     defaultViewport: null,
@@ -9,38 +11,52 @@ const puppeteer = require('puppeteer');
 
   try {
     await page.goto('https://portal.unimedpalmas.coop.br/');
-
     const iframes = await page.frames();
     for (const iframe of iframes) {
-      console.log('Iframe name:', iframe.name());
-      const allIds = await iframe.$$eval('[id]', (elements) =>
-        elements.map((element) => element.id)
-      );
-      console.log('IDs inside the page:', allIds + ' on' + iframe.name());
-
       if (iframe.name() === 'principal') {
+        // LOGIN PROCESS
         await iframe.waitForSelector('#tipoUsuario');
         await iframe.select('select#tipoUsuario', 'P');
-        console.log('Usuário selecionado!');
         await iframe.type('#nmUsuario', 'fisiocep');
         await iframe.type('#dsSenha', 'fisiocep2022');
         await iframe.waitForSelector('#btn_entrar');
-        console.log('Credenciais preenchidas!');
         await iframe.$eval('#btn_entrar', (button) => button.click());
-        await iframe.waitForSelector('#item_9');
 
-        // const childFrames = iframe.childFrames();
-        // // Output the URLs of child frames
-        // console.log(`URLs of child frames in ${iframe.url()}:`);
-        // for (const childFrame of childFrames) {
-        //   console.log(childFrame.url());
-        // }
+        // NAVIGATE TO PAGE
+        await iframe.waitForNavigation();
+        await iframe.goto(
+          'https://portal.unimedpalmas.coop.br/pls_montarTelaExecucaoRequisicao.action'
+        );
+
+        // TYPE IN CLIENT DATA AND SEARCH
+        await iframe.waitForSelector('#CD_USUARIO_PLANO');
+        await iframe.type('#CD_USUARIO_PLANO', '02223167000166001');
+        await page.keyboard.press('Tab');
+        await iframe.$eval('#btnConsultar', (button) => button.click());
+
+        // CHECKBOXES
+        const checkboxesSelector = 'input[type="checkbox"]';
+        await page.waitForSelector(checkboxesSelector);
+        const checkboxes = await page.$$(checkboxesSelector);
+        for (const checkbox of checkboxes) {
+          await checkbox.click();
+        }
+
+        // CLICK TO EVALUATE
+        const btnConfirma = await page.$('#btnConfirma');
+        await btnConfirma.click();
       }
     }
   } catch (error) {
     console.error('Error:', error);
   } finally {
-    // Close the browser
     // await browser.close();
   }
 })();
+
+// const url = 'https://portal.unimedpalmas.coop.br/pls_principalPrestador.jsp'
+// await page.goto(url, { waitUntil: 'networkidle0' });
+// https://portal.unimedpalmas.coop.br/montaTelaLogin.action?item_0=:
+// index_pls.jsp
+// principal (login.action)
+// paginaPrincipal (pls_montarTelaExecucaoRequisicao.action)
