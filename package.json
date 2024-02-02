@@ -2,9 +2,9 @@
   "name": "unimedauto",
   "version": "1.0.0",
   "description": "",
-  "main": "reader.js",
+  "main": "index.js",
   "bin": {
-    "your-app": "reader.js"
+    "your-app": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
