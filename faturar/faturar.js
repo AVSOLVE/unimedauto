@@ -9,6 +9,20 @@ function extractNrSeqProtocolo(url) {
   const match = url.match(/nrSeqProtocolo=(\d+)/);
   return match ? match[1] : null;
 }
+function formatTime(seconds) {
+  if (seconds < 60) {
+      return seconds + " second" + (seconds !== 1 ? "s" : "");
+  } else {
+      const minutes = Math.floor(seconds / 60);
+      const remainingSeconds = seconds % 60;
+
+      if (remainingSeconds === 0) {
+          return minutes + " minuto" + (minutes !== 1 ? "s" : "");
+      } else {
+          return minutes + " minuto" + (minutes !== 1 ? "s" : "") + " e " + remainingSeconds + " segundo" + (remainingSeconds !== 1 ? "s" : "");
+      }
+  }
+}
 
 async function logToFile(
   index,
@@ -194,9 +208,10 @@ async function logToFile(
                 // Log the completion message
                 const time = new Date() - startTime;
                 const elapsedTimeInSeconds = time / 1000;
+                const formattedTime = formatTime(elapsedTimeInSeconds)
                 const completionMessage = `==> ${
                   index + 1
-                } Faturmentos concluídos em ${elapsedTimeInSeconds}\n `;
+                } Faturmentos concluídos em ${formattedTime}\n`;
                 console.log(completionMessage);
                 await fs.appendFile('log faturamento.txt', completionMessage);
               }
