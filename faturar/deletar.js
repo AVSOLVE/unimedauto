@@ -43,8 +43,8 @@ function extractNrSeqProtocolo(url) {
         const firstAnchorElement = await iframe.$('a');
         await firstAnchorElement.evaluate((a) => a.click());
 
-        for (let i = 0; i < 8; i++) {          
-          await iframe.waitForTimeout(1000);
+        for (let i = 0; i < 4; i++) {          
+          await iframe.waitForTimeout(300);
           const secondAnchorElement = await iframe.$('a');
           await secondAnchorElement.evaluate((a) => a.click());
           

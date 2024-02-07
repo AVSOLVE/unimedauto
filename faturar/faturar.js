@@ -101,75 +101,40 @@ async function logToFile(
           );
 
           // TYPE IN CLIENT DATA AND SEARCH
-          // await iframe.waitForSelector('#nr_crm_solicitante');
-          await iframe.type('#nr_crm_solicitante', crmMedico);
-          await page.keyboard.press('Tab');
-          // await page.waitForTimeout(500);
+          if (await iframe.waitForSelector('#nr_crm_solicitante')) {
+            await iframe.type('#nr_crm_solicitante', crmMedico);
+            await page.keyboard.press('Tab');
 
-          // await page.waitForTimeout(1000);
-          // await iframe.waitForSelector('#nm_medico_solicitante');
-          // const medicoExists = await iframe.$eval(
-          //   '#nm_medico_solicitante',
-          //   (el) => el.value
-          // );
+            if (await iframe.waitForSelector('#nm_medico_solicitante')) {
+              const medicoExists = await iframe.$eval(
+                '#nm_medico_solicitante',
+                (el) => el.value
+              );
 
-          // if (!medicoExists) {
-          //   await page.keyboard.press('Tab');
-          //   console.log(crmMedico, nomeMedico, medicoExists);
-          //   console.log(
-          //     'Medico não existe',
-          //     await iframe.waitForSelector('#idListaMedico_solicitante')
-          //   );
-          //   await iframe.waitForSelector('#idListaMedico_solicitante');
-          //   await page.waitForTimeout(1000);
-          //   await iframe.select(
-          //     'select#idListaMedico_solicitante',
-          //     codUnimedMedico
-          //   );
-          // }
-          // await page.waitForTimeout(1000);
+              if (!medicoExists) {
+                console.log(
+                  'Médico não identificado automaticamente, injetando credenciais...'
+                );
+                await iframe.select(
+                  'select#idListaMedico_solicitante',
+                  codUnimedMedico
+                );
+                await page.keyboard.press('Tab');
+              }
+            }
+            await page.waitForTimeout(500);
+          }
 
-          // await iframe.waitForSelector('#CD_PRESTADOR_EXEC');
           await iframe.type('#CD_PRESTADOR_EXEC', '30001343');
           await page.keyboard.press('Tab');
-          // await page.waitForTimeout(500);
 
-          // await iframe.waitForSelector('#NM_PRESTADOR_EXEC');
-          // await iframe.$eval(
-          //   '#NM_PRESTADOR_EXEC',
-          //   (input, value) => (input.value = value),
-          //   'Fisiocep Ltda'
-          // );
-          // await page.keyboard.press('Tab');
-
-          // await iframe.waitForSelector('#NR_SEQ_PRESTADOR_EXEC');
-          // await iframe.$eval(
-          //   '#NR_SEQ_PRESTADOR_EXEC',
-          //   (input, value) => (input.value = value),
-          //   1394
-          // );
-          // await page.keyboard.press('Tab');
-
-          // await iframe.waitForSelector('#id_grau_participacao_filtro');
           await iframe.select('select#id_grau_participacao_filtro', '10');
-          // await page.waitForTimeout(1000);
 
-          // await iframe.waitForSelector('#nr_crm_participante');
           await iframe.type('#nr_crm_participante', '152447');
           await page.keyboard.press('Tab');
-          // await page.waitForTimeout(2000);
-          // await page.keyboard.press('Tab');
 
-          // await iframe.$eval(
-          //     '#idListaMedico_participante',
-          //     (input, value) => (input.value = value),
-          //     '225793'
-          //   );
-
-          // await iframe.waitForSelector('#idListaMedico_participante');
           await iframe.select('select#idListaMedico_participante', '225793');
           await page.keyboard.press('Tab');
-          // await page.waitForTimeout(1000);
 
           // ACCESS NEW FRAME CONTAINING BUTTON
           const iframes = page.frames();
@@ -188,16 +153,6 @@ async function logToFile(
               await iframe.waitForSelector('#CD_USUARIO_PLANO');
               await iframe.type('#CD_USUARIO_PLANO', numeroCarteirinha);
               await page.keyboard.press('Tab');
-
-              // if (!medicoExists) {
-              //   await iframe.waitForSelector('#nr_crm_solicitante');
-              //   await iframe.$eval(
-              //     '#nr_crm_solicitante',
-              //     (input, value) => (input.value = value),
-              //     crmMedico
-              //   );
-              //   await page.keyboard.press('Tab');
-              // }
 
               await iframe.waitForSelector('#IE_CARATER_INTERNACAO');
               await iframe.select('select#IE_CARATER_INTERNACAO', 'E');
