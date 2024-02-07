@@ -1,8 +1,12 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 
-const evaluateClients = async (clientInfoCard) => {
-  const logFilePath = 'log.txt';
+function formatDateTime(dateTime) {
+  return dateTime.toLocaleString('pt-BR');
+}
+
+const evaluateClients = async (codigoGuia, nomePaciente) => {
+  const logFilePath = 'logExecutar.txt';
   const browser = await puppeteer.launch({
     headless: false,
     defaultViewport: null,
@@ -30,7 +34,7 @@ const evaluateClients = async (clientInfoCard) => {
 
         // TYPE IN CLIENT DATA AND SEARCH
         await iframe.waitForSelector('#CD_USUARIO_PLANO');
-        await iframe.type('#CD_USUARIO_PLANO', clientInfoCard);
+        await iframe.type('#CD_USUARIO_PLANO', codigoGuia);
         await page.keyboard.press('Tab');
         await iframe.$eval('#btnConsultar', (button) => button.click());
 
@@ -42,7 +46,7 @@ const evaluateClients = async (clientInfoCard) => {
           for (const checkbox of checkboxes) {
             await checkbox.click();
           }
-          await page.waitForTimeout(2000);
+          await page.waitForTimeout(1000);
 
           // CLICK TO EVALUATE
           const btnConfirma = await page.$('#btnConfirma');
@@ -55,7 +59,7 @@ const evaluateClients = async (clientInfoCard) => {
           for (const selectBox of selectBoxes) {
             await selectBox.select('3');
           }
-          await page.waitForTimeout(2000);
+          await page.waitForTimeout(1000);
 
           // INPUT BOXES SETTING
           const inputTextSelector = 'input[type="text"]';
@@ -64,12 +68,12 @@ const evaluateClients = async (clientInfoCard) => {
           for (const inputText of inputTexts) {
             await inputText.evaluate((input) => (input.value = '1'));
           }
-          await page.waitForTimeout(2000);
+          await page.waitForTimeout(1000);
 
           // CLICK TO EVALUATE
           const btnConfirmaGuia = await page.$('input[type="button"]');
           await btnConfirmaGuia.click();
-          await page.waitForTimeout(2000);
+          await page.waitForTimeout(1000);
 
           // CLICK TO LEAVE EVALUATE FEEDBACK
           await page.waitForSelector('input[type="button"]');
@@ -77,15 +81,16 @@ const evaluateClients = async (clientInfoCard) => {
           for (const btnBack of btnVoltar) {
             await btnBack.evaluate((button) => button.click());
           }
-          await page.waitForTimeout(2000);
+          await page.waitForTimeout(1000);
 
-          const timestamp = new Date().toLocaleString();
-          const logMessage = `Guia: ${clientInfoCard} - ${timestamp}\n`;
+          const timestamp = formatDateTime(new Date());
+          const logMessage = `Guia: ${codigoGuia} - ${nomePaciente} : ${timestamp}\n`;
           await fs.appendFile(logFilePath, logMessage);
+          await page.waitForTimeout(1000);
 
         } catch (error) {
-          const timestamp = new Date().toLocaleString();
-          const logMessage = `Não há requisições pendentes para a guia: ${clientInfoCard} - ${timestamp}\n`;
+          const timestamp = formatDateTime(new Date());
+          const logMessage = `Não há requisições pendentes para a guia: ${codigoGuia} - ${nomePaciente} : ${timestamp}\n`;
           await fs.appendFile(logFilePath, logMessage);
           return;
         }
