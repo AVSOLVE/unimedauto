@@ -1124,3 +1124,329 @@ Dialog message: Conta consistida!
 16/02/2024, 23:06:22 - Numero: 71, Executando GUIA: 11157580, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 05/02/24 11:32, Médico: CRM 1810 - Marcelo Faria Mota
 16/02/2024, 23:06:28 - Numero: 72, Executando GUIA: 11157579, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 05/02/24 11:32, Médico: CRM 1810 - Marcelo Faria Mota
 ==> 72 Faturmentos concluídos em 5 minutos e 55.12900000000002 segundos
+Dialog message: Médico não encontrado na base.
+13/03/2024, 00:20:25 - Numero: 1, Executando GUIA: 11230406, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 07/03/24, Médico: CRM 5864 - Miguel Angel Corrales Coutinho
+13/03/2024, 00:20:30 - Numero: 2, Executando GUIA: 11230405, Cartão: 02220764001154012, Beneficiário: Rosyvone Caliari, Data execução: 07/03/24, Médico: CRM 3741 - Roberto Piza Morisco
+13/03/2024, 00:20:35 - Numero: 3, Executando GUIA: 11230404, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 07/03/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+13/03/2024, 00:20:41 - Numero: 4, Executando GUIA: 11230403, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 07/03/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+13/03/2024, 00:20:46 - Numero: 5, Executando GUIA: 11230402, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 07/03/24, Médico: CRM 2789 - Thiago Farias
+13/03/2024, 00:20:51 - Numero: 6, Executando GUIA: 11225725, Cartão: 02223167000171030, Beneficiário: Onilza Naves Rabelo, Data execução: 06/03/24, Médico: CRM 3971 - Leandro Rodrigues Cunha
+13/03/2024, 00:20:57 - Numero: 7, Executando GUIA: 11225724, Cartão: 02222303000119012, Beneficiário: Maria do Espirito Santo, Data execução: 06/03/24, Médico: CRM 124 - Aloisio Bolwerk
+13/03/2024, 00:21:02 - Numero: 8, Executando GUIA: 11225723, Cartão: 02220764001154012, Beneficiário: Rosyvone Caliari, Data execução: 06/03/24, Médico: CRM 3741 - Roberto Piza Morisco
+13/03/2024, 00:21:08 - Numero: 9, Executando GUIA: 11225722, Cartão: 02222303000092009, Beneficiário: Adriana Santana Gomes Gomides, Data execução: 06/03/24, Médico: CRM 4958 - Caroline Coelho Falcão Teixeira Morais
+13/03/2024, 00:21:13 - Numero: 10, Executando GUIA: 11225718, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 06/03/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:21:18 - Numero: 11, Executando GUIA: 11225717, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 06/03/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:21:23 - Numero: 12, Executando GUIA: 11225712, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 06/03/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+13/03/2024, 00:21:28 - Numero: 13, Executando GUIA: 11225710, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 06/03/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+13/03/2024, 00:21:34 - Numero: 14, Executando GUIA: 11225707, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 06/03/24, Médico: CRM 5864 - Miguel Angel Corrales Coutinho
+13/03/2024, 00:21:39 - Numero: 15, Executando GUIA: 11222674, Cartão: 02220764001154012, Beneficiário: Rosyvone Caliari, Data execução: 05/03/24, Médico: CRM 3741 - Roberto Piza Morisco
+13/03/2024, 00:21:44 - Numero: 16, Executando GUIA: 11222673, Cartão: 02222303000092009, Beneficiário: Adriana Santana Gomes Gomides, Data execução: 05/03/24, Médico: CRM 4958 - Caroline Coelho Falcão Teixeira Morais
+13/03/2024, 00:21:49 - Numero: 17, Executando GUIA: 11222672, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 05/03/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:21:54 - Numero: 18, Executando GUIA: 11222669, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 05/03/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+13/03/2024, 00:21:59 - Numero: 19, Executando GUIA: 11222667, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 05/03/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+13/03/2024, 00:22:05 - Numero: 20, Executando GUIA: 11222666, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 05/03/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+13/03/2024, 00:22:10 - Numero: 21, Executando GUIA: 11222660, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 05/03/24, Médico: CRM 5864 - Miguel Angel Corrales Coutinho
+13/03/2024, 00:22:15 - Numero: 22, Executando GUIA: 11220915, Cartão: 02220764001154012, Beneficiário: Rosyvone Caliari, Data execução: 04/03/24, Médico: CRM 3741 - Roberto Piza Morisco
+13/03/2024, 00:22:21 - Numero: 23, Executando GUIA: 11220914, Cartão: 02222303000092009, Beneficiário: Adriana Santana Gomes Gomides, Data execução: 04/03/24, Médico: CRM 4958 - Caroline Coelho Falcão Teixeira Morais
+13/03/2024, 00:22:26 - Numero: 24, Executando GUIA: 11220913, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 04/03/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:22:31 - Numero: 25, Executando GUIA: 11220910, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 04/03/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+13/03/2024, 00:22:37 - Numero: 26, Executando GUIA: 11220908, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 04/03/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+13/03/2024, 00:22:42 - Numero: 27, Executando GUIA: 11220903, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 04/03/24, Médico: CRM 5864 - Miguel Angel Corrales Coutinho
+13/03/2024, 00:22:47 - Numero: 28, Executando GUIA: 11213927, Cartão: 02220764001154012, Beneficiário: Rosyvone Caliari, Data execução: 29/02/24, Médico: CRM 3741 - Roberto Piza Morisco
+13/03/2024, 00:22:53 - Numero: 29, Executando GUIA: 11213925, Cartão: 02222303000092009, Beneficiário: Adriana Santana Gomes Gomides, Data execução: 29/02/24, Médico: CRM 4958 - Caroline Coelho Falcão Teixeira Morais
+13/03/2024, 00:22:58 - Numero: 30, Executando GUIA: 11213924, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 29/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:23:03 - Numero: 31, Executando GUIA: 11213923, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 29/02/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+13/03/2024, 00:23:08 - Numero: 32, Executando GUIA: 11213922, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 29/02/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+13/03/2024, 00:23:14 - Numero: 33, Executando GUIA: 11213921, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 29/02/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+13/03/2024, 00:23:19 - Numero: 34, Executando GUIA: 11213920, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 29/02/24, Médico: CRM 5864 - Miguel Angel Corrales Coutinho
+13/03/2024, 00:23:25 - Numero: 35, Executando GUIA: 11209281, Cartão: 02222303000092009, Beneficiário: Adriana Santana Gomes Gomides, Data execução: 28/02/24, Médico: CRM 4958 - Caroline Coelho Falcão Teixeira Morais
+13/03/2024, 00:23:30 - Numero: 36, Executando GUIA: 11209280, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 28/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:23:35 - Numero: 37, Executando GUIA: 11209276, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 28/02/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+13/03/2024, 00:23:41 - Numero: 38, Executando GUIA: 11209271, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 28/02/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+13/03/2024, 00:23:46 - Numero: 39, Executando GUIA: 11209269, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 28/02/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+13/03/2024, 00:23:52 - Numero: 40, Executando GUIA: 11206090, Cartão: 02222303000092009, Beneficiário: Adriana Santana Gomes Gomides, Data execução: 27/02/24, Médico: CRM 4958 - Caroline Coelho Falcão Teixeira Morais
+13/03/2024, 00:23:57 - Numero: 41, Executando GUIA: 11206088, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 27/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:24:03 - Numero: 42, Executando GUIA: 11206087, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 27/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:24:08 - Numero: 43, Executando GUIA: 11206084, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 27/02/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+13/03/2024, 00:24:13 - Numero: 44, Executando GUIA: 11206081, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 27/02/24, Médico: CRM 1281 - Silvio Delorenzo Filho
+13/03/2024, 00:24:19 - Numero: 45, Executando GUIA: 11206079, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 27/02/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+13/03/2024, 00:24:24 - Numero: 46, Executando GUIA: 11206069, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 27/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+13/03/2024, 00:24:30 - Numero: 47, Executando GUIA: 11201589, Cartão: 02222303000092009, Beneficiário: Adriana Santana Gomes Gomides, Data execução: 26/02/24, Médico: CRM 4958 - Caroline Coelho Falcão Teixeira Morais
+13/03/2024, 00:24:35 - Numero: 48, Executando GUIA: 11201588, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 26/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:24:40 - Numero: 49, Executando GUIA: 11201587, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 26/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:24:46 - Numero: 50, Executando GUIA: 11201585, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 26/02/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+13/03/2024, 00:24:51 - Numero: 51, Executando GUIA: 11201581, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 26/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+13/03/2024, 00:24:57 - Numero: 52, Executando GUIA: 11201580, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 26/02/24, Médico: CRM 1281 - Silvio Delorenzo Filho
+13/03/2024, 00:25:02 - Numero: 53, Executando GUIA: 11201576, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 26/02/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+13/03/2024, 00:25:08 - Numero: 54, Executando GUIA: 11201573, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 26/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+13/03/2024, 00:25:13 - Numero: 55, Executando GUIA: 11197775, Cartão: 02222303000092009, Beneficiário: Adriana Santana Gomes Gomides, Data execução: 23/02/24, Médico: CRM 4958 - Caroline Coelho Falcão Teixeira Morais
+13/03/2024, 00:25:19 - Numero: 56, Executando GUIA: 11197774, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 23/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:25:24 - Numero: 57, Executando GUIA: 11197770, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 23/02/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+13/03/2024, 00:25:30 - Numero: 58, Executando GUIA: 11197766, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 23/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+13/03/2024, 00:25:35 - Numero: 59, Executando GUIA: 11197761, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 23/02/24, Médico: CRM 1281 - Silvio Delorenzo Filho
+13/03/2024, 00:25:41 - Numero: 60, Executando GUIA: 11197753, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 23/02/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+13/03/2024, 00:25:47 - Numero: 61, Executando GUIA: 11197747, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 23/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+13/03/2024, 00:25:52 - Numero: 62, Executando GUIA: 11195970, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 22/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:25:59 - Numero: 63, Executando GUIA: 11195968, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 22/02/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+13/03/2024, 00:26:04 - Numero: 64, Executando GUIA: 11195967, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 22/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+13/03/2024, 00:26:10 - Numero: 65, Executando GUIA: 11195966, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 22/02/24, Médico: CRM 1281 - Silvio Delorenzo Filho
+13/03/2024, 00:26:16 - Numero: 66, Executando GUIA: 11195963, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 22/02/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+13/03/2024, 00:26:22 - Numero: 67, Executando GUIA: 11195960, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 22/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+13/03/2024, 00:26:28 - Numero: 68, Executando GUIA: 11195875, Cartão: 02222303000092009, Beneficiário: Adriana Santana Gomes Gomides, Data execução: 22/02/24, Médico: CRM 4958 - Caroline Coelho Falcão Teixeira Morais
+13/03/2024, 00:26:34 - Numero: 69, Executando GUIA: 11192718, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 21/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:26:40 - Numero: 70, Executando GUIA: 11192716, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 21/02/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+13/03/2024, 00:26:45 - Numero: 71, Executando GUIA: 11192713, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 21/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+13/03/2024, 00:26:51 - Numero: 72, Executando GUIA: 11192711, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 21/02/24, Médico: CRM 1281 - Silvio Delorenzo Filho
+13/03/2024, 00:26:58 - Numero: 73, Executando GUIA: 11192705, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 21/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+13/03/2024, 00:27:04 - Numero: 74, Executando GUIA: 11191086, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 20/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:27:10 - Numero: 75, Executando GUIA: 11191085, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 20/02/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+13/03/2024, 00:27:16 - Numero: 76, Executando GUIA: 11191083, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 20/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+13/03/2024, 00:27:23 - Numero: 77, Executando GUIA: 11191082, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 20/02/24, Médico: CRM 1281 - Silvio Delorenzo Filho
+13/03/2024, 00:27:29 - Numero: 78, Executando GUIA: 11191081, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:27:36 - Numero: 79, Executando GUIA: 11191080, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:27:42 - Numero: 80, Executando GUIA: 11191079, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 20/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+13/03/2024, 00:27:48 - Numero: 81, Executando GUIA: 11186064, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 19/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:27:55 - Numero: 82, Executando GUIA: 11186062, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 19/02/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+13/03/2024, 00:28:02 - Numero: 83, Executando GUIA: 11186055, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 19/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+13/03/2024, 00:28:08 - Numero: 84, Executando GUIA: 11186052, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 19/02/24, Médico: CRM 1281 - Silvio Delorenzo Filho
+13/03/2024, 00:28:15 - Numero: 85, Executando GUIA: 11186043, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:28:21 - Numero: 86, Executando GUIA: 11186042, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:28:28 - Numero: 87, Executando GUIA: 11186040, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 19/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+==> 87 Faturmentos concluídos em 8 minutos e 13.874000000000024 segundos
+13/03/2024, 00:39:14 - Numero: 1, Executando GUIA: 11230413, Cartão: 09942271251852014, Beneficiário: LUSINETE RUBINS SANTOS GAMA, Data execução: 07/03/24, Médico: CRM 1810 - Marcelo Faria Mota
+13/03/2024, 00:39:19 - Numero: 2, Executando GUIA: 11230412, Cartão: 02228000000867034, Beneficiário: Murilo Jose Cardoso, Data execução: 07/03/24, Médico: CRM 1281 - Silvio Delorenzo Filho
+13/03/2024, 00:39:24 - Numero: 3, Executando GUIA: 11230411, Cartão: 02223167000171030, Beneficiário: Onilza Naves Rabelo, Data execução: 07/03/24, Médico: CRM 3971 - Leandro Rodrigues Cunha
+13/03/2024, 00:39:29 - Numero: 4, Executando GUIA: 11230410, Cartão: 02222303000119012, Beneficiário: Maria do Espirito Santo, Data execução: 07/03/24, Médico: CRM 124 - Aloisio Bolwerk
+13/03/2024, 00:39:35 - Numero: 5, Executando GUIA: 11230409, Cartão: 02222303000092009, Beneficiário: Adriana Santana Gomes Gomides, Data execução: 07/03/24, Médico: CRM 4958 - Caroline Coelho Falcão Teixeira Morais
+13/03/2024, 00:39:40 - Numero: 6, Executando GUIA: 11230408, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 07/03/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:39:45 - Numero: 7, Executando GUIA: 11230407, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 07/03/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+==> 7 Faturmentos concluídos em 41.716 seconds
+13/03/2024, 00:41:45 - Numero: 1, Executando GUIA: 11240612, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 12/03/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:41:50 - Numero: 2, Executando GUIA: 11240611, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 12/03/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+13/03/2024, 00:41:55 - Numero: 3, Executando GUIA: 11240610, Cartão: 09942271251852014, Beneficiário: LUSINETE RUBINS SANTOS GAMA, Data execução: 12/03/24, Médico: CRM 1810 - Marcelo Faria Mota
+13/03/2024, 00:42:00 - Numero: 4, Executando GUIA: 11240609, Cartão: 09941984254390004, Beneficiário: Diogo Almeida de Souza, Data execução: 12/03/24, Médico: CRM 924 - Jose Ronaldo De Assis
+13/03/2024, 00:42:05 - Numero: 5, Executando GUIA: 11240608, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 12/03/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+13/03/2024, 00:42:10 - Numero: 6, Executando GUIA: 11240607, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 12/03/24, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
+13/03/2024, 00:42:15 - Numero: 7, Executando GUIA: 11240606, Cartão: 02228000000867034, Beneficiário: Murilo Jose Cardoso, Data execução: 12/03/24, Médico: CRM 1281 - Silvio Delorenzo Filho
+13/03/2024, 00:42:21 - Numero: 8, Executando GUIA: 11240605, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 12/03/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+13/03/2024, 00:42:26 - Numero: 9, Executando GUIA: 11240604, Cartão: 02223167000171030, Beneficiário: Onilza Naves Rabelo, Data execução: 12/03/24, Médico: CRM 3971 - Leandro Rodrigues Cunha
+13/03/2024, 00:42:32 - Numero: 10, Executando GUIA: 11240603, Cartão: 02222303000119012, Beneficiário: Maria do Espirito Santo, Data execução: 12/03/24, Médico: CRM 124 - Aloisio Bolwerk
+13/03/2024, 00:42:37 - Numero: 11, Executando GUIA: 11240602, Cartão: 02222200000080000, Beneficiário: Mayda Pimenta de Medeiros, Data execução: 12/03/24, Médico: CRM 124 - Aloisio Bolwerk
+13/03/2024, 00:42:42 - Numero: 12, Executando GUIA: 11240601, Cartão: 02220764001154012, Beneficiário: Rosyvone Caliari, Data execução: 12/03/24, Médico: CRM 3741 - Roberto Piza Morisco
+13/03/2024, 00:42:47 - Numero: 13, Executando GUIA: 11240600, Cartão: 02220411001958014, Beneficiário: Benavenuta Lira Cavalcante, Data execução: 12/03/24, Médico: CRM 1674 - Elton Stecca Santana
+13/03/2024, 00:42:52 - Numero: 14, Executando GUIA: 11240599, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 12/03/24, Médico: CRM 5864 - Miguel Angel Corrales Coutinho
+13/03/2024, 00:42:57 - Numero: 15, Executando GUIA: 11230415, Cartão: 09941984254390004, Beneficiário: Diogo Almeida de Souza, Data execução: 07/03/24, Médico: CRM 924 - Jose Ronaldo De Assis
+13/03/2024, 00:43:02 - Numero: 16, Executando GUIA: 11230414, Cartão: 02220411001958014, Beneficiário: Benavenuta Lira Cavalcante, Data execução: 07/03/24, Médico: CRM 1674 - Elton Stecca Santana
+==> 16 Faturmentos concluídos em 1 minuto e 27.774 segundos
+13/03/2024, 00:50:23 - Numero: 1, Executando GUIA: 11054314, Cartão: 00648000009399694, Beneficiário: JOSEFINA OTAVIANI S JOSE, Data execução: 08/12/2023 08:58:37, Médico: CRM 4359 - RENATA ROSSATO
+13/03/2024, 00:50:28 - Numero: 2, Executando GUIA: 11054311, Cartão: 02220411001030011, Beneficiário: SIMEY DA CRUZ SOUSA PIMENTEL, Data execução: 08/12/2023 08:57:56, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 00:50:33 - Numero: 3, Executando GUIA: 11054295, Cartão: 02222507000017002, Beneficiário: MARIA EURLENE GOMES CARVALHO, Data execução: 08/12/2023 08:54:42, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 00:50:38 - Numero: 4, Executando GUIA: 11054291, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 08/12/2023 08:54:07, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 00:50:43 - Numero: 5, Executando GUIA: 11054286, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 08/12/2023 08:53:39, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 00:50:49 - Numero: 6, Executando GUIA: 11054278, Cartão: 02220764000472002, Beneficiário: EDSON ALMEIDA DE OLIVEIRA PEREIRA, Data execução: 08/12/2023 08:52:52, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 00:50:53 - Numero: 7, Executando GUIA: 11054274, Cartão: 08650001114424009, Beneficiário: SABRINE ARAUJO PACHECO, Data execução: 08/12/2023 08:52:16, Médico: CRM 2520 - ANGELA BEATRIZ DAL MOLIN AUGUSCO
+13/03/2024, 00:50:59 - Numero: 8, Executando GUIA: 11054272, Cartão: 02220607000177005, Beneficiário: MARINELIA MACIEL TURIBIO FERNANDES, Data execução: 08/12/2023 08:51:45, Médico: CRM 1700238 - ANTONIO WANDERLEY P. JUNIOR
+13/03/2024, 00:51:04 - Numero: 9, Executando GUIA: 11051522, Cartão: 09942265505547000, Beneficiário: CARLOS EDUARDO GOMES CARVALHO, Data execução: 07/12/2023 08:54:57, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 00:51:09 - Numero: 10, Executando GUIA: 11051516, Cartão: 02223167000189001, Beneficiário: DANUBIA CARLOS FERNANDES LOPES, Data execução: 07/12/2023 08:54:18, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 00:51:14 - Numero: 11, Executando GUIA: 11051512, Cartão: 02229000000489094, Beneficiário: SHAVIO ROCHA CABRAL, Data execução: 07/12/2023 08:53:47, Médico: CRM 1933 - GIULYANO DIAS REIS
+13/03/2024, 00:51:19 - Numero: 12, Executando GUIA: 11051504, Cartão: 00648000067972008, Beneficiário: ROBERTO FARIA TONACO, Data execução: 07/12/2023 08:52:47, Médico: CRM 2799 - EDSON PEDROZA DOS SANTOS JUNIOR
+13/03/2024, 00:51:25 - Numero: 13, Executando GUIA: 11051496, Cartão: 00648000009399694, Beneficiário: JOSEFINA OTAVIANI S JOSE, Data execução: 07/12/2023 08:51:27, Médico: CRM 4359 - RENATA ROSSATO
+13/03/2024, 00:51:30 - Numero: 14, Executando GUIA: 11051489, Cartão: 02220411001030011, Beneficiário: SIMEY DA CRUZ SOUSA PIMENTEL, Data execução: 07/12/2023 08:50:54, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 00:51:35 - Numero: 15, Executando GUIA: 11051485, Cartão: 02222507000017002, Beneficiário: MARIA EURLENE GOMES CARVALHO, Data execução: 07/12/2023 08:50:18, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 00:51:40 - Numero: 16, Executando GUIA: 11051478, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 07/12/2023 08:49:49, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 00:51:45 - Numero: 17, Executando GUIA: 11051476, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 07/12/2023 08:49:22, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 00:51:51 - Numero: 18, Executando GUIA: 11051474, Cartão: 02220764000472002, Beneficiário: EDSON ALMEIDA DE OLIVEIRA PEREIRA, Data execução: 07/12/2023 08:48:54, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 00:51:56 - Numero: 19, Executando GUIA: 11051470, Cartão: 08650001114424009, Beneficiário: SABRINE ARAUJO PACHECO, Data execução: 07/12/2023 08:48:23, Médico: CRM 2520 - ANGELA BEATRIZ DAL MOLIN AUGUSCO
+13/03/2024, 00:52:02 - Numero: 20, Executando GUIA: 11051463, Cartão: 02220607000177005, Beneficiário: MARINELIA MACIEL TURIBIO FERNANDES, Data execução: 07/12/2023 08:47:52, Médico: CRM 1700238 - ANTONIO WANDERLEY P. JUNIOR
+13/03/2024, 00:52:07 - Numero: 21, Executando GUIA: 11051453, Cartão: 02227602002005004, Beneficiário: FABIANA GUIDA PEREIRA ABREU, Data execução: 07/12/2023 08:46:44, Médico: CRM 2173 - DANIEL MARTINS HIRAMATSU
+13/03/2024, 00:52:12 - Numero: 22, Executando GUIA: 11051445, Cartão: 08650003975883004, Beneficiário: EDILSON BORGES DE ALMEIDA, Data execução: 07/12/2023 08:45:47, Médico: CRM 2009 - RONALDO REGO RODRIGUES
+13/03/2024, 00:52:19 - Numero: 23, Executando GUIA: 11051437, Cartão: 02222303000031000, Beneficiário: LAIRSON LOPES, Data execução: 07/12/2023 08:44:19, Médico: CRM 1017 - ANTONIO CARLOS MARTINS CIRILO
+13/03/2024, 00:52:25 - Numero: 24, Executando GUIA: 11051432, Cartão: 02222303000045000, Beneficiário: IRAILDES ALVES HAWAT, Data execução: 07/12/2023 08:43:48, Médico: CRM 3993 - HIGOR KAZUMI MORIBE
+13/03/2024, 00:52:31 - Numero: 25, Executando GUIA: 11051426, Cartão: 02220607000177013, Beneficiário: EDSON FERNANDES DA COSTA, Data execução: 07/12/2023 08:43:07, Médico: CRM 3993 - HIGOR KAZUMI MORIBE
+13/03/2024, 00:52:36 - Numero: 26, Executando GUIA: 11051423, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 07/12/2023 08:42:39, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 00:52:41 - Numero: 27, Executando GUIA: 11051418, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 07/12/2023 08:42:00, Médico: CRM 2578 - JHONNY ESCALERA CRUZ
+13/03/2024, 00:52:46 - Numero: 28, Executando GUIA: 11051412, Cartão: 09942265505547000, Beneficiário: CARLOS EDUARDO GOMES CARVALHO, Data execução: 07/12/2023 08:41:13, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 00:52:51 - Numero: 29, Executando GUIA: 11050867, Cartão: 09942265505547000, Beneficiário: CARLOS EDUARDO GOMES CARVALHO, Data execução: 06/12/2023 18:10:28, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 00:52:57 - Numero: 30, Executando GUIA: 11050844, Cartão: 02223167000073003, Beneficiário: DOUGLAS AIRES MILHOMEM, Data execução: 06/12/2023 17:55:43, Médico: CRM 2809 - ERINALDO PASSOS
+13/03/2024, 00:53:03 - Numero: 31, Executando GUIA: 11047428, Cartão: 02222303000065010, Beneficiário: MIRIAN RESPLANDE ASSIS, Data execução: 05/12/2023 16:17:48, Médico: CRM 2566 - LEANDRO RIBEIRO CAMPOS
+13/03/2024, 00:53:09 - Numero: 32, Executando GUIA: 11047423, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 05/12/2023 16:17:02, Médico: CRM 2578 - JHONNY ESCALERA CRUZ
+13/03/2024, 00:53:14 - Numero: 33, Executando GUIA: 11047418, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 05/12/2023 16:16:22, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 00:53:19 - Numero: 34, Executando GUIA: 11047416, Cartão: 02220607000177013, Beneficiário: EDSON FERNANDES DA COSTA, Data execução: 05/12/2023 16:15:52, Médico: CRM 3993 - HIGOR KAZUMI MORIBE
+13/03/2024, 00:53:25 - Numero: 35, Executando GUIA: 11047413, Cartão: 02222303000045000, Beneficiário: IRAILDES ALVES HAWAT, Data execução: 05/12/2023 16:15:28, Médico: CRM 3993 - HIGOR KAZUMI MORIBE
+13/03/2024, 00:53:30 - Numero: 36, Executando GUIA: 11047410, Cartão: 02222303000031000, Beneficiário: LAIRSON LOPES, Data execução: 05/12/2023 16:14:54, Médico: CRM 1017 - ANTONIO CARLOS MARTINS CIRILO
+13/03/2024, 00:53:36 - Numero: 37, Executando GUIA: 11047405, Cartão: 08650003975883004, Beneficiário: EDILSON BORGES DE ALMEIDA, Data execução: 05/12/2023 16:14:27, Médico: CRM 2009 - RONALDO REGO RODRIGUES
+13/03/2024, 00:53:41 - Numero: 38, Executando GUIA: 11047398, Cartão: 02227602002005004, Beneficiário: FABIANA GUIDA PEREIRA ABREU, Data execução: 05/12/2023 16:13:49, Médico: CRM 2173 - DANIEL MARTINS HIRAMATSU
+13/03/2024, 00:53:48 - Numero: 39, Executando GUIA: 11047392, Cartão: 02220607000177005, Beneficiário: MARINELIA MACIEL TURIBIO FERNANDES, Data execução: 05/12/2023 16:12:51, Médico: CRM 1700238 - ANTONIO WANDERLEY P. JUNIOR
+13/03/2024, 00:53:53 - Numero: 40, Executando GUIA: 11047391, Cartão: 08650001114424009, Beneficiário: SABRINE ARAUJO PACHECO, Data execução: 05/12/2023 16:12:28, Médico: CRM 2520 - ANGELA BEATRIZ DAL MOLIN AUGUSCO
+13/03/2024, 00:53:59 - Numero: 41, Executando GUIA: 11047388, Cartão: 02220764000472002, Beneficiário: EDSON ALMEIDA DE OLIVEIRA PEREIRA, Data execução: 05/12/2023 16:11:48, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 00:54:04 - Numero: 42, Executando GUIA: 11047382, Cartão: 02227601001834009, Beneficiário: ROSINALVA FERREIRA BRINGEL VIANA, Data execução: 05/12/2023 16:11:15, Médico: CRM 2922 - ANA CAROLINA CAMARGO ROCHA
+13/03/2024, 00:54:09 - Numero: 43, Executando GUIA: 11047380, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 05/12/2023 16:10:29, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 00:54:15 - Numero: 44, Executando GUIA: 11047377, Cartão: 08650002976108014, Beneficiário: BERNADETE CRISTINA MONTEIRO DINIZ, Data execução: 05/12/2023 16:09:40, Médico: CRM 3367 - LUCIANO RACHID ABREU
+13/03/2024, 00:54:21 - Numero: 45, Executando GUIA: 11047369, Cartão: 00643740000003670, Beneficiário: JOÃO CLAUDIO FRANÇA MALTA, Data execução: 05/12/2023 16:07:48, Médico: CRM 2789 - THIAGO FARIAS
+13/03/2024, 00:54:26 - Numero: 46, Executando GUIA: 11047367, Cartão: 08650003654080004, Beneficiário: SARA CRUZ FERNANDES MALTA, Data execução: 05/12/2023 16:07:14, Médico: CRM 2694 - VEONICA ANDRESA ORTEGA COELHO
+13/03/2024, 00:54:32 - Numero: 47, Executando GUIA: 11047329, Cartão: 02227602002530001, Beneficiário: JOSE MARIA DE MELO OLIVEIRA, Data execução: 05/12/2023 16:00:31, Médico: CRM 4385 - LENDL DO VALE MENDONCA
+13/03/2024, 00:54:37 - Numero: 48, Executando GUIA: 11047317, Cartão: 00648000067972008, Beneficiário: ROBERTO FARIA TONACO, Data execução: 05/12/2023 15:59:16, Médico: CRM 2799 - EDSON PEDROZA DOS SANTOS JUNIOR
+13/03/2024, 00:54:43 - Numero: 49, Executando GUIA: 11047295, Cartão: 00648000009399694, Beneficiário: JOSEFINA OTAVIANI S JOSE, Data execução: 05/12/2023 15:54:49, Médico: CRM 4359 - RENATA ROSSATO
+13/03/2024, 00:54:48 - Numero: 50, Executando GUIA: 11047282, Cartão: 02220411001030011, Beneficiário: SIMEY DA CRUZ SOUSA PIMENTEL, Data execução: 05/12/2023 15:52:11, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 00:54:54 - Numero: 51, Executando GUIA: 11047278, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 05/12/2023 15:51:40, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 00:54:59 - Numero: 52, Executando GUIA: 11047275, Cartão: 02222507000017002, Beneficiário: MARIA EURLENE GOMES CARVALHO, Data execução: 05/12/2023 15:51:06, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 00:55:05 - Numero: 53, Executando GUIA: 11047271, Cartão: 02229000000489094, Beneficiário: SHAVIO ROCHA CABRAL, Data execução: 05/12/2023 15:50:32, Médico: CRM 1933 - GIULYANO DIAS REIS
+13/03/2024, 00:55:10 - Numero: 54, Executando GUIA: 11047270, Cartão: 02223167000189001, Beneficiário: DANUBIA CARLOS FERNANDES LOPES, Data execução: 05/12/2023 15:49:51, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 00:55:16 - Numero: 55, Executando GUIA: 11064926, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 13/12/2023 10:53:15, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 00:55:21 - Numero: 56, Executando GUIA: 11082434, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 22/12/2023 09:36:17, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 00:55:27 - Numero: 57, Executando GUIA: 11081321, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 21/12/2023 14:24:48, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 00:55:32 - Numero: 58, Executando GUIA: 11092944, Cartão: 02222380000001007, Beneficiário: IRACI RODRIGUES SANTANA, Data execução: 04/01/2024 16:38:16, Médico: CRM 1129 - ROSABEL ANDINO ROSE DIAS
+13/03/2024, 00:55:38 - Numero: 59, Executando GUIA: 11100418, Cartão: 02223167000189001, Beneficiário: DANUBIA CARLOS FERNANDES LOPES, Data execução: 09/01/2024 19:04:59, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 00:55:43 - Numero: 60, Executando GUIA: 11081341, Cartão: 02223167000189001, Beneficiário: DANUBIA CARLOS FERNANDES LOPES, Data execução: 21/12/2023 14:28:08, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 00:55:49 - Numero: 61, Executando GUIA: 11082443, Cartão: 02223167000189001, Beneficiário: DANUBIA CARLOS FERNANDES LOPES, Data execução: 22/12/2023 09:37:54, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 00:55:54 - Numero: 62, Executando GUIA: 11108278, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 12/01/2024 20:02:47, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 00:56:00 - Numero: 63, Executando GUIA: 11100512, Cartão: 02222380000001007, Beneficiário: IRACI RODRIGUES SANTANA, Data execução: 10/01/2024 00:48:17, Médico: CRM 1129 - ROSABEL ANDINO ROSE DIAS
+13/03/2024, 00:56:06 - Numero: 64, Executando GUIA: 11100510, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 10/01/2024 00:45:15, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 00:56:11 - Numero: 65, Executando GUIA: 11092931, Cartão: 02223167000189001, Beneficiário: DANUBIA CARLOS FERNANDES LOPES, Data execução: 04/01/2024 16:33:49, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 00:56:17 - Numero: 66, Executando GUIA: 11181992, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:56:24 - Numero: 67, Executando GUIA: 11181991, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:56:30 - Numero: 68, Executando GUIA: 11178635, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:56:36 - Numero: 69, Executando GUIA: 11178634, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:56:42 - Numero: 70, Executando GUIA: 11175572, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:56:49 - Numero: 71, Executando GUIA: 11175571, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:56:55 - Numero: 72, Executando GUIA: 11159594, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 06/02/24 01:02, Médico: CRM 1810 - Marcelo Faria Mota
+13/03/2024, 00:57:01 - Numero: 73, Executando GUIA: 11166230, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 07/02/24 23:03, Médico: CRM 1810 - Marcelo Faria Mota
+13/03/2024, 00:57:07 - Numero: 74, Executando GUIA: 11169458, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 08/02/24 18:22, Médico: CRM 1810 - Marcelo Faria Mota
+13/03/2024, 00:57:14 - Numero: 75, Executando GUIA: 11175561, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/24 10:55, Médico: CRM 1810 - Marcelo Faria Mota
+13/03/2024, 00:57:20 - Numero: 76, Executando GUIA: 11186043, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:57:27 - Numero: 77, Executando GUIA: 11186042, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:57:34 - Numero: 78, Executando GUIA: 11191081, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:57:41 - Numero: 79, Executando GUIA: 11191080, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+13/03/2024, 00:57:48 - Numero: 80, Executando GUIA: 11054359, Cartão: 02220607000177013, Beneficiário: EDSON FERNANDES DA COSTA, Data execução: 08/12/2023 09:04:43, Médico: CRM 3993 - HIGOR KAZUMI MORIBE
+13/03/2024, 00:57:55 - Numero: 81, Executando GUIA: 11054355, Cartão: 02222303000045000, Beneficiário: IRAILDES ALVES HAWAT, Data execução: 08/12/2023 09:04:10, Médico: CRM 3993 - HIGOR KAZUMI MORIBE
+13/03/2024, 00:58:01 - Numero: 82, Executando GUIA: 11054351, Cartão: 08650003975883004, Beneficiário: EDILSON BORGES DE ALMEIDA, Data execução: 08/12/2023 09:03:34, Médico: CRM 2009 - RONALDO REGO RODRIGUES
+13/03/2024, 00:58:08 - Numero: 83, Executando GUIA: 11054346, Cartão: 02222303000031000, Beneficiário: LAIRSON LOPES, Data execução: 08/12/2023 09:03:03, Médico: CRM 1017 - ANTONIO CARLOS MARTINS CIRILO
+13/03/2024, 00:58:15 - Numero: 84, Executando GUIA: 11054344, Cartão: 02227602002005004, Beneficiário: FABIANA GUIDA PEREIRA ABREU, Data execução: 08/12/2023 09:02:32, Médico: CRM 2173 - DANIEL MARTINS HIRAMATSU
+13/03/2024, 00:58:22 - Numero: 85, Executando GUIA: 11054339, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 08/12/2023 09:01:57, Médico: CRM 2578 - JHONNY ESCALERA CRUZ
+13/03/2024, 00:58:29 - Numero: 86, Executando GUIA: 11054335, Cartão: 09942265505547000, Beneficiário: CARLOS EDUARDO GOMES CARVALHO, Data execução: 08/12/2023 09:01:21, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 00:58:35 - Numero: 87, Executando GUIA: 11054327, Cartão: 02223167000189001, Beneficiário: DANUBIA CARLOS FERNANDES LOPES, Data execução: 08/12/2023 09:00:31, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 00:58:42 - Numero: 88, Executando GUIA: 11054324, Cartão: 02229000000489094, Beneficiário: SHAVIO ROCHA CABRAL, Data execução: 08/12/2023 09:00:00, Médico: CRM 1933 - GIULYANO DIAS REIS
+13/03/2024, 00:58:49 - Numero: 89, Executando GUIA: 11054320, Cartão: 00648000067972008, Beneficiário: ROBERTO FARIA TONACO, Data execução: 08/12/2023 08:59:24, Médico: CRM 2799 - EDSON PEDROZA DOS SANTOS JUNIOR
+13/03/2024, 00:58:55 - Numero: 90, Executando GUIA: 11054539, Cartão: 02220768000181000, Beneficiário: HELAINY BRITO LEOPOLDINO MENDES, Data execução: 08/12/2023 09:32:45, Médico: CRM 272 - JORGE IVAN ALVES BEZERRA
+==> 90 Faturmentos concluídos em 8 minutos e 43.547000000000025 segundos
+13/03/2024, 01:39:27 - Numero: 1, Executando GUIA: 11092944, Cartão: 02222380000001007, Beneficiário: IRACI RODRIGUES SANTANA, Data execução: 04/01/2024 16:38:16, Médico: CRM 1129 - ROSABEL ANDINO ROSE DIAS
+13/03/2024, 01:39:32 - Numero: 2, Executando GUIA: 11100512, Cartão: 02222380000001007, Beneficiário: IRACI RODRIGUES SANTANA, Data execução: 10/01/2024 00:48:17, Médico: CRM 1129 - ROSABEL ANDINO ROSE DIAS
+==> 2 Faturmentos concluídos em 14.985 seconds
+Dialog message: Conta consistida!
+13/03/2024, 01:49:47 - Numero: 1, Executando GUIA: 11108293, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 12/01/2024 20:08:54, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 01:49:52 - Numero: 2, Executando GUIA: 11103109, Cartão: 02222380000001007, Beneficiário: IRACI RODRIGUES SANTANA, Data execução: 11/01/2024 00:07:51, Médico: CRM 1129 - ROSABEL ANDINO ROSE DIAS
+13/03/2024, 01:49:57 - Numero: 3, Executando GUIA: 11088973, Cartão: 02222380000001007, Beneficiário: IRACI RODRIGUES SANTANA, Data execução: 01/01/2024 14:40:50, Médico: CRM 1129 - ROSABEL ANDINO ROSE DIAS
+13/03/2024, 01:50:02 - Numero: 4, Executando GUIA: 11100417, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 09/01/2024 19:04:07, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 01:50:07 - Numero: 5, Executando GUIA: 11144473, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 30/01/2024 08:14:45, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 01:50:12 - Numero: 6, Executando GUIA: 11092922, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 04/01/2024 16:32:27, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 01:50:16 - Numero: 7, Executando GUIA: 11100419, Cartão: 02222380000001007, Beneficiário: IRACI RODRIGUES SANTANA, Data execução: 09/01/2024 19:05:47, Médico: CRM 1129 - ROSABEL ANDINO ROSE DIAS
+13/03/2024, 01:50:21 - Numero: 8, Executando GUIA: 11144102, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 29/01/2024 20:59:00, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 01:50:27 - Numero: 9, Executando GUIA: 11094398, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 05/01/2024 15:03:57, Médico: CRM 2530 - ANDRE LUIZ PEREIRA
+13/03/2024, 01:50:31 - Numero: 10, Executando GUIA: 11103108, Cartão: 02223167000189001, Beneficiário: DANUBIA CARLOS FERNANDES LOPES, Data execução: 11/01/2024 00:06:58, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 01:50:36 - Numero: 11, Executando GUIA: 11108841, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 13/01/2024 14:16:29, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:50:41 - Numero: 12, Executando GUIA: 11155560, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 02/02/2024 19:01:29, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 01:50:47 - Numero: 13, Executando GUIA: 11155558, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 02/02/2024 19:00:57, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:50:52 - Numero: 14, Executando GUIA: 11155517, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 02/02/2024 18:20:01, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:50:57 - Numero: 15, Executando GUIA: 11150204, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 01/02/2024 01:24:24, Médico: CRM 2530 - ANDRE LUIZ PEREIRA
+13/03/2024, 01:51:02 - Numero: 16, Executando GUIA: 11150203, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 01/02/2024 01:24:24, Médico: CRM 2530 - ANDRE LUIZ PEREIRA
+13/03/2024, 01:51:08 - Numero: 17, Executando GUIA: 11150200, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 01/02/2024 01:17:06, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:51:13 - Numero: 18, Executando GUIA: 11150201, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 01/02/2024 01:17:06, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:51:18 - Numero: 19, Executando GUIA: 11150196, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 01/02/2024 01:10:55, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 01:51:23 - Numero: 20, Executando GUIA: 11150193, Cartão: 00643740000035122, Beneficiário: FILIPE SIMOES DIAS MENDES, Data execução: 01/02/2024 01:05:07, Médico: CRM 1582 - GUSTAVO MACHADO VASCONCELOS
+13/03/2024, 01:51:28 - Numero: 21, Executando GUIA: 11150194, Cartão: 00643740000035122, Beneficiário: FILIPE SIMOES DIAS MENDES, Data execução: 01/02/2024 01:05:08, Médico: CRM 1582 - GUSTAVO MACHADO VASCONCELOS
+13/03/2024, 01:51:33 - Numero: 22, Executando GUIA: 11150125, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 31/01/2024 21:02:56, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 01:51:38 - Numero: 23, Executando GUIA: 11144471, Cartão: 02222380000001007, Beneficiário: IRACI RODRIGUES SANTANA, Data execução: 30/01/2024 08:14:24, Médico: CRM 1129 - ROSABEL ANDINO ROSE DIAS
+13/03/2024, 01:51:43 - Numero: 24, Executando GUIA: 11144469, Cartão: 02227601004329003, Beneficiário: ALEX TONACO MILHOMEM, Data execução: 30/01/2024 08:13:49, Médico: CRM 2556 - JOAO PAULO BORGES DE MORAES
+13/03/2024, 01:51:48 - Numero: 25, Executando GUIA: 11144468, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 30/01/2024 08:13:32, Médico: CRM 3873 - HUGO DE CARLOS MACIEL ROSSONI
+13/03/2024, 01:51:53 - Numero: 26, Executando GUIA: 11144467, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 30/01/2024 08:13:13, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:51:57 - Numero: 27, Executando GUIA: 11144466, Cartão: 02223167000189001, Beneficiário: DANUBIA CARLOS FERNANDES LOPES, Data execução: 30/01/2024 08:12:54, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 01:52:02 - Numero: 28, Executando GUIA: 11094399, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 05/01/2024 15:03:57, Médico: CRM 2530 - ANDRE LUIZ PEREIRA
+13/03/2024, 01:52:07 - Numero: 29, Executando GUIA: 11144459, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 30/01/2024 08:12:20, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:52:12 - Numero: 30, Executando GUIA: 11144120, Cartão: 01830000000399723, Beneficiário: NILDA DE GODOY ZARPELLON, Data execução: 29/01/2024 21:01:50, Médico: CRM 2799 - EDSON PEDROZA DOS SANTOS JUNIOR
+13/03/2024, 01:52:17 - Numero: 31, Executando GUIA: 11144118, Cartão: 02220411000034137, Beneficiário: PEDRO LUCAS MOTA PEREIRA, Data execução: 29/01/2024 21:01:28, Médico: CRM 2530 - ANDRE LUIZ PEREIRA
+13/03/2024, 01:52:22 - Numero: 32, Executando GUIA: 11144112, Cartão: 02640103760001800, Beneficiário: MARIA GABRIELA BRITO TEIXEIRA, Data execução: 29/01/2024 21:00:27, Médico: CRM 2530 - ANDRE LUIZ PEREIRA
+13/03/2024, 01:52:27 - Numero: 33, Executando GUIA: 11144110, Cartão: 00643740000035122, Beneficiário: FILIPE SIMOES DIAS MENDES, Data execução: 29/01/2024 21:00:02, Médico: CRM 1582 - GUSTAVO MACHADO VASCONCELOS
+13/03/2024, 01:52:32 - Numero: 34, Executando GUIA: 11144108, Cartão: 02223167000166001, Beneficiário: VERALUCE TEODORO GONCALVES, Data execução: 29/01/2024 20:59:45, Médico: CRM 2736 - FLAVIO DIAS SILVA
+13/03/2024, 01:52:37 - Numero: 35, Executando GUIA: 11144107, Cartão: 02223167000166001, Beneficiário: VERALUCE TEODORO GONCALVES, Data execução: 29/01/2024 20:59:45, Médico: CRM 2736 - FLAVIO DIAS SILVA
+13/03/2024, 01:52:42 - Numero: 36, Executando GUIA: 11144105, Cartão: 08650001114424009, Beneficiário: SABRINE ARAUJO PACHECO, Data execução: 29/01/2024 20:59:19, Médico: CRM 2520 - ANGELA BEATRIZ DAL MOLIN AUGUSCO
+13/03/2024, 01:52:46 - Numero: 37, Executando GUIA: 11144103, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 29/01/2024 20:59:00, Médico: CRM 1810 - MARCELO FARIA MOTA
+13/03/2024, 01:52:51 - Numero: 38, Executando GUIA: 11144100, Cartão: 02222380000001007, Beneficiário: IRACI RODRIGUES SANTANA, Data execução: 29/01/2024 20:58:29, Médico: CRM 1129 - ROSABEL ANDINO ROSE DIAS
+13/03/2024, 01:52:56 - Numero: 39, Executando GUIA: 11137093, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 25/01/2024 23:51:48, Médico: CRM 3873 - HUGO DE CARLOS MACIEL ROSSONI
+13/03/2024, 01:53:01 - Numero: 40, Executando GUIA: 11137092, Cartão: 08650002661679007, Beneficiário: ROSALICE MARTINS DE SOUSA MOURA, Data execução: 25/01/2024 23:51:24, Médico: CRM 6206 - ALESSANDRO PAOLO SEQUENZIA
+13/03/2024, 01:53:07 - Numero: 41, Executando GUIA: 11051459, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 07/12/2023 08:47:19, Médico: CRM 2530 - ANDRE LUIZ PEREIRA
+13/03/2024, 01:53:12 - Numero: 42, Executando GUIA: 11132849, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 24/01/2024 13:20:48, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 01:53:18 - Numero: 43, Executando GUIA: 11054270, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 08/12/2023 08:50:57, Médico: CRM 221055 - MARINA HUBAIDE ROSA
+13/03/2024, 01:53:23 - Numero: 44, Executando GUIA: 11129495, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 23/01/2024 12:44:40, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 01:53:29 - Numero: 45, Executando GUIA: 11116730, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 17/01/2024 13:32:41, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:53:34 - Numero: 46, Executando GUIA: 11116745, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 17/01/2024 13:35:44, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 01:53:40 - Numero: 47, Executando GUIA: 11116755, Cartão: 08650002978590000, Beneficiário: EDISON MENDES RODRIGUES, Data execução: 17/01/2024 13:38:14, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 01:53:45 - Numero: 48, Executando GUIA: 11116754, Cartão: 08650002978590000, Beneficiário: EDISON MENDES RODRIGUES, Data execução: 17/01/2024 13:38:14, Médico: CRM 4385 - LENDL DO VALE MENDONCA
+13/03/2024, 01:53:52 - Numero: 49, Executando GUIA: 11129492, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 23/01/2024 12:43:45, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:53:58 - Numero: 50, Executando GUIA: 11129491, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 23/01/2024 12:43:45, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:54:03 - Numero: 51, Executando GUIA: 11100499, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 10/01/2024 00:27:59, Médico: CRM 2530 - ANDRE LUIZ PEREIRA
+13/03/2024, 01:54:09 - Numero: 52, Executando GUIA: 11127274, Cartão: 08650002978590000, Beneficiário: EDISON MENDES RODRIGUES, Data execução: 22/01/2024 16:12:15, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 01:54:14 - Numero: 53, Executando GUIA: 11127273, Cartão: 08650002978590000, Beneficiário: EDISON MENDES RODRIGUES, Data execução: 22/01/2024 16:12:15, Médico: CRM 4385 - LENDL DO VALE MENDONCA
+13/03/2024, 01:54:20 - Numero: 54, Executando GUIA: 11123782, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 19/01/2024 21:44:47, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:54:26 - Numero: 55, Executando GUIA: 11123781, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 19/01/2024 21:44:47, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:54:32 - Numero: 56, Executando GUIA: 11123789, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 19/01/2024 21:49:15, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 01:54:38 - Numero: 57, Executando GUIA: 11123796, Cartão: 08650002978590000, Beneficiário: EDISON MENDES RODRIGUES, Data execução: 19/01/2024 21:51:30, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 01:54:44 - Numero: 58, Executando GUIA: 11123795, Cartão: 08650002978590000, Beneficiário: EDISON MENDES RODRIGUES, Data execução: 19/01/2024 21:51:30, Médico: CRM 4385 - LENDL DO VALE MENDONCA
+13/03/2024, 01:54:50 - Numero: 59, Executando GUIA: 11100501, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 10/01/2024 00:30:33, Médico: CRM 2530 - ANDRE LUIZ PEREIRA
+13/03/2024, 01:54:56 - Numero: 60, Executando GUIA: 11127242, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 22/01/2024 16:07:31, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:55:02 - Numero: 61, Executando GUIA: 11127241, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 22/01/2024 16:07:31, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:55:08 - Numero: 62, Executando GUIA: 11127261, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 22/01/2024 16:10:04, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 01:55:14 - Numero: 63, Executando GUIA: 11113615, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 16/01/2024 13:18:19, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 01:55:19 - Numero: 64, Executando GUIA: 11113612, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 16/01/2024 13:17:29, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:55:25 - Numero: 65, Executando GUIA: 11113610, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 16/01/2024 13:16:36, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 01:55:31 - Numero: 66, Executando GUIA: 11113609, Cartão: 02222380000001007, Beneficiário: IRACI RODRIGUES SANTANA, Data execução: 16/01/2024 13:16:16, Médico: CRM 1129 - ROSABEL ANDINO ROSE DIAS
+13/03/2024, 01:55:36 - Numero: 67, Executando GUIA: 11113607, Cartão: 08650002661679007, Beneficiário: ROSALICE MARTINS DE SOUSA MOURA, Data execução: 16/01/2024 13:15:51, Médico: CRM 6206 - ALESSANDRO PAOLO SEQUENZIA
+13/03/2024, 01:55:42 - Numero: 68, Executando GUIA: 11113621, Cartão: 08650002978590000, Beneficiário: EDISON MENDES RODRIGUES, Data execução: 16/01/2024 13:20:02, Médico: CRM 4385 - LENDL DO VALE MENDONCA
+13/03/2024, 01:55:48 - Numero: 69, Executando GUIA: 11113622, Cartão: 08650002978590000, Beneficiário: EDISON MENDES RODRIGUES, Data execução: 16/01/2024 13:20:02, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 01:55:54 - Numero: 70, Executando GUIA: 11116729, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 17/01/2024 13:32:41, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:56:00 - Numero: 71, Executando GUIA: 11113605, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 16/01/2024 13:15:29, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:56:06 - Numero: 72, Executando GUIA: 11113604, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 16/01/2024 13:15:29, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:56:12 - Numero: 73, Executando GUIA: 11111900, Cartão: 08650002978590000, Beneficiário: EDISON MENDES RODRIGUES, Data execução: 15/01/2024 18:59:41, Médico: CRM 1682 - LUIS ANTONIO FARIA MOTA
+13/03/2024, 01:56:19 - Numero: 74, Executando GUIA: 11111899, Cartão: 08650002978590000, Beneficiário: EDISON MENDES RODRIGUES, Data execução: 15/01/2024 18:59:41, Médico: CRM 4385 - LENDL DO VALE MENDONCA
+13/03/2024, 01:56:25 - Numero: 75, Executando GUIA: 11111896, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 15/01/2024 18:51:21, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:56:31 - Numero: 76, Executando GUIA: 11111895, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 15/01/2024 18:51:21, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:56:37 - Numero: 77, Executando GUIA: 11110733, Cartão: 02222380000001007, Beneficiário: IRACI RODRIGUES SANTANA, Data execução: 15/01/2024 13:59:06, Médico: CRM 1129 - ROSABEL ANDINO ROSE DIAS
+13/03/2024, 01:56:44 - Numero: 78, Executando GUIA: 11110726, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 15/01/2024 13:57:06, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 01:56:50 - Numero: 79, Executando GUIA: 11110704, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 15/01/2024 13:51:50, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:56:56 - Numero: 80, Executando GUIA: 11110684, Cartão: 08650002661679007, Beneficiário: ROSALICE MARTINS DE SOUSA MOURA, Data execução: 15/01/2024 13:46:18, Médico: CRM 6206 - ALESSANDRO PAOLO SEQUENZIA
+13/03/2024, 01:57:03 - Numero: 81, Executando GUIA: 11110697, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 15/01/2024 13:49:33, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 01:57:09 - Numero: 82, Executando GUIA: 11108865, Cartão: 08650002661679007, Beneficiário: ROSALICE MARTINS DE SOUSA MOURA, Data execução: 13/01/2024 14:27:04, Médico: CRM 6206 - ALESSANDRO PAOLO SEQUENZIA
+13/03/2024, 01:57:16 - Numero: 83, Executando GUIA: 11108856, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 13/01/2024 14:22:20, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 01:57:23 - Numero: 84, Executando GUIA: 11108853, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 13/01/2024 14:20:57, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 01:57:29 - Numero: 85, Executando GUIA: 11108850, Cartão: 02222303000084006, Beneficiário: RAIMUNDO AGUIAR ROSADO, Data execução: 13/01/2024 14:20:10, Médico: CRM 1299 - CLAUDSON TEIXEIRA DA SILVA
+13/03/2024, 01:57:36 - Numero: 86, Executando GUIA: 11108849, Cartão: 02222380000001007, Beneficiário: IRACI RODRIGUES SANTANA, Data execução: 13/01/2024 14:19:50, Médico: CRM 1129 - ROSABEL ANDINO ROSE DIAS
+13/03/2024, 01:57:43 - Numero: 87, Executando GUIA: 11103114, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 11/01/2024 00:12:35, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 01:57:50 - Numero: 88, Executando GUIA: 11103106, Cartão: 02220768000181000, Beneficiário: HELAINY BRITO LEOPOLDINO MENDES, Data execução: 11/01/2024 00:05:32, Médico: CRM 272 - JORGE IVAN ALVES BEZERRA
+==> 88 Faturmentos concluídos em 8 minutos e 12.764999999999986 segundos
+Dialog message: Conta consistida!
+13/03/2024, 02:31:07 - Numero: 1, Executando GUIA: 11103112, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 11/01/2024 00:12:35, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 02:31:12 - Numero: 2, Executando GUIA: 11100426, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 09/01/2024 19:11:34, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 02:31:17 - Numero: 3, Executando GUIA: 11100515, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 10/01/2024 00:52:27, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 02:31:22 - Numero: 4, Executando GUIA: 11103104, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 11/01/2024 00:04:41, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:31:27 - Numero: 5, Executando GUIA: 11100412, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 09/01/2024 18:57:35, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:31:32 - Numero: 6, Executando GUIA: 11100503, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 10/01/2024 00:32:26, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:31:38 - Numero: 7, Executando GUIA: 11108277, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 12/01/2024 20:02:47, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:31:43 - Numero: 8, Executando GUIA: 11108286, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 12/01/2024 20:06:12, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 02:31:48 - Numero: 9, Executando GUIA: 11103122, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 11/01/2024 00:21:07, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:31:53 - Numero: 10, Executando GUIA: 11103121, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 11/01/2024 00:21:07, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:31:59 - Numero: 11, Executando GUIA: 11100502, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 10/01/2024 00:32:26, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:32:04 - Numero: 12, Executando GUIA: 11092908, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 04/01/2024 16:29:09, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:32:09 - Numero: 13, Executando GUIA: 11100497, Cartão: 02222303000045000, Beneficiário: IRAILDES ALVES HAWAT, Data execução: 10/01/2024 00:25:17, Médico: CRM 3993 - HIGOR KAZUMI MORIBE
+13/03/2024, 02:32:14 - Numero: 14, Executando GUIA: 11108296, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 12/01/2024 20:10:09, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:32:19 - Numero: 15, Executando GUIA: 11092937, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 04/01/2024 16:36:59, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 02:32:24 - Numero: 16, Executando GUIA: 11108288, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 12/01/2024 20:06:12, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 02:32:30 - Numero: 17, Executando GUIA: 11092876, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 04/01/2024 16:21:59, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:32:35 - Numero: 18, Executando GUIA: 11092875, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 04/01/2024 16:21:59, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:32:40 - Numero: 19, Executando GUIA: 11092861, Cartão: 02222303000045000, Beneficiário: IRAILDES ALVES HAWAT, Data execução: 04/01/2024 16:19:53, Médico: CRM 3993 - HIGOR KAZUMI MORIBE
+13/03/2024, 02:32:46 - Numero: 20, Executando GUIA: 11092860, Cartão: 02222303000045000, Beneficiário: IRAILDES ALVES HAWAT, Data execução: 04/01/2024 16:19:53, Médico: CRM 3993 - HIGOR KAZUMI MORIBE
+13/03/2024, 02:32:51 - Numero: 21, Executando GUIA: 11082421, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 22/12/2023 09:33:22, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:32:56 - Numero: 22, Executando GUIA: 11064932, Cartão: 02220969000036010, Beneficiário: EDER COELHO, Data execução: 13/12/2023 10:53:49, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:33:00 - Numero: 23, Executando GUIA: 11081355, Cartão: 02223187000001007, Beneficiário: DULCILENE FREITAS OLIVEIRA, Data execução: 21/12/2023 14:31:00, Médico: CRM 2980 - MAURICIO ERNESTO DE ASSIS
+13/03/2024, 02:33:05 - Numero: 24, Executando GUIA: 11064909, Cartão: 00648000067972008, Beneficiário: ROBERTO FARIA TONACO, Data execução: 13/12/2023 10:50:42, Médico: CRM 2799 - EDSON PEDROZA DOS SANTOS JUNIOR
+13/03/2024, 02:33:11 - Numero: 25, Executando GUIA: 11055967, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 08/12/2023 16:34:38, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
+13/03/2024, 02:33:16 - Numero: 26, Executando GUIA: 11054544, Cartão: 02222303000024003, Beneficiário: LUIS CARLOS PEREIRA COELHO, Data execução: 08/12/2023 09:33:21, Médico: CRM 924 - JOSE RONALDO DE ASSIS
+==> 26 Faturmentos concluídos em 2 minutos e 24.383999999999986 segundos
