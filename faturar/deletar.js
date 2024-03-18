@@ -1,15 +1,10 @@
 const puppeteer = require('puppeteer');
-
-function extractNrSeqProtocolo(url) {
-  const match = url.match(/nrSeqProtocolo=(\d+)/);
-  return match ? match[1] : null;
-}
+const prompt = require('prompt-sync')();
 
 (async () => {
   console.clear();
-  const startTime = new Date();
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: 'new',
     defaultViewport: null,
   });
 
@@ -33,6 +28,7 @@ function extractNrSeqProtocolo(url) {
         await iframe.type('#dsSenha', 'fisiocep2022');
         await iframe.waitForSelector('#btn_entrar');
         await iframe.$eval('#btn_entrar', (button) => button.click());
+        console.log('LOGIN SUCCESSFUL!');
 
         // NAVIGATE TO PAGE
         await iframe.waitForNavigation();
@@ -42,12 +38,24 @@ function extractNrSeqProtocolo(url) {
 
         const firstAnchorElement = await iframe.$('a');
         await firstAnchorElement.evaluate((a) => a.click());
+        await iframe.waitForTimeout(300);
+        console.log('DELETING PHASE!');
 
-        for (let i = 0; i < 26; i++) {          
+        const anchorElements = await iframe.$$('a');
+        const lengthInput = prompt(
+          `How many do you wanna delete, 1 |----| ${anchorElements.length}? `
+        );
+
+        if (!lengthInput || isNaN(lengthInput)) {
+          console.error('Invalid input. Please enter a valid number.');
+          process.exit(1);
+        }
+
+        for (let i = 0; i < lengthInput; i++) {
           await iframe.waitForTimeout(300);
           const secondAnchorElement = await iframe.$('a');
           await secondAnchorElement.evaluate((a) => a.click());
-          
+
           await iframe.waitForSelector('#btnExcluir');
           await iframe.$eval('#btnExcluir', (button) => button.click());
         }

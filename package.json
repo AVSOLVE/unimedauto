@@ -15,10 +15,10 @@
   "dependencies": {
     "jsdom": "^24.0.0",
     "nodemon": "^3.0.3",
+    "prompt-sync": "^4.2.0",
     "puppeteer": "^21.10.0"
   },
   "devDependencies": {
     "pkg": "^5.5.1"
   }
-  
 }
