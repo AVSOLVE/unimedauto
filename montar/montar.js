@@ -3,7 +3,7 @@ const { chromium } = require('playwright');
 const { login, password } = { login: 'fisiocep', password: 'fisiocep2022' };
 
 async function loginAuth() {
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext();
   const page = await context.newPage();
   const timeout = 5000;
@@ -66,9 +66,9 @@ async function loginAuth() {
     .getByRole('button', { name: 'Atualizar' })
     .click();
 
-    console.log('Logged in!');
+  console.log('Logged in!');
 
-    return page
+  return page;
 }
 
 async function concatenateDataAtPositions(dataString) {
@@ -78,13 +78,11 @@ async function concatenateDataAtPositions(dataString) {
     .map((position) => {
       if (position === 29) {
         let id = () => {
-          if (dataArray[position - 3].length === 17) return position - 3;
           if (dataArray[position - 2].length === 17) return position - 2;
           if (dataArray[position - 1].length === 17) return position - 1;
           if (dataArray[position].length === 17) return position;
           if (dataArray[position + 1].length === 17) return position + 1;
           if (dataArray[position + 2].length === 17) return position + 2;
-          if (dataArray[position + 3].length === 17) return position + 3;
         };
         return dataArray[id()] || '';
       } else {
@@ -107,7 +105,6 @@ async function extractAndSaveData(pageContent) {
   const regex = /<td class="line-content">\["(.*?)"],<\/td>/gs;
   let match;
   let count = 0;
-
   while ((match = regex.exec(pageContent)) !== null && count < 30) {
     let aux = await concatenateDataAtPositions(match[1]);
     console.log(aux);
@@ -120,7 +117,7 @@ async function extractAndSaveData(pageContent) {
 async function extractAndSavePaginationLinks(pageContent) {
   const paginationRegex = /href="pls_montarConsultaAut(.*?)"/gs;
   const matches = pageContent.matchAll(paginationRegex);
-
+  await fs.writeFile('basePagination.csv', '');
   for (const match of matches) {
     let aux = match[1].replace(/amp;/g, '');
     await fs.appendFile(
@@ -154,11 +151,36 @@ async function processPaginationCSV(page) {
   }
 }
 
+async function mergeFiles(file1Path, file2Path, mergedFilePath) {
+  try {
+      const file1Data = await fsPromises.readFile(file1Path, 'utf-8');
+      const file2Data = await fsPromises.readFile(file2Path, 'utf-8');
+
+      const linesFile1 = file1Data.split('\n');
+      const linesFile2 = file2Data.split('\n');
+
+      const maxLength = Math.max(linesFile1.length, linesFile2.length);
+
+      let mergedContent = '';
+      for (let i = 0; i < maxLength; i++) {
+          if (i < linesFile1.length) {
+              mergedContent += linesFile1[i] + '\n';
+          }
+          if (i < linesFile2.length) {
+              mergedContent += linesFile2[i] + '\n';
+          }
+      }
+
+      await fsPromises.writeFile(mergedFilePath, mergedContent.trim());
+      console.log("Files merged successfully!");
+  } catch (error) {
+      console.error("An error occurred:", error);
+  }
+}
+
 (async () => {
   console.clear();
-
   const page = await loginAuth();
-
   await page.goto(
     'view-source:https://portal.unimedpalmas.coop.br/wheb_gridDet.jsp',
     {
@@ -169,7 +191,4 @@ async function processPaginationCSV(page) {
   await extractAndSavePaginationLinks(await page.content());
   await extractAndSaveData(await page.content());
   await processPaginationCSV(page);
-
-  // await browser.close();
-  // process.exit(1);
 })();
