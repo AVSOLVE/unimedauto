@@ -1,18 +1,43 @@
 const puppeteer = require('puppeteer');
 const prompt = require('prompt-sync')();
 
+function elapsedTime(startTime) {
+  const timeInSeconds = Math.floor((new Date() - startTime) / 1000);
+  if (timeInSeconds < 60) {
+    return timeInSeconds + ' segundo' + (timeInSeconds !== 1 ? 's' : '');
+  } else {
+    const minutes = Math.floor(timeInSeconds / 60);
+    const remainingSeconds = Math.floor(timeInSeconds % 60);
+
+    if (remainingSeconds === 0) {
+      return minutes + ' minuto' + (minutes !== 1 ? 's' : '');
+    } else {
+      return (
+        minutes +
+        ' minuto' +
+        (minutes !== 1 ? 's' : '') +
+        ' e ' +
+        remainingSeconds +
+        ' segundo' +
+        (remainingSeconds !== 1 ? 's' : '')
+      );
+    }
+  }
+}
+
 (async () => {
   console.clear();
+  const startTime = new Date();
   const browser = await puppeteer.launch({
     headless: 'new',
     defaultViewport: null,
   });
 
   const page = await browser.newPage();
-
+  let lengthInput = '';
+  let counter = 0;
   page.on('dialog', async (dialog) => {
-    const logMessage = `Dialog message: ${dialog.message()}\n`;
-    console.log(logMessage);
+    console.log(`Dialog: ${dialog.message()}\n`);
     await dialog.accept();
   });
 
@@ -42,7 +67,7 @@ const prompt = require('prompt-sync')();
         console.log('DELETING PHASE!');
 
         const anchorElements = await iframe.$$('a');
-        const lengthInput = prompt(
+        lengthInput = prompt(
           `How many do you wanna delete, 1 |----| ${anchorElements.length}? `
         );
 
@@ -52,18 +77,22 @@ const prompt = require('prompt-sync')();
         }
 
         for (let i = 0; i < lengthInput; i++) {
-          await iframe.waitForTimeout(300);
+          await iframe.waitForTimeout(500);
           const secondAnchorElement = await iframe.$('a');
           await secondAnchorElement.evaluate((a) => a.click());
 
           await iframe.waitForSelector('#btnExcluir');
           await iframe.$eval('#btnExcluir', (button) => button.click());
+          counter = i + 1;
         }
       }
     }
   } catch (error) {
     console.error('Error:', error);
   } finally {
+    console.error(
+      `SUCCESSFULLY DELETED ${counter} ENTRIES IN ${elapsedTime(startTime)}!`
+    );
     await browser.close();
   }
 })();

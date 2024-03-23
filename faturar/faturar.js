@@ -9,18 +9,27 @@ function extractNrSeqProtocolo(url) {
   const match = url.match(/nrSeqProtocolo=(\d+)/);
   return match ? match[1] : null;
 }
-function formatTime(seconds) {
-  if (seconds < 60) {
-      return seconds + " second" + (seconds !== 1 ? "s" : "");
+function elapsedTime(startTime) {
+  const timeInSeconds = (new Date() - startTime) / 1000;
+  if (timeInSeconds < 60) {
+    return timeInSeconds + ' segundo' + (timeInSeconds !== 1 ? 's' : '');
   } else {
-      const minutes = Math.floor(seconds / 60);
-      const remainingSeconds = seconds % 60;
+    const minutes = Math.floor(timeInSeconds / 60);
+    const remainingSeconds = Math.floor(timeInSeconds % 60);
 
-      if (remainingSeconds === 0) {
-          return minutes + " minuto" + (minutes !== 1 ? "s" : "");
-      } else {
-          return minutes + " minuto" + (minutes !== 1 ? "s" : "") + " e " + remainingSeconds + " segundo" + (remainingSeconds !== 1 ? "s" : "");
-      }
+    if (remainingSeconds === 0) {
+      return minutes + ' minuto' + (minutes !== 1 ? 's' : '');
+    } else {
+      return (
+        minutes +
+        ' minuto' +
+        (minutes !== 1 ? 's' : '') +
+        ' e ' +
+        remainingSeconds +
+        ' segundo' +
+        (remainingSeconds !== 1 ? 's' : '')
+      );
+    }
   }
 }
 
@@ -36,7 +45,7 @@ async function logToFile(
   const timestamp = formatDateTime(new Date());
   const logMessage = `${timestamp} - Numero: ${
     index + 1
-  }, Executando GUIA: ${codigoGuia}, Cartão: ${numeroCarteirinha}, Beneficiário: ${nomePaciente}, Data execução: ${dataExec}, Médico: CRM ${crmMedico} - ${nomeMedico}\n`;
+  }, Faturando GUIA: ${codigoGuia}, Cartão: ${numeroCarteirinha}, Beneficiário: ${nomePaciente}, Data execução: ${dataExec}, Médico: CRM ${crmMedico} - ${nomeMedico}\n`;
 
   // Log to console
   console.log(logMessage);
@@ -62,7 +71,7 @@ async function logToFile(
     await fs.appendFile('log faturamento.txt', logMessage);
     console.log(logMessage);
     // await dialog.dismiss();
-    // await dialog.accept();
+    await dialog.accept();
   });
 
   try {
@@ -80,7 +89,7 @@ async function logToFile(
         await iframe.type('#dsSenha', 'fisiocep2022');
         await iframe.waitForSelector('#btn_entrar');
         await iframe.$eval('#btn_entrar', (button) => button.click());
-
+        console.log('LOGIN SUCCESSFUL!');
         // NAVIGATE TO PAGE
         await iframe.waitForNavigation();
         await iframe.goto(
@@ -188,9 +197,7 @@ async function logToFile(
               await iframe.$eval('#btnVoltar', (button) => button.click());
               await page.waitForTimeout(1000);
 
-              // Print the time spent running the app
-              const elapsedTime = new Date() - startTimeLoop;
-              const elapsedTimeInSeconds = elapsedTime / 1000;
+              // Print the time spent running the application
               await logToFile(
                 index,
                 codigoGuia,
@@ -200,18 +207,11 @@ async function logToFile(
                 crmMedico,
                 nomeMedico
               );
-              const elapsedTimeLog = `${elapsedTimeInSeconds.toFixed(
-                2
-              )} segundos`;
 
               if (index === lines.length - 1) {
-                // Log the completion message
-                const time = new Date() - startTime;
-                const elapsedTimeInSeconds = time / 1000;
-                const formattedTime = formatTime(elapsedTimeInSeconds)
                 const completionMessage = `==> ${
                   index + 1
-                } Faturmentos concluídos em ${formattedTime}\n`;
+                } Faturmentos concluídos em ${elapsedTime(startTime)}\n`;
                 console.log(completionMessage);
                 await fs.appendFile('log faturamento.txt', completionMessage);
               }
@@ -223,6 +223,6 @@ async function logToFile(
   } catch (error) {
     console.error('Error:', error);
   } finally {
-    // await browser.close();
+    await browser.close();
   }
 })();

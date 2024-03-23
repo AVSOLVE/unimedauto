@@ -1450,3 +1450,639 @@ Dialog message: Conta consistida!
 13/03/2024, 02:33:11 - Numero: 25, Executando GUIA: 11055967, Cartão: 02223167000167016, Beneficiário: MARIA CIRQUEIRA DA SILVA, Data execução: 08/12/2023 16:34:38, Médico: CRM 4091 - GUILHERME MILWARD XAVIER DE AZEVEDO
 13/03/2024, 02:33:16 - Numero: 26, Executando GUIA: 11054544, Cartão: 02222303000024003, Beneficiário: LUIS CARLOS PEREIRA COELHO, Data execução: 08/12/2023 09:33:21, Médico: CRM 924 - JOSE RONALDO DE ASSIS
 ==> 26 Faturmentos concluídos em 2 minutos e 24.383999999999986 segundos
+18/03/2024, 20:14:56 - Numero: 1, Executando GUIA: 11181992, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:15:01 - Numero: 2, Executando GUIA: 11181991, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:15:07 - Numero: 3, Executando GUIA: 11178635, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:15:12 - Numero: 4, Executando GUIA: 11178634, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:15:17 - Numero: 5, Executando GUIA: 11175572, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:15:22 - Numero: 6, Executando GUIA: 11175571, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:15:27 - Numero: 7, Executando GUIA: 11186043, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:15:32 - Numero: 8, Executando GUIA: 11186042, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:15:37 - Numero: 9, Executando GUIA: 11191081, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:15:42 - Numero: 10, Executando GUIA: 11191080, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:15:48 - Numero: 11, Executando GUIA: 11159594, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 06/02/24 01:02, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:15:52 - Numero: 12, Executando GUIA: 11166230, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 07/02/24 23:03, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:15:57 - Numero: 13, Executando GUIA: 11169458, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 08/02/24 18:22, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:16:02 - Numero: 14, Executando GUIA: 11175561, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/24 10:55, Médico: CRM 1810 - Marcelo Faria Mota
+==> 14 Faturmentos concluídos em 1 minuto e 16.811000000000007 segundos
+18/03/2024, 20:18:28 - Numero: 1, Executando GUIA: 11181992, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:18:33 - Numero: 2, Executando GUIA: 11181991, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:18:38 - Numero: 3, Executando GUIA: 11178635, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:18:42 - Numero: 4, Executando GUIA: 11178634, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:18:48 - Numero: 5, Executando GUIA: 11175572, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:18:53 - Numero: 6, Executando GUIA: 11175571, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:18:58 - Numero: 7, Executando GUIA: 11186043, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:19:03 - Numero: 8, Executando GUIA: 11186042, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:19:08 - Numero: 9, Executando GUIA: 11191081, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:19:13 - Numero: 10, Executando GUIA: 11191080, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:19:18 - Numero: 11, Executando GUIA: 11159594, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 06/02/24 01:02, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:19:23 - Numero: 12, Executando GUIA: 11166230, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 07/02/24 23:03, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:19:28 - Numero: 13, Executando GUIA: 11169458, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 08/02/24 18:22, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:19:33 - Numero: 14, Executando GUIA: 11175561, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/24 10:55, Médico: CRM 1810 - Marcelo Faria Mota
+==> 14 Faturmentos concluídos em 1 minuto e 14.795000000000002 segundos
+18/03/2024, 20:40:47 - Numero: 1, Executando GUIA: 11181992, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:40:52 - Numero: 2, Executando GUIA: 11181991, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:40:57 - Numero: 3, Executando GUIA: 11178635, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:41:02 - Numero: 4, Executando GUIA: 11178634, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:41:07 - Numero: 5, Executando GUIA: 11175572, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:41:12 - Numero: 6, Executando GUIA: 11175571, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:41:17 - Numero: 7, Executando GUIA: 11186043, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:41:22 - Numero: 8, Executando GUIA: 11186042, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:41:27 - Numero: 9, Executando GUIA: 11191081, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:41:31 - Numero: 10, Executando GUIA: 11191080, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:41:36 - Numero: 11, Executando GUIA: 11159594, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 06/02/24 01:02, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:41:41 - Numero: 12, Executando GUIA: 11166230, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 07/02/24 23:03, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:41:46 - Numero: 13, Executando GUIA: 11169458, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 08/02/24 18:22, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:41:51 - Numero: 14, Executando GUIA: 11175561, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/24 10:55, Médico: CRM 1810 - Marcelo Faria Mota
+==> 14 Faturmentos concluídos em 1 minuto e 14.552000000000007 segundos
+18/03/2024, 20:44:10 - Numero: 1, Faturando GUIA: 11181992, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:44:15 - Numero: 2, Faturando GUIA: 11181991, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:44:20 - Numero: 3, Faturando GUIA: 11178635, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:44:25 - Numero: 4, Faturando GUIA: 11178634, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:44:30 - Numero: 5, Faturando GUIA: 11175572, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:44:35 - Numero: 6, Faturando GUIA: 11175571, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:44:40 - Numero: 7, Faturando GUIA: 11186043, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:44:45 - Numero: 8, Faturando GUIA: 11186042, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:44:50 - Numero: 9, Faturando GUIA: 11191081, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:44:55 - Numero: 10, Faturando GUIA: 11191080, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:45:00 - Numero: 11, Faturando GUIA: 11159594, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 06/02/24 01:02, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:45:05 - Numero: 12, Faturando GUIA: 11166230, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 07/02/24 23:03, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:45:10 - Numero: 13, Faturando GUIA: 11169458, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 08/02/24 18:22, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:45:15 - Numero: 14, Faturando GUIA: 11175561, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/24 10:55, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:50:41 - Numero: 1, Faturando GUIA: 11181992, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:50:46 - Numero: 2, Faturando GUIA: 11181991, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:50:51 - Numero: 3, Faturando GUIA: 11178635, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:50:56 - Numero: 4, Faturando GUIA: 11178634, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:51:01 - Numero: 5, Faturando GUIA: 11175572, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:51:06 - Numero: 6, Faturando GUIA: 11175571, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:51:11 - Numero: 7, Faturando GUIA: 11186043, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:51:16 - Numero: 8, Faturando GUIA: 11186042, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:51:21 - Numero: 9, Faturando GUIA: 11191081, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:51:26 - Numero: 10, Faturando GUIA: 11191080, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 20:51:30 - Numero: 11, Faturando GUIA: 11159594, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 06/02/24 01:02, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:51:35 - Numero: 12, Faturando GUIA: 11166230, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 07/02/24 23:03, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:51:40 - Numero: 13, Faturando GUIA: 11169458, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 08/02/24 18:22, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 20:51:45 - Numero: 14, Faturando GUIA: 11175561, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/24 10:55, Médico: CRM 1810 - Marcelo Faria Mota
+==> 14 Faturmentos concluídos em 1 minuto e 13.989000000000004 segundos
+18/03/2024, 20:59:57 - Numero: 1, Faturando GUIA: 11181992, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:00:02 - Numero: 2, Faturando GUIA: 11181991, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:00:07 - Numero: 3, Faturando GUIA: 11178635, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:00:12 - Numero: 4, Faturando GUIA: 11178634, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:00:17 - Numero: 5, Faturando GUIA: 11175572, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:00:22 - Numero: 6, Faturando GUIA: 11175571, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:00:27 - Numero: 7, Faturando GUIA: 11186043, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:00:32 - Numero: 8, Faturando GUIA: 11186042, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:00:37 - Numero: 9, Faturando GUIA: 11191081, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:00:42 - Numero: 10, Faturando GUIA: 11191080, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:00:47 - Numero: 11, Faturando GUIA: 11159594, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 06/02/24 01:02, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 21:00:52 - Numero: 12, Faturando GUIA: 11166230, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 07/02/24 23:03, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 21:00:56 - Numero: 13, Faturando GUIA: 11169458, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 08/02/24 18:22, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 21:01:01 - Numero: 14, Faturando GUIA: 11175561, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/24 10:55, Médico: CRM 1810 - Marcelo Faria Mota
+==> 14 Faturmentos concluídos em 1 minuto e 15 segundos
+18/03/2024, 21:08:39 - Numero: 1, Faturando GUIA: 11181992, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:08:44 - Numero: 2, Faturando GUIA: 11181991, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:08:49 - Numero: 3, Faturando GUIA: 11178635, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:08:54 - Numero: 4, Faturando GUIA: 11178634, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:08:59 - Numero: 5, Faturando GUIA: 11175572, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:09:04 - Numero: 6, Faturando GUIA: 11175571, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:09:09 - Numero: 7, Faturando GUIA: 11186043, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:09:14 - Numero: 8, Faturando GUIA: 11186042, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:09:19 - Numero: 9, Faturando GUIA: 11191081, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:09:24 - Numero: 10, Faturando GUIA: 11191080, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:09:28 - Numero: 11, Faturando GUIA: 11159594, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 06/02/24 01:02, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 21:09:33 - Numero: 12, Faturando GUIA: 11166230, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 07/02/24 23:03, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 21:09:38 - Numero: 13, Faturando GUIA: 11169458, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 08/02/24 18:22, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 21:09:43 - Numero: 14, Faturando GUIA: 11175561, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/24 10:55, Médico: CRM 1810 - Marcelo Faria Mota
+==> 14 Faturmentos concluídos em 1 minuto e 13 segundos
+18/03/2024, 21:12:01 - Numero: 1, Faturando GUIA: 11181992, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:12:06 - Numero: 2, Faturando GUIA: 11181991, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24 12:08, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:12:11 - Numero: 3, Faturando GUIA: 11178635, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:12:15 - Numero: 4, Faturando GUIA: 11178634, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24 11:58, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:12:20 - Numero: 5, Faturando GUIA: 11175572, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:12:25 - Numero: 6, Faturando GUIA: 11175571, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24 10:57, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:12:30 - Numero: 7, Faturando GUIA: 11186043, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:12:35 - Numero: 8, Faturando GUIA: 11186042, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:12:40 - Numero: 9, Faturando GUIA: 11191081, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:12:45 - Numero: 10, Faturando GUIA: 11191080, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+18/03/2024, 21:12:50 - Numero: 11, Faturando GUIA: 11159594, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 06/02/24 01:02, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 21:12:55 - Numero: 12, Faturando GUIA: 11166230, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 07/02/24 23:03, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 21:13:00 - Numero: 13, Faturando GUIA: 11169458, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 08/02/24 18:22, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 21:13:05 - Numero: 14, Faturando GUIA: 11175561, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/24 10:55, Médico: CRM 1810 - Marcelo Faria Mota
+==> 14 Faturmentos concluídos em 1 minuto e 13 segundos
+18/03/2024, 23:47:21 - Numero: 1, Faturando GUIA: 11081337, Cartão: 02229000000489094, Beneficiário: Shavio Rocha Cabral, Data execução: 21/12/23, Médico: CRM 1933 - Giulyano Dias Reis
+18/03/2024, 23:47:25 - Numero: 2, Faturando GUIA: 11081329, Cartão: 00648000009399694, Beneficiário: Josefina Otaviani S Jose, Data execução: 21/12/23, Médico: CRM 4359 - RENATA ROSSATO
+18/03/2024, 23:47:30 - Numero: 3, Faturando GUIA: 11081322, Cartão: 02222507000017002, Beneficiário: Maria Eurlene Gomes Carvalho, Data execução: 21/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:47:34 - Numero: 4, Faturando GUIA: 11081321, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 21/12/23, Médico: CRM 1299 - Claudson Teixeira da Silva
+18/03/2024, 23:47:39 - Numero: 5, Faturando GUIA: 11081319, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 21/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:47:43 - Numero: 6, Faturando GUIA: 11081317, Cartão: 03175476100001013, Beneficiário: Edileuza Oliveira Honorio, Data execução: 21/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:47:48 - Numero: 7, Faturando GUIA: 11081315, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 21/12/23, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+18/03/2024, 23:47:52 - Numero: 8, Faturando GUIA: 11064941, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 13/12/23, Médico: CRM 221055 - Marina Hubaide Rosa
+18/03/2024, 23:47:57 - Numero: 9, Faturando GUIA: 11064938, Cartão: 02220607000177005, Beneficiário: Marinelia Maciel Turibio Fernandes, Data execução: 13/12/23, Médico: CRM 1700238 - Antonio Wanderley P. Junior
+18/03/2024, 23:48:01 - Numero: 10, Faturando GUIA: 11064934, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 13/12/23, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
+18/03/2024, 23:48:06 - Numero: 11, Faturando GUIA: 11064932, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 13/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:48:10 - Numero: 12, Faturando GUIA: 11064926, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 13/12/23, Médico: CRM 1299 - Claudson Teixeira da Silva
+18/03/2024, 23:48:15 - Numero: 13, Faturando GUIA: 11064925, Cartão: 02222507000017002, Beneficiário: Maria Eurlene Gomes Carvalho, Data execução: 13/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:48:19 - Numero: 14, Faturando GUIA: 11064917, Cartão: 00648000009399694, Beneficiário: Josefina Otaviani S Jose, Data execução: 13/12/23, Médico: CRM 4359 - RENATA ROSSATO
+18/03/2024, 23:48:24 - Numero: 15, Faturando GUIA: 11064909, Cartão: 00648000067972008, Beneficiário: ROBERTO FARIA TONACO, Data execução: 13/12/23, Médico: CRM 2799 - Edson Pedroza dos Santos Junior
+18/03/2024, 23:48:28 - Numero: 16, Faturando GUIA: 11064902, Cartão: 02229000000489094, Beneficiário: Shavio Rocha Cabral, Data execução: 13/12/23, Médico: CRM 1933 - Giulyano Dias Reis
+18/03/2024, 23:48:33 - Numero: 17, Faturando GUIA: 11064894, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 13/12/23, Médico: CRM 1682 - Luis Antonio Faria Mota
+18/03/2024, 23:48:37 - Numero: 18, Faturando GUIA: 11064891, Cartão: 09942265505547000, Beneficiário: carlos eduardo gomes carvalho, Data execução: 13/12/23, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 23:48:42 - Numero: 19, Faturando GUIA: 11064883, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 13/12/23, Médico: CRM 2578 - Jhonny Escalera Cruz
+18/03/2024, 23:48:47 - Numero: 20, Faturando GUIA: 11064878, Cartão: 02227602002005004, Beneficiário: Fabiana Guida Pereira Abreu, Data execução: 13/12/23, Médico: CRM 2173 - Daniel Martins Hiramatsu
+18/03/2024, 23:48:51 - Numero: 21, Faturando GUIA: 11064876, Cartão: 02222303000031000, Beneficiário: Lairson Lopes, Data execução: 13/12/23, Médico: CRM 1017 - Antonio Carlos Martins Cirilo
+18/03/2024, 23:48:56 - Numero: 22, Faturando GUIA: 11064875, Cartão: 08650003975883004, Beneficiário: Edilson Borges de Almeida, Data execução: 13/12/23, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+18/03/2024, 23:49:00 - Numero: 23, Faturando GUIA: 11064873, Cartão: 02220607000177013, Beneficiário: Edson Fernandes da Costa, Data execução: 13/12/23, Médico: CRM 3993 - Higor Kazumi Moribe
+18/03/2024, 23:49:05 - Numero: 24, Faturando GUIA: 11064868, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 13/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:49:10 - Numero: 25, Faturando GUIA: 11064867, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 13/12/23, Médico: CRM 272 - JORGE IVAN ALVES BEZERRA
+18/03/2024, 23:49:14 - Numero: 26, Faturando GUIA: 11064863, Cartão: 02222303000024003, Beneficiário: Luis Carlos Pereira Coelho, Data execução: 13/12/23, Médico: CRM 924 - Jose Ronaldo De Assis
+18/03/2024, 23:49:19 - Numero: 27, Faturando GUIA: 11064860, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 13/12/23, Médico: CRM 3993 - Higor Kazumi Moribe
+18/03/2024, 23:49:23 - Numero: 28, Faturando GUIA: 11064855, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 13/12/23, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+18/03/2024, 23:49:28 - Numero: 29, Faturando GUIA: 11057043, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 10/12/23, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+18/03/2024, 23:49:33 - Numero: 30, Faturando GUIA: 11055967, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 08/12/23, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+18/03/2024, 23:49:38 - Numero: 31, Faturando GUIA: 11054544, Cartão: 02222303000024003, Beneficiário: Luis Carlos Pereira Coelho, Data execução: 08/12/23, Médico: CRM 924 - Jose Ronaldo De Assis
+18/03/2024, 23:49:43 - Numero: 32, Faturando GUIA: 11054539, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 08/12/23, Médico: CRM 272 - JORGE IVAN ALVES BEZERRA
+18/03/2024, 23:49:48 - Numero: 33, Faturando GUIA: 11054359, Cartão: 02220607000177013, Beneficiário: Edson Fernandes da Costa, Data execução: 08/12/23, Médico: CRM 3993 - Higor Kazumi Moribe
+18/03/2024, 23:49:53 - Numero: 34, Faturando GUIA: 11054355, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 08/12/23, Médico: CRM 3993 - Higor Kazumi Moribe
+18/03/2024, 23:49:58 - Numero: 35, Faturando GUIA: 11054351, Cartão: 08650003975883004, Beneficiário: Edilson Borges de Almeida, Data execução: 08/12/23, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+18/03/2024, 23:50:03 - Numero: 36, Faturando GUIA: 11054346, Cartão: 02222303000031000, Beneficiário: Lairson Lopes, Data execução: 08/12/23, Médico: CRM 1017 - Antonio Carlos Martins Cirilo
+18/03/2024, 23:50:09 - Numero: 37, Faturando GUIA: 11054344, Cartão: 02227602002005004, Beneficiário: Fabiana Guida Pereira Abreu, Data execução: 08/12/23, Médico: CRM 2173 - Daniel Martins Hiramatsu
+18/03/2024, 23:50:14 - Numero: 38, Faturando GUIA: 11054339, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 08/12/23, Médico: CRM 2578 - Jhonny Escalera Cruz
+18/03/2024, 23:50:19 - Numero: 39, Faturando GUIA: 11054335, Cartão: 09942265505547000, Beneficiário: carlos eduardo gomes carvalho, Data execução: 08/12/23, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 23:50:24 - Numero: 40, Faturando GUIA: 11054327, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 08/12/23, Médico: CRM 1682 - Luis Antonio Faria Mota
+18/03/2024, 23:50:29 - Numero: 41, Faturando GUIA: 11054324, Cartão: 02229000000489094, Beneficiário: Shavio Rocha Cabral, Data execução: 08/12/23, Médico: CRM 1933 - Giulyano Dias Reis
+18/03/2024, 23:50:34 - Numero: 42, Faturando GUIA: 11054320, Cartão: 00648000067972008, Beneficiário: ROBERTO FARIA TONACO, Data execução: 08/12/23, Médico: CRM 2799 - Edson Pedroza dos Santos Junior
+18/03/2024, 23:50:39 - Numero: 43, Faturando GUIA: 11054314, Cartão: 00648000009399694, Beneficiário: Josefina Otaviani S Jose, Data execução: 08/12/23, Médico: CRM 4359 - RENATA ROSSATO
+18/03/2024, 23:50:44 - Numero: 44, Faturando GUIA: 11054311, Cartão: 02220411001030011, Beneficiário: Simey da Cruz Sousa Pimentel, Data execução: 08/12/23, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 23:50:50 - Numero: 45, Faturando GUIA: 11054295, Cartão: 02222507000017002, Beneficiário: Maria Eurlene Gomes Carvalho, Data execução: 08/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:50:55 - Numero: 46, Faturando GUIA: 11054291, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 08/12/23, Médico: CRM 1299 - Claudson Teixeira da Silva
+18/03/2024, 23:51:00 - Numero: 47, Faturando GUIA: 11054286, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 08/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:51:05 - Numero: 48, Faturando GUIA: 11054278, Cartão: 02220764000472002, Beneficiário: Edson Almeida De Oliveira Pereira, Data execução: 08/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:51:10 - Numero: 49, Faturando GUIA: 11054274, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 08/12/23, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
+18/03/2024, 23:51:16 - Numero: 50, Faturando GUIA: 11054272, Cartão: 02220607000177005, Beneficiário: Marinelia Maciel Turibio Fernandes, Data execução: 08/12/23, Médico: CRM 1700238 - Antonio Wanderley P. Junior
+18/03/2024, 23:51:21 - Numero: 51, Faturando GUIA: 11054270, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 08/12/23, Médico: CRM 221055 - Marina Hubaide Rosa
+18/03/2024, 23:51:27 - Numero: 52, Faturando GUIA: 11051522, Cartão: 09942265505547000, Beneficiário: carlos eduardo gomes carvalho, Data execução: 07/12/23, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 23:51:32 - Numero: 53, Faturando GUIA: 11051516, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 07/12/23, Médico: CRM 1682 - Luis Antonio Faria Mota
+18/03/2024, 23:51:38 - Numero: 54, Faturando GUIA: 11051512, Cartão: 02229000000489094, Beneficiário: Shavio Rocha Cabral, Data execução: 07/12/23, Médico: CRM 1933 - Giulyano Dias Reis
+18/03/2024, 23:51:44 - Numero: 55, Faturando GUIA: 11051504, Cartão: 00648000067972008, Beneficiário: ROBERTO FARIA TONACO, Data execução: 07/12/23, Médico: CRM 2799 - Edson Pedroza dos Santos Junior
+18/03/2024, 23:51:50 - Numero: 56, Faturando GUIA: 11051496, Cartão: 00648000009399694, Beneficiário: Josefina Otaviani S Jose, Data execução: 07/12/23, Médico: CRM 4359 - RENATA ROSSATO
+18/03/2024, 23:51:55 - Numero: 57, Faturando GUIA: 11051489, Cartão: 02220411001030011, Beneficiário: Simey da Cruz Sousa Pimentel, Data execução: 07/12/23, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 23:52:01 - Numero: 58, Faturando GUIA: 11051485, Cartão: 02222507000017002, Beneficiário: Maria Eurlene Gomes Carvalho, Data execução: 07/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:52:07 - Numero: 59, Faturando GUIA: 11051478, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 07/12/23, Médico: CRM 1299 - Claudson Teixeira da Silva
+18/03/2024, 23:52:13 - Numero: 60, Faturando GUIA: 11051476, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 07/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:52:19 - Numero: 61, Faturando GUIA: 11051474, Cartão: 02220764000472002, Beneficiário: Edson Almeida De Oliveira Pereira, Data execução: 07/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:52:24 - Numero: 62, Faturando GUIA: 11051470, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 07/12/23, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
+18/03/2024, 23:52:30 - Numero: 63, Faturando GUIA: 11051463, Cartão: 02220607000177005, Beneficiário: Marinelia Maciel Turibio Fernandes, Data execução: 07/12/23, Médico: CRM 1700238 - Antonio Wanderley P. Junior
+18/03/2024, 23:52:36 - Numero: 64, Faturando GUIA: 11051459, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 07/12/23, Médico: CRM 2530 - Andre Luiz Pereira
+18/03/2024, 23:52:42 - Numero: 65, Faturando GUIA: 11051453, Cartão: 02227602002005004, Beneficiário: Fabiana Guida Pereira Abreu, Data execução: 07/12/23, Médico: CRM 2173 - Daniel Martins Hiramatsu
+18/03/2024, 23:52:48 - Numero: 66, Faturando GUIA: 11051445, Cartão: 08650003975883004, Beneficiário: Edilson Borges de Almeida, Data execução: 07/12/23, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+18/03/2024, 23:52:54 - Numero: 67, Faturando GUIA: 11051437, Cartão: 02222303000031000, Beneficiário: Lairson Lopes, Data execução: 07/12/23, Médico: CRM 1017 - Antonio Carlos Martins Cirilo
+18/03/2024, 23:53:01 - Numero: 68, Faturando GUIA: 11051432, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 07/12/23, Médico: CRM 3993 - Higor Kazumi Moribe
+18/03/2024, 23:53:07 - Numero: 69, Faturando GUIA: 11051426, Cartão: 02220607000177013, Beneficiário: Edson Fernandes da Costa, Data execução: 07/12/23, Médico: CRM 3993 - Higor Kazumi Moribe
+18/03/2024, 23:53:13 - Numero: 70, Faturando GUIA: 11051423, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 07/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:53:19 - Numero: 71, Faturando GUIA: 11051418, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 07/12/23, Médico: CRM 2578 - Jhonny Escalera Cruz
+18/03/2024, 23:53:24 - Numero: 72, Faturando GUIA: 11051412, Cartão: 09942265505547000, Beneficiário: carlos eduardo gomes carvalho, Data execução: 07/12/23, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 23:53:30 - Numero: 73, Faturando GUIA: 11050867, Cartão: 09942265505547000, Beneficiário: carlos eduardo gomes carvalho, Data execução: 06/12/23, Médico: CRM 1810 - Marcelo Faria Mota
+18/03/2024, 23:53:37 - Numero: 74, Faturando GUIA: 11050844, Cartão: 02223167000073003, Beneficiário: Douglas Aires Milhomem, Data execução: 06/12/23, Médico: CRM 2809 - Erinaldo Passos
+18/03/2024, 23:53:43 - Numero: 75, Faturando GUIA: 11047428, Cartão: 02222303000065010, Beneficiário: Mirian Resplande Assis, Data execução: 05/12/23, Médico: CRM 2566 - Leandro Ribeiro Campos
+18/03/2024, 23:53:50 - Numero: 76, Faturando GUIA: 11047423, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 05/12/23, Médico: CRM 2578 - Jhonny Escalera Cruz
+18/03/2024, 23:53:56 - Numero: 77, Faturando GUIA: 11047418, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 05/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:54:02 - Numero: 78, Faturando GUIA: 11047416, Cartão: 02220607000177013, Beneficiário: Edson Fernandes da Costa, Data execução: 05/12/23, Médico: CRM 3993 - Higor Kazumi Moribe
+18/03/2024, 23:54:09 - Numero: 79, Faturando GUIA: 11047413, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 05/12/23, Médico: CRM 3993 - Higor Kazumi Moribe
+18/03/2024, 23:54:15 - Numero: 80, Faturando GUIA: 11047410, Cartão: 02222303000031000, Beneficiário: Lairson Lopes, Data execução: 05/12/23, Médico: CRM 1017 - Antonio Carlos Martins Cirilo
+18/03/2024, 23:54:22 - Numero: 81, Faturando GUIA: 11047405, Cartão: 08650003975883004, Beneficiário: Edilson Borges de Almeida, Data execução: 05/12/23, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+18/03/2024, 23:54:29 - Numero: 82, Faturando GUIA: 11047398, Cartão: 02227602002005004, Beneficiário: Fabiana Guida Pereira Abreu, Data execução: 05/12/23, Médico: CRM 2173 - Daniel Martins Hiramatsu
+18/03/2024, 23:54:35 - Numero: 83, Faturando GUIA: 11047395, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 05/12/23, Médico: CRM 221055 - Marina Hubaide Rosa
+18/03/2024, 23:54:42 - Numero: 84, Faturando GUIA: 11047392, Cartão: 02220607000177005, Beneficiário: Marinelia Maciel Turibio Fernandes, Data execução: 05/12/23, Médico: CRM 1700238 - Antonio Wanderley P. Junior
+18/03/2024, 23:54:49 - Numero: 85, Faturando GUIA: 11047391, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 05/12/23, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
+18/03/2024, 23:54:56 - Numero: 86, Faturando GUIA: 11047388, Cartão: 02220764000472002, Beneficiário: Edson Almeida De Oliveira Pereira, Data execução: 05/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:55:02 - Numero: 87, Faturando GUIA: 11047382, Cartão: 02227601001834009, Beneficiário: Rosinalva Ferreira Bringel Viana, Data execução: 05/12/23, Médico: CRM 2922 - Ana Carolina Camargo Rocha
+18/03/2024, 23:55:09 - Numero: 88, Faturando GUIA: 11047380, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 05/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+18/03/2024, 23:55:16 - Numero: 89, Faturando GUIA: 11047377, Cartão: 08650002976108014, Beneficiário: BERNADETE CRISTINA MONTEIRO DINIZ, Data execução: 05/12/23, Médico: CRM 3367 - Luciano Rachid Abreu
+18/03/2024, 23:55:23 - Numero: 90, Faturando GUIA: 11047369, Cartão: 00643740000003670, Beneficiário: JOÃO CLAUDIO FRANÇA MALTA, Data execução: 05/12/23, Médico: CRM 2789 - Thiago Farias
+Dialog message: Protocolo atingiu seu limite de contas, deseja tranferir a conta para um protocolo com o tipo de guia 'SP/SADT' ?
+19/03/2024, 00:03:23 - Numero: 1, Faturando GUIA: 11103104, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 11/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:03:28 - Numero: 2, Faturando GUIA: 11103102, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 11/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:03:32 - Numero: 3, Faturando GUIA: 11103031, Cartão: 08650002661679007, Beneficiário: Rosalice Martins de Sousa Moura, Data execução: 10/01/24, Médico: CRM 6206 - Alessandro Paolo Sequenzia
+19/03/2024, 00:03:37 - Numero: 4, Faturando GUIA: 11100516, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 10/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:03:41 - Numero: 5, Faturando GUIA: 11100515, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 10/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:03:47 - Numero: 6, Faturando GUIA: 11100514, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 10/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:03:51 - Numero: 7, Faturando GUIA: 11100513, Cartão: 02222303000024003, Beneficiário: Luis Carlos Pereira Coelho, Data execução: 10/01/24, Médico: CRM 924 - Jose Ronaldo De Assis
+19/03/2024, 00:03:56 - Numero: 8, Faturando GUIA: 11100512, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 10/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:04:00 - Numero: 9, Faturando GUIA: 11100511, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 10/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:04:04 - Numero: 10, Faturando GUIA: 11100510, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 10/01/24, Médico: CRM 1299 - Claudson Teixeira da Silva
+19/03/2024, 00:04:09 - Numero: 11, Faturando GUIA: 11100509, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 10/01/24, Médico: CRM 272 - JORGE IVAN ALVES BEZERRA
+19/03/2024, 00:04:14 - Numero: 12, Faturando GUIA: 11100508, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 10/01/24, Médico: CRM 3741 - Roberto Piza Morisco
+19/03/2024, 00:04:18 - Numero: 13, Faturando GUIA: 11100507, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 10/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:04:23 - Numero: 14, Faturando GUIA: 11100506, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 10/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:04:27 - Numero: 15, Faturando GUIA: 11100505, Cartão: 02227604001810007, Beneficiário: Iulia Lima da Silva, Data execução: 10/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:04:32 - Numero: 16, Faturando GUIA: 11100504, Cartão: 08650002253077004, Beneficiário: Tatiane de Jesus Silva, Data execução: 10/01/24, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+19/03/2024, 00:04:37 - Numero: 17, Faturando GUIA: 11100503, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 10/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:04:42 - Numero: 18, Faturando GUIA: 11100502, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 10/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:04:47 - Numero: 19, Faturando GUIA: 11100501, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 10/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:04:51 - Numero: 20, Faturando GUIA: 11100500, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 10/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:04:56 - Numero: 21, Faturando GUIA: 11100499, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 10/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:05:01 - Numero: 22, Faturando GUIA: 11100498, Cartão: 02229000000489094, Beneficiário: Shavio Rocha Cabral, Data execução: 10/01/24, Médico: CRM 1933 - Giulyano Dias Reis
+19/03/2024, 00:05:06 - Numero: 23, Faturando GUIA: 11100497, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 10/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:05:11 - Numero: 24, Faturando GUIA: 11100427, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 09/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:05:16 - Numero: 25, Faturando GUIA: 11100426, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 09/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:05:21 - Numero: 26, Faturando GUIA: 11100425, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 09/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:05:25 - Numero: 27, Faturando GUIA: 11100424, Cartão: 02222303000024003, Beneficiário: Luis Carlos Pereira Coelho, Data execução: 09/01/24, Médico: CRM 924 - Jose Ronaldo De Assis
+19/03/2024, 00:05:30 - Numero: 28, Faturando GUIA: 11100419, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 09/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:05:34 - Numero: 29, Faturando GUIA: 11100418, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 09/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:05:39 - Numero: 30, Faturando GUIA: 11100417, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 09/01/24, Médico: CRM 1299 - Claudson Teixeira da Silva
+19/03/2024, 00:05:44 - Numero: 31, Faturando GUIA: 11100415, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 09/01/24, Médico: CRM 272 - JORGE IVAN ALVES BEZERRA
+19/03/2024, 00:05:48 - Numero: 32, Faturando GUIA: 11100414, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 09/01/24, Médico: CRM 3741 - Roberto Piza Morisco
+19/03/2024, 00:05:53 - Numero: 33, Faturando GUIA: 11100412, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 09/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:05:58 - Numero: 34, Faturando GUIA: 11094399, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 05/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:06:03 - Numero: 35, Faturando GUIA: 11094398, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 05/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:06:08 - Numero: 36, Faturando GUIA: 11092954, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 04/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:06:13 - Numero: 37, Faturando GUIA: 11092948, Cartão: 02222303000024003, Beneficiário: Luis Carlos Pereira Coelho, Data execução: 04/01/24, Médico: CRM 924 - Jose Ronaldo De Assis
+19/03/2024, 00:06:18 - Numero: 38, Faturando GUIA: 11092944, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 04/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:06:23 - Numero: 39, Faturando GUIA: 11092938, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 04/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:06:28 - Numero: 40, Faturando GUIA: 11092937, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 04/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:06:33 - Numero: 41, Faturando GUIA: 11092934, Cartão: 02229000000489094, Beneficiário: Shavio Rocha Cabral, Data execução: 04/01/24, Médico: CRM 1933 - Giulyano Dias Reis
+19/03/2024, 00:06:37 - Numero: 42, Faturando GUIA: 11092931, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 04/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:06:42 - Numero: 43, Faturando GUIA: 11092922, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 04/01/24, Médico: CRM 1299 - Claudson Teixeira da Silva
+19/03/2024, 00:06:47 - Numero: 44, Faturando GUIA: 11092918, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 04/01/24, Médico: CRM 272 - JORGE IVAN ALVES BEZERRA
+19/03/2024, 00:06:52 - Numero: 45, Faturando GUIA: 11092917, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 04/01/24, Médico: CRM 3741 - Roberto Piza Morisco
+19/03/2024, 00:06:57 - Numero: 46, Faturando GUIA: 11092908, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 04/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:07:02 - Numero: 47, Faturando GUIA: 11092902, Cartão: 02220607000177013, Beneficiário: Edson Fernandes da Costa, Data execução: 04/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:07:07 - Numero: 48, Faturando GUIA: 11092894, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 04/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:07:12 - Numero: 49, Faturando GUIA: 11092883, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 04/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:07:17 - Numero: 50, Faturando GUIA: 11092876, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 04/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:07:23 - Numero: 51, Faturando GUIA: 11092875, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 04/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:07:28 - Numero: 52, Faturando GUIA: 11092861, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 04/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:07:34 - Numero: 53, Faturando GUIA: 11092860, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 04/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:07:39 - Numero: 54, Faturando GUIA: 11092850, Cartão: 08650002253077004, Beneficiário: Tatiane de Jesus Silva, Data execução: 04/01/24, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+19/03/2024, 00:07:44 - Numero: 55, Faturando GUIA: 11092847, Cartão: 02227604001810007, Beneficiário: Iulia Lima da Silva, Data execução: 04/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:07:49 - Numero: 56, Faturando GUIA: 11088973, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 01/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:07:54 - Numero: 57, Faturando GUIA: 11082466, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 22/12/23, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:07:59 - Numero: 58, Faturando GUIA: 11082453, Cartão: 02220607000177005, Beneficiário: Marinelia Maciel Turibio Fernandes, Data execução: 22/12/23, Médico: CRM 1700238 - Antonio Wanderley P. Junior
+19/03/2024, 00:08:05 - Numero: 59, Faturando GUIA: 11082447, Cartão: 09942265505547000, Beneficiário: carlos eduardo gomes carvalho, Data execução: 22/12/23, Médico: CRM 1810 - Marcelo Faria Mota
+19/03/2024, 00:08:10 - Numero: 60, Faturando GUIA: 11082443, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 22/12/23, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:08:15 - Numero: 61, Faturando GUIA: 11082439, Cartão: 02229000000489094, Beneficiário: Shavio Rocha Cabral, Data execução: 22/12/23, Médico: CRM 1933 - Giulyano Dias Reis
+19/03/2024, 00:08:21 - Numero: 62, Faturando GUIA: 11082437, Cartão: 02222507000017002, Beneficiário: Maria Eurlene Gomes Carvalho, Data execução: 22/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:08:26 - Numero: 63, Faturando GUIA: 11082434, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 22/12/23, Médico: CRM 1299 - Claudson Teixeira da Silva
+19/03/2024, 00:08:31 - Numero: 64, Faturando GUIA: 11082432, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 22/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:08:36 - Numero: 65, Faturando GUIA: 11082430, Cartão: 03175476100001013, Beneficiário: Edileuza Oliveira Honorio, Data execução: 22/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:08:42 - Numero: 66, Faturando GUIA: 11082426, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 22/12/23, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:08:47 - Numero: 67, Faturando GUIA: 11082423, Cartão: 02220607000177013, Beneficiário: Edson Fernandes da Costa, Data execução: 22/12/23, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:08:52 - Numero: 68, Faturando GUIA: 11082421, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 22/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:08:58 - Numero: 69, Faturando GUIA: 11082419, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 22/12/23, Médico: CRM 272 - JORGE IVAN ALVES BEZERRA
+19/03/2024, 00:09:04 - Numero: 70, Faturando GUIA: 11082417, Cartão: 02222303000024003, Beneficiário: Luis Carlos Pereira Coelho, Data execução: 22/12/23, Médico: CRM 924 - Jose Ronaldo De Assis
+19/03/2024, 00:09:10 - Numero: 71, Faturando GUIA: 11082415, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 22/12/23, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:09:15 - Numero: 72, Faturando GUIA: 11081368, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 21/12/23, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:09:21 - Numero: 73, Faturando GUIA: 11081364, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 21/12/23, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:09:26 - Numero: 74, Faturando GUIA: 11081362, Cartão: 02222303000024003, Beneficiário: Luis Carlos Pereira Coelho, Data execução: 21/12/23, Médico: CRM 924 - Jose Ronaldo De Assis
+19/03/2024, 00:09:32 - Numero: 75, Faturando GUIA: 11081356, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 21/12/23, Médico: CRM 272 - JORGE IVAN ALVES BEZERRA
+19/03/2024, 00:09:38 - Numero: 76, Faturando GUIA: 11081355, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 21/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:09:44 - Numero: 77, Faturando GUIA: 11081352, Cartão: 02220607000177013, Beneficiário: Edson Fernandes da Costa, Data execução: 21/12/23, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:09:50 - Numero: 78, Faturando GUIA: 11081348, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 21/12/23, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
+19/03/2024, 00:09:56 - Numero: 79, Faturando GUIA: 11081346, Cartão: 02220607000177005, Beneficiário: Marinelia Maciel Turibio Fernandes, Data execução: 21/12/23, Médico: CRM 1700238 - Antonio Wanderley P. Junior
+19/03/2024, 00:10:03 - Numero: 80, Faturando GUIA: 11081343, Cartão: 09942265505547000, Beneficiário: carlos eduardo gomes carvalho, Data execução: 21/12/23, Médico: CRM 1810 - Marcelo Faria Mota
+19/03/2024, 00:10:09 - Numero: 81, Faturando GUIA: 11081341, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 21/12/23, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:10:16 - Numero: 82, Faturando GUIA: 11047367, Cartão: 08650003654080004, Beneficiário: SARA CRUZ FERNANDES MALTA, Data execução: 05/12/23, Médico: CRM 2694 - Veonica Andresa Ortega Coelho
+19/03/2024, 00:10:22 - Numero: 83, Faturando GUIA: 11047329, Cartão: 02227602002530001, Beneficiário: Jose Maria De Melo Oliveira, Data execução: 05/12/23, Médico: CRM 4385 - Lendl do Vale Mendonca
+19/03/2024, 00:10:29 - Numero: 84, Faturando GUIA: 11047317, Cartão: 00648000067972008, Beneficiário: ROBERTO FARIA TONACO, Data execução: 05/12/23, Médico: CRM 2799 - Edson Pedroza dos Santos Junior
+19/03/2024, 00:10:36 - Numero: 85, Faturando GUIA: 11047295, Cartão: 00648000009399694, Beneficiário: Josefina Otaviani S Jose, Data execução: 05/12/23, Médico: CRM 4359 - RENATA ROSSATO
+19/03/2024, 00:10:42 - Numero: 86, Faturando GUIA: 11047282, Cartão: 02220411001030011, Beneficiário: Simey da Cruz Sousa Pimentel, Data execução: 05/12/23, Médico: CRM 1810 - Marcelo Faria Mota
+19/03/2024, 00:10:49 - Numero: 87, Faturando GUIA: 11047278, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 05/12/23, Médico: CRM 1299 - Claudson Teixeira da Silva
+19/03/2024, 00:10:56 - Numero: 88, Faturando GUIA: 11047275, Cartão: 02222507000017002, Beneficiário: Maria Eurlene Gomes Carvalho, Data execução: 05/12/23, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:11:02 - Numero: 89, Faturando GUIA: 11047271, Cartão: 02229000000489094, Beneficiário: Shavio Rocha Cabral, Data execução: 05/12/23, Médico: CRM 1933 - Giulyano Dias Reis
+19/03/2024, 00:11:09 - Numero: 90, Faturando GUIA: 11047270, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 05/12/23, Médico: CRM 1682 - Luis Antonio Faria Mota
+==> 90 Faturmentos concluídos em 7 minutos e 54 segundos
+19/03/2024, 00:12:43 - Numero: 1, Faturando GUIA: 11113616, Cartão: 02222200000080000, Beneficiário: Mayda Pimenta de Medeiros, Data execução: 16/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:12:48 - Numero: 2, Faturando GUIA: 11113615, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 16/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:12:53 - Numero: 3, Faturando GUIA: 11113614, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 16/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:12:57 - Numero: 4, Faturando GUIA: 11113613, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 16/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:13:01 - Numero: 5, Faturando GUIA: 11113612, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 16/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:13:06 - Numero: 6, Faturando GUIA: 11113611, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 16/01/24, Médico: CRM 3741 - Roberto Piza Morisco
+19/03/2024, 00:13:10 - Numero: 7, Faturando GUIA: 11113610, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 16/01/24, Médico: CRM 1299 - Claudson Teixeira da Silva
+19/03/2024, 00:13:15 - Numero: 8, Faturando GUIA: 11113609, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 16/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:13:19 - Numero: 9, Faturando GUIA: 11113607, Cartão: 08650002661679007, Beneficiário: Rosalice Martins de Sousa Moura, Data execução: 16/01/24, Médico: CRM 6206 - Alessandro Paolo Sequenzia
+19/03/2024, 00:13:24 - Numero: 10, Faturando GUIA: 11113605, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 16/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:13:29 - Numero: 11, Faturando GUIA: 11113604, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 16/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:13:33 - Numero: 12, Faturando GUIA: 11113602, Cartão: 02227604001810007, Beneficiário: Iulia Lima da Silva, Data execução: 16/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:13:38 - Numero: 13, Faturando GUIA: 11113599, Cartão: 08650002253077004, Beneficiário: Tatiane de Jesus Silva, Data execução: 16/01/24, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+19/03/2024, 00:13:43 - Numero: 14, Faturando GUIA: 11113598, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 16/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:13:47 - Numero: 15, Faturando GUIA: 11113597, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 16/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:13:52 - Numero: 16, Faturando GUIA: 11113593, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 16/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:13:57 - Numero: 17, Faturando GUIA: 11111900, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 15/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:14:02 - Numero: 18, Faturando GUIA: 11111899, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 15/01/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+19/03/2024, 00:14:06 - Numero: 19, Faturando GUIA: 11111897, Cartão: 09942115505953308, Beneficiário: Ester de Cássia Machado Gomes, Data execução: 15/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:14:11 - Numero: 20, Faturando GUIA: 11111896, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 15/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:14:16 - Numero: 21, Faturando GUIA: 11111895, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 15/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:14:20 - Numero: 22, Faturando GUIA: 11111894, Cartão: 02227604001810007, Beneficiário: Iulia Lima da Silva, Data execução: 15/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:14:25 - Numero: 23, Faturando GUIA: 11111893, Cartão: 08650002253077004, Beneficiário: Tatiane de Jesus Silva, Data execução: 15/01/24, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+19/03/2024, 00:14:30 - Numero: 24, Faturando GUIA: 11111892, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 15/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:14:34 - Numero: 25, Faturando GUIA: 11111889, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 15/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:14:39 - Numero: 26, Faturando GUIA: 11111888, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 15/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:14:44 - Numero: 27, Faturando GUIA: 11110733, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 15/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:14:49 - Numero: 28, Faturando GUIA: 11110726, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 15/01/24, Médico: CRM 1299 - Claudson Teixeira da Silva
+19/03/2024, 00:14:53 - Numero: 29, Faturando GUIA: 11110711, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 15/01/24, Médico: CRM 3741 - Roberto Piza Morisco
+19/03/2024, 00:14:58 - Numero: 30, Faturando GUIA: 11110704, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 15/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:15:03 - Numero: 31, Faturando GUIA: 11110700, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 15/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:15:08 - Numero: 32, Faturando GUIA: 11110697, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 15/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:15:13 - Numero: 33, Faturando GUIA: 11110696, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 15/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:15:17 - Numero: 34, Faturando GUIA: 11110690, Cartão: 02222200000080000, Beneficiário: Mayda Pimenta de Medeiros, Data execução: 15/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:15:22 - Numero: 35, Faturando GUIA: 11110686, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 15/01/24, Médico: CRM 7123 - Fernando Rezek Rodrigues
+19/03/2024, 00:15:27 - Numero: 36, Faturando GUIA: 11110684, Cartão: 08650002661679007, Beneficiário: Rosalice Martins de Sousa Moura, Data execução: 15/01/24, Médico: CRM 6206 - Alessandro Paolo Sequenzia
+19/03/2024, 00:15:32 - Numero: 37, Faturando GUIA: 11108865, Cartão: 08650002661679007, Beneficiário: Rosalice Martins de Sousa Moura, Data execução: 13/01/24, Médico: CRM 6206 - Alessandro Paolo Sequenzia
+19/03/2024, 00:15:37 - Numero: 38, Faturando GUIA: 11108864, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 13/01/24, Médico: CRM 7123 - Fernando Rezek Rodrigues
+19/03/2024, 00:15:42 - Numero: 39, Faturando GUIA: 11108857, Cartão: 02222200000080000, Beneficiário: Mayda Pimenta de Medeiros, Data execução: 13/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:15:47 - Numero: 40, Faturando GUIA: 11108856, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 13/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:15:52 - Numero: 41, Faturando GUIA: 11108855, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 13/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:15:57 - Numero: 42, Faturando GUIA: 11108854, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 13/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:16:02 - Numero: 43, Faturando GUIA: 11108853, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 13/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:16:07 - Numero: 44, Faturando GUIA: 11108852, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 13/01/24, Médico: CRM 272 - JORGE IVAN ALVES BEZERRA
+19/03/2024, 00:16:12 - Numero: 45, Faturando GUIA: 11108851, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 13/01/24, Médico: CRM 3741 - Roberto Piza Morisco
+19/03/2024, 00:16:16 - Numero: 46, Faturando GUIA: 11108850, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 13/01/24, Médico: CRM 1299 - Claudson Teixeira da Silva
+19/03/2024, 00:16:21 - Numero: 47, Faturando GUIA: 11108849, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 13/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:16:27 - Numero: 48, Faturando GUIA: 11108848, Cartão: 02222303000024003, Beneficiário: Luis Carlos Pereira Coelho, Data execução: 13/01/24, Médico: CRM 924 - Jose Ronaldo De Assis
+19/03/2024, 00:16:32 - Numero: 49, Faturando GUIA: 11108846, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 13/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:16:37 - Numero: 50, Faturando GUIA: 11108845, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 13/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:16:42 - Numero: 51, Faturando GUIA: 11108844, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 13/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:16:47 - Numero: 52, Faturando GUIA: 11108843, Cartão: 08650002253077004, Beneficiário: Tatiane de Jesus Silva, Data execução: 13/01/24, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+19/03/2024, 00:16:52 - Numero: 53, Faturando GUIA: 11108842, Cartão: 02227604001810007, Beneficiário: Iulia Lima da Silva, Data execução: 13/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:16:57 - Numero: 54, Faturando GUIA: 11108841, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 13/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:17:02 - Numero: 55, Faturando GUIA: 11108840, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 13/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:17:07 - Numero: 56, Faturando GUIA: 11108298, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 12/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:17:12 - Numero: 57, Faturando GUIA: 11108296, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 12/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:17:17 - Numero: 58, Faturando GUIA: 11108295, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 12/01/24, Médico: CRM 272 - JORGE IVAN ALVES BEZERRA
+19/03/2024, 00:17:23 - Numero: 59, Faturando GUIA: 11108294, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 12/01/24, Médico: CRM 3741 - Roberto Piza Morisco
+19/03/2024, 00:17:27 - Numero: 60, Faturando GUIA: 11108293, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 12/01/24, Médico: CRM 1299 - Claudson Teixeira da Silva
+19/03/2024, 00:17:33 - Numero: 61, Faturando GUIA: 11108292, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 12/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:17:38 - Numero: 62, Faturando GUIA: 11108291, Cartão: 02222303000024003, Beneficiário: Luis Carlos Pereira Coelho, Data execução: 12/01/24, Médico: CRM 924 - Jose Ronaldo De Assis
+19/03/2024, 00:17:43 - Numero: 63, Faturando GUIA: 11108289, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 12/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:17:49 - Numero: 64, Faturando GUIA: 11108288, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 12/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:17:54 - Numero: 65, Faturando GUIA: 11108287, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 12/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:18:01 - Numero: 66, Faturando GUIA: 11108286, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 12/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:18:06 - Numero: 67, Faturando GUIA: 11108285, Cartão: 02229000000489094, Beneficiário: Shavio Rocha Cabral, Data execução: 12/01/24, Médico: CRM 1933 - Giulyano Dias Reis
+19/03/2024, 00:18:11 - Numero: 68, Faturando GUIA: 11108284, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 12/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:18:16 - Numero: 69, Faturando GUIA: 11108282, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 12/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:18:22 - Numero: 70, Faturando GUIA: 11108280, Cartão: 08650002253077004, Beneficiário: Tatiane de Jesus Silva, Data execução: 12/01/24, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+19/03/2024, 00:18:28 - Numero: 71, Faturando GUIA: 11108279, Cartão: 02227604001810007, Beneficiário: Iulia Lima da Silva, Data execução: 12/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:18:33 - Numero: 72, Faturando GUIA: 11108278, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 12/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:18:39 - Numero: 73, Faturando GUIA: 11108277, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 12/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:18:45 - Numero: 74, Faturando GUIA: 11103122, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 11/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:18:51 - Numero: 75, Faturando GUIA: 11103121, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 11/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:18:57 - Numero: 76, Faturando GUIA: 11103120, Cartão: 02227604001810007, Beneficiário: Iulia Lima da Silva, Data execução: 11/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:19:03 - Numero: 77, Faturando GUIA: 11103119, Cartão: 08650002253077004, Beneficiário: Tatiane de Jesus Silva, Data execução: 11/01/24, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+19/03/2024, 00:19:09 - Numero: 78, Faturando GUIA: 11103118, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 11/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:19:15 - Numero: 79, Faturando GUIA: 11103117, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 11/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:19:21 - Numero: 80, Faturando GUIA: 11103116, Cartão: 02229000000489094, Beneficiário: Shavio Rocha Cabral, Data execução: 11/01/24, Médico: CRM 1933 - Giulyano Dias Reis
+19/03/2024, 00:19:28 - Numero: 81, Faturando GUIA: 11103114, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 11/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:19:34 - Numero: 82, Faturando GUIA: 11103113, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 11/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:19:41 - Numero: 83, Faturando GUIA: 11103112, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 11/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:19:47 - Numero: 84, Faturando GUIA: 11103111, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 11/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:19:53 - Numero: 85, Faturando GUIA: 11103110, Cartão: 02222303000024003, Beneficiário: Luis Carlos Pereira Coelho, Data execução: 11/01/24, Médico: CRM 924 - Jose Ronaldo De Assis
+19/03/2024, 00:19:59 - Numero: 86, Faturando GUIA: 11103109, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 11/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:20:05 - Numero: 87, Faturando GUIA: 11103108, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 11/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:20:11 - Numero: 88, Faturando GUIA: 11103107, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 11/01/24, Médico: CRM 1299 - Claudson Teixeira da Silva
+19/03/2024, 00:20:18 - Numero: 89, Faturando GUIA: 11103106, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 11/01/24, Médico: CRM 272 - JORGE IVAN ALVES BEZERRA
+19/03/2024, 00:20:24 - Numero: 90, Faturando GUIA: 11103105, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 11/01/24, Médico: CRM 3741 - Roberto Piza Morisco
+==> 90 Faturmentos concluídos em 7 minutos e 49 segundos
+19/03/2024, 00:22:02 - Numero: 1, Faturando GUIA: 11137093, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 25/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:22:07 - Numero: 2, Faturando GUIA: 11137092, Cartão: 08650002661679007, Beneficiário: Rosalice Martins de Sousa Moura, Data execução: 25/01/24, Médico: CRM 6206 - Alessandro Paolo Sequenzia
+19/03/2024, 00:22:11 - Numero: 3, Faturando GUIA: 11137091, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 25/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:22:16 - Numero: 4, Faturando GUIA: 11137090, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 25/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:22:20 - Numero: 5, Faturando GUIA: 11137089, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 25/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:22:25 - Numero: 6, Faturando GUIA: 11137088, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 25/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:22:29 - Numero: 7, Faturando GUIA: 11132873, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 24/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:22:34 - Numero: 8, Faturando GUIA: 11132868, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 24/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:22:38 - Numero: 9, Faturando GUIA: 11132859, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 24/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:22:42 - Numero: 10, Faturando GUIA: 11132858, Cartão: 09942115505953308, Beneficiário: Ester de Cássia Machado Gomes, Data execução: 24/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:22:47 - Numero: 11, Faturando GUIA: 11132855, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 24/01/24, Médico: CRM 7123 - Fernando Rezek Rodrigues
+19/03/2024, 00:22:51 - Numero: 12, Faturando GUIA: 11132853, Cartão: 02222200000080000, Beneficiário: Mayda Pimenta de Medeiros, Data execução: 24/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:22:56 - Numero: 13, Faturando GUIA: 11132851, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 24/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:23:01 - Numero: 14, Faturando GUIA: 11132849, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 24/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:23:05 - Numero: 15, Faturando GUIA: 11132848, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 24/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:23:09 - Numero: 16, Faturando GUIA: 11132845, Cartão: 08650002661679007, Beneficiário: Rosalice Martins de Sousa Moura, Data execução: 24/01/24, Médico: CRM 6206 - Alessandro Paolo Sequenzia
+19/03/2024, 00:23:14 - Numero: 17, Faturando GUIA: 11132838, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 24/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:23:18 - Numero: 18, Faturando GUIA: 11132835, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 24/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:23:23 - Numero: 19, Faturando GUIA: 11132833, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 24/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:23:27 - Numero: 20, Faturando GUIA: 11129502, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 23/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:23:32 - Numero: 21, Faturando GUIA: 11129500, Cartão: 09942115505953308, Beneficiário: Ester de Cássia Machado Gomes, Data execução: 23/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:23:36 - Numero: 22, Faturando GUIA: 11129498, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 23/01/24, Médico: CRM 7123 - Fernando Rezek Rodrigues
+19/03/2024, 00:23:41 - Numero: 23, Faturando GUIA: 11129497, Cartão: 02222200000080000, Beneficiário: Mayda Pimenta de Medeiros, Data execução: 23/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:23:46 - Numero: 24, Faturando GUIA: 11129496, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 23/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:23:51 - Numero: 25, Faturando GUIA: 11129495, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 23/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:23:55 - Numero: 26, Faturando GUIA: 11129494, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 23/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:24:00 - Numero: 27, Faturando GUIA: 11129493, Cartão: 08650002661679007, Beneficiário: Rosalice Martins de Sousa Moura, Data execução: 23/01/24, Médico: CRM 6206 - Alessandro Paolo Sequenzia
+19/03/2024, 00:24:05 - Numero: 28, Faturando GUIA: 11129492, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 23/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:24:10 - Numero: 29, Faturando GUIA: 11129491, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 23/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:24:14 - Numero: 30, Faturando GUIA: 11129490, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 23/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:24:19 - Numero: 31, Faturando GUIA: 11129489, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 23/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:24:24 - Numero: 32, Faturando GUIA: 11129488, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 23/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:24:29 - Numero: 33, Faturando GUIA: 11127274, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 22/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:24:34 - Numero: 34, Faturando GUIA: 11127273, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 22/01/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+19/03/2024, 00:24:39 - Numero: 35, Faturando GUIA: 11127270, Cartão: 09942115505953308, Beneficiário: Ester de Cássia Machado Gomes, Data execução: 22/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:24:43 - Numero: 36, Faturando GUIA: 11127266, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 22/01/24, Médico: CRM 7123 - Fernando Rezek Rodrigues
+19/03/2024, 00:24:48 - Numero: 37, Faturando GUIA: 11127263, Cartão: 02222200000080000, Beneficiário: Mayda Pimenta de Medeiros, Data execução: 22/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:24:53 - Numero: 38, Faturando GUIA: 11127261, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 22/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:24:58 - Numero: 39, Faturando GUIA: 11127260, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 22/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:25:03 - Numero: 40, Faturando GUIA: 11127257, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 22/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:25:08 - Numero: 41, Faturando GUIA: 11127250, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 22/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:25:13 - Numero: 42, Faturando GUIA: 11127246, Cartão: 08650002661679007, Beneficiário: Rosalice Martins de Sousa Moura, Data execução: 22/01/24, Médico: CRM 6206 - Alessandro Paolo Sequenzia
+19/03/2024, 00:25:18 - Numero: 43, Faturando GUIA: 11127242, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 22/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:25:24 - Numero: 44, Faturando GUIA: 11127241, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 22/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:25:29 - Numero: 45, Faturando GUIA: 11127239, Cartão: 02227604001810007, Beneficiário: Iulia Lima da Silva, Data execução: 22/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:25:34 - Numero: 46, Faturando GUIA: 11127233, Cartão: 08650002253077004, Beneficiário: Tatiane de Jesus Silva, Data execução: 22/01/24, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+19/03/2024, 00:25:39 - Numero: 47, Faturando GUIA: 11127231, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 22/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:25:44 - Numero: 48, Faturando GUIA: 11127228, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 22/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:25:49 - Numero: 49, Faturando GUIA: 11123796, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 19/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:25:54 - Numero: 50, Faturando GUIA: 11123795, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 19/01/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+19/03/2024, 00:25:59 - Numero: 51, Faturando GUIA: 11123794, Cartão: 09942115505953308, Beneficiário: Ester de Cássia Machado Gomes, Data execução: 19/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:26:04 - Numero: 52, Faturando GUIA: 11123793, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 19/01/24, Médico: CRM 7123 - Fernando Rezek Rodrigues
+19/03/2024, 00:26:09 - Numero: 53, Faturando GUIA: 11123790, Cartão: 02222200000080000, Beneficiário: Mayda Pimenta de Medeiros, Data execução: 19/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:26:15 - Numero: 54, Faturando GUIA: 11123789, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 19/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:26:20 - Numero: 55, Faturando GUIA: 11123788, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 19/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:26:25 - Numero: 56, Faturando GUIA: 11123787, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 19/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:26:30 - Numero: 57, Faturando GUIA: 11123786, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 19/01/24, Médico: CRM 3741 - Roberto Piza Morisco
+19/03/2024, 00:26:35 - Numero: 58, Faturando GUIA: 11123785, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 19/01/24, Médico: CRM 1299 - Claudson Teixeira da Silva
+19/03/2024, 00:26:41 - Numero: 59, Faturando GUIA: 11123784, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 19/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:26:46 - Numero: 60, Faturando GUIA: 11123783, Cartão: 08650002661679007, Beneficiário: Rosalice Martins de Sousa Moura, Data execução: 19/01/24, Médico: CRM 6206 - Alessandro Paolo Sequenzia
+19/03/2024, 00:26:51 - Numero: 61, Faturando GUIA: 11123782, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 19/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:26:57 - Numero: 62, Faturando GUIA: 11123781, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 19/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:27:02 - Numero: 63, Faturando GUIA: 11123780, Cartão: 02227604001810007, Beneficiário: Iulia Lima da Silva, Data execução: 19/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:27:08 - Numero: 64, Faturando GUIA: 11123778, Cartão: 08650002253077004, Beneficiário: Tatiane de Jesus Silva, Data execução: 19/01/24, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+19/03/2024, 00:27:13 - Numero: 65, Faturando GUIA: 11123777, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 19/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:27:19 - Numero: 66, Faturando GUIA: 11123775, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 19/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:27:25 - Numero: 67, Faturando GUIA: 11116755, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 17/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:27:30 - Numero: 68, Faturando GUIA: 11116754, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 17/01/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+19/03/2024, 00:27:36 - Numero: 69, Faturando GUIA: 11116749, Cartão: 09942115505953308, Beneficiário: Ester de Cássia Machado Gomes, Data execução: 17/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:27:41 - Numero: 70, Faturando GUIA: 11116747, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 17/01/24, Médico: CRM 7123 - Fernando Rezek Rodrigues
+19/03/2024, 00:27:47 - Numero: 71, Faturando GUIA: 11116746, Cartão: 02222200000080000, Beneficiário: Mayda Pimenta de Medeiros, Data execução: 17/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:27:53 - Numero: 72, Faturando GUIA: 11116745, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 17/01/24, Médico: CRM 4091 - Guilherme Milward Xavier de Azevedo
+19/03/2024, 00:27:58 - Numero: 73, Faturando GUIA: 11116744, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 17/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:28:04 - Numero: 74, Faturando GUIA: 11116743, Cartão: 02222303000045000, Beneficiário: Iraildes Alves Hawat, Data execução: 17/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:28:10 - Numero: 75, Faturando GUIA: 11116741, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 17/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:28:16 - Numero: 76, Faturando GUIA: 11116736, Cartão: 02220768000181000, Beneficiário: Helainy Brito Leopoldino Mendes, Data execução: 17/01/24, Médico: CRM 3741 - Roberto Piza Morisco
+19/03/2024, 00:28:22 - Numero: 77, Faturando GUIA: 11116735, Cartão: 02222303000084006, Beneficiário: Raimundo Aguiar Rosado, Data execução: 17/01/24, Médico: CRM 1299 - Claudson Teixeira da Silva
+19/03/2024, 00:28:28 - Numero: 78, Faturando GUIA: 11116734, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 17/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:28:34 - Numero: 79, Faturando GUIA: 11116732, Cartão: 08650002661679007, Beneficiário: Rosalice Martins de Sousa Moura, Data execução: 17/01/24, Médico: CRM 6206 - Alessandro Paolo Sequenzia
+19/03/2024, 00:28:40 - Numero: 80, Faturando GUIA: 11116730, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 17/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:28:47 - Numero: 81, Faturando GUIA: 11116729, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 17/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:28:53 - Numero: 82, Faturando GUIA: 11116723, Cartão: 02227604001810007, Beneficiário: Iulia Lima da Silva, Data execução: 17/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:28:59 - Numero: 83, Faturando GUIA: 11116722, Cartão: 08650002253077004, Beneficiário: Tatiane de Jesus Silva, Data execução: 17/01/24, Médico: CRM 2009 - Ronaldo Rego Rodrigues
+19/03/2024, 00:29:05 - Numero: 84, Faturando GUIA: 11116718, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 17/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:29:11 - Numero: 85, Faturando GUIA: 11116717, Cartão: 08650002978591014, Beneficiário: NAIDE REIS ARAUJO SILVA, Data execução: 17/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:29:18 - Numero: 86, Faturando GUIA: 11116715, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 17/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:29:24 - Numero: 87, Faturando GUIA: 11113622, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 16/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:29:31 - Numero: 88, Faturando GUIA: 11113621, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 16/01/24, Médico: CRM 4385 - Lendl do Vale Mendonca
+19/03/2024, 00:29:37 - Numero: 89, Faturando GUIA: 11113619, Cartão: 09942115505953308, Beneficiário: Ester de Cássia Machado Gomes, Data execução: 16/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:29:44 - Numero: 90, Faturando GUIA: 11113618, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 16/01/24, Médico: CRM 7123 - Fernando Rezek Rodrigues
+==> 90 Faturmentos concluídos em 7 minutos e 50 segundos
+19/03/2024, 00:32:51 - Numero: 1, Faturando GUIA: 11155560, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 02/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+19/03/2024, 00:32:56 - Numero: 2, Faturando GUIA: 11155559, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 02/02/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:33:01 - Numero: 3, Faturando GUIA: 11155558, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 02/02/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:33:05 - Numero: 4, Faturando GUIA: 11155517, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 02/02/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:33:10 - Numero: 5, Faturando GUIA: 11150205, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 01/02/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:33:15 - Numero: 6, Faturando GUIA: 11150204, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 01/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:33:20 - Numero: 7, Faturando GUIA: 11150203, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 01/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:33:24 - Numero: 8, Faturando GUIA: 11150202, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 01/02/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:33:29 - Numero: 9, Faturando GUIA: 11150201, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 01/02/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:33:34 - Numero: 10, Faturando GUIA: 11150200, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 01/02/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:33:38 - Numero: 11, Faturando GUIA: 11150199, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 01/02/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:33:43 - Numero: 12, Faturando GUIA: 11150198, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 01/02/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:33:47 - Numero: 13, Faturando GUIA: 11150197, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 01/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+19/03/2024, 00:33:52 - Numero: 14, Faturando GUIA: 11150196, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 01/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+19/03/2024, 00:33:57 - Numero: 15, Faturando GUIA: 11150195, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 01/02/24, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
+19/03/2024, 00:34:02 - Numero: 16, Faturando GUIA: 11150194, Cartão: 00643740000035122, Beneficiário: Filipe Simoes Dias Mendes, Data execução: 01/02/24, Médico: CRM 1582 - Gustavo Machado Vasconcelos
+19/03/2024, 00:34:07 - Numero: 17, Faturando GUIA: 11150193, Cartão: 00643740000035122, Beneficiário: Filipe Simoes Dias Mendes, Data execução: 01/02/24, Médico: CRM 1582 - Gustavo Machado Vasconcelos
+19/03/2024, 00:34:11 - Numero: 18, Faturando GUIA: 11150192, Cartão: 02640103760001800, Beneficiário: MARIA GABRIELA BRITO TEIXEIRA, Data execução: 01/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:34:16 - Numero: 19, Faturando GUIA: 11150191, Cartão: 02220411000034137, Beneficiário: Pedro Lucas Mota Pereira, Data execução: 01/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:34:20 - Numero: 20, Faturando GUIA: 11150190, Cartão: 01830000000399723, Beneficiário: Nilda De Godoy Zarpellon, Data execução: 01/02/24, Médico: CRM 2799 - Edson Pedroza dos Santos Junior
+19/03/2024, 00:34:25 - Numero: 21, Faturando GUIA: 11150189, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 01/02/24, Médico: CRM 5864 - Miguel Angel Corrales Coutinho
+19/03/2024, 00:34:30 - Numero: 22, Faturando GUIA: 11150188, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 01/02/24, Médico: CRM 2736 - Flavio Dias Silva
+19/03/2024, 00:34:34 - Numero: 23, Faturando GUIA: 11150187, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 01/02/24, Médico: CRM 2736 - Flavio Dias Silva
+19/03/2024, 00:34:39 - Numero: 24, Faturando GUIA: 11150138, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 31/01/24, Médico: CRM 5864 - Miguel Angel Corrales Coutinho
+19/03/2024, 00:34:43 - Numero: 25, Faturando GUIA: 11150137, Cartão: 01830000000399723, Beneficiário: Nilda De Godoy Zarpellon, Data execução: 31/01/24, Médico: CRM 2799 - Edson Pedroza dos Santos Junior
+19/03/2024, 00:34:48 - Numero: 26, Faturando GUIA: 11150136, Cartão: 02220411000034137, Beneficiário: Pedro Lucas Mota Pereira, Data execução: 31/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:34:52 - Numero: 27, Faturando GUIA: 11150134, Cartão: 02640103760001800, Beneficiário: MARIA GABRIELA BRITO TEIXEIRA, Data execução: 31/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:34:57 - Numero: 28, Faturando GUIA: 11150132, Cartão: 00643740000035122, Beneficiário: Filipe Simoes Dias Mendes, Data execução: 31/01/24, Médico: CRM 1582 - Gustavo Machado Vasconcelos
+19/03/2024, 00:35:02 - Numero: 29, Faturando GUIA: 11150130, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 31/01/24, Médico: CRM 2736 - Flavio Dias Silva
+19/03/2024, 00:35:06 - Numero: 30, Faturando GUIA: 11150129, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 31/01/24, Médico: CRM 2736 - Flavio Dias Silva
+19/03/2024, 00:35:11 - Numero: 31, Faturando GUIA: 11150128, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 31/01/24, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
+19/03/2024, 00:35:16 - Numero: 32, Faturando GUIA: 11150126, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 31/01/24, Médico: CRM 1810 - Marcelo Faria Mota
+19/03/2024, 00:35:21 - Numero: 33, Faturando GUIA: 11150125, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 31/01/24, Médico: CRM 1810 - Marcelo Faria Mota
+19/03/2024, 00:35:25 - Numero: 34, Faturando GUIA: 11150123, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 31/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:35:30 - Numero: 35, Faturando GUIA: 11150120, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 31/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:35:35 - Numero: 36, Faturando GUIA: 11150118, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 31/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:35:40 - Numero: 37, Faturando GUIA: 11150116, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 31/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:35:44 - Numero: 38, Faturando GUIA: 11150114, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 31/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:35:49 - Numero: 39, Faturando GUIA: 11150112, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 31/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:35:54 - Numero: 40, Faturando GUIA: 11150111, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 31/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:35:59 - Numero: 41, Faturando GUIA: 11144502, Cartão: 01830000000399723, Beneficiário: Nilda De Godoy Zarpellon, Data execução: 30/01/24, Médico: CRM 2799 - Edson Pedroza dos Santos Junior
+19/03/2024, 00:36:04 - Numero: 42, Faturando GUIA: 11144498, Cartão: 02220411000034137, Beneficiário: Pedro Lucas Mota Pereira, Data execução: 30/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:36:09 - Numero: 43, Faturando GUIA: 11144493, Cartão: 02640103760001800, Beneficiário: MARIA GABRIELA BRITO TEIXEIRA, Data execução: 30/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:36:13 - Numero: 44, Faturando GUIA: 11144488, Cartão: 00643740000035122, Beneficiário: Filipe Simoes Dias Mendes, Data execução: 30/01/24, Médico: CRM 1582 - Gustavo Machado Vasconcelos
+19/03/2024, 00:36:18 - Numero: 45, Faturando GUIA: 11144486, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 30/01/24, Médico: CRM 2736 - Flavio Dias Silva
+19/03/2024, 00:36:23 - Numero: 46, Faturando GUIA: 11144485, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 30/01/24, Médico: CRM 2736 - Flavio Dias Silva
+19/03/2024, 00:36:28 - Numero: 47, Faturando GUIA: 11144481, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 30/01/24, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
+19/03/2024, 00:36:33 - Numero: 48, Faturando GUIA: 11144474, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 30/01/24, Médico: CRM 1810 - Marcelo Faria Mota
+19/03/2024, 00:36:39 - Numero: 49, Faturando GUIA: 11144473, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 30/01/24, Médico: CRM 1810 - Marcelo Faria Mota
+19/03/2024, 00:36:43 - Numero: 50, Faturando GUIA: 11144471, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 30/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:36:49 - Numero: 51, Faturando GUIA: 11144469, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 30/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:36:54 - Numero: 52, Faturando GUIA: 11144468, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 30/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:36:59 - Numero: 53, Faturando GUIA: 11144467, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 30/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:37:04 - Numero: 54, Faturando GUIA: 11144466, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 30/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:37:09 - Numero: 55, Faturando GUIA: 11144462, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 30/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:37:14 - Numero: 56, Faturando GUIA: 11144459, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 30/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:37:19 - Numero: 57, Faturando GUIA: 11144120, Cartão: 01830000000399723, Beneficiário: Nilda De Godoy Zarpellon, Data execução: 29/01/24, Médico: CRM 2799 - Edson Pedroza dos Santos Junior
+19/03/2024, 00:37:25 - Numero: 58, Faturando GUIA: 11144118, Cartão: 02220411000034137, Beneficiário: Pedro Lucas Mota Pereira, Data execução: 29/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:37:30 - Numero: 59, Faturando GUIA: 11144112, Cartão: 02640103760001800, Beneficiário: MARIA GABRIELA BRITO TEIXEIRA, Data execução: 29/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:37:35 - Numero: 60, Faturando GUIA: 11144110, Cartão: 00643740000035122, Beneficiário: Filipe Simoes Dias Mendes, Data execução: 29/01/24, Médico: CRM 1582 - Gustavo Machado Vasconcelos
+19/03/2024, 00:37:40 - Numero: 61, Faturando GUIA: 11144108, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 29/01/24, Médico: CRM 2736 - Flavio Dias Silva
+19/03/2024, 00:37:46 - Numero: 62, Faturando GUIA: 11144107, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 29/01/24, Médico: CRM 2736 - Flavio Dias Silva
+19/03/2024, 00:37:51 - Numero: 63, Faturando GUIA: 11144105, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 29/01/24, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
+19/03/2024, 00:37:56 - Numero: 64, Faturando GUIA: 11144103, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 29/01/24, Médico: CRM 1810 - Marcelo Faria Mota
+19/03/2024, 00:38:02 - Numero: 65, Faturando GUIA: 11144102, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 29/01/24, Médico: CRM 1810 - Marcelo Faria Mota
+19/03/2024, 00:38:07 - Numero: 66, Faturando GUIA: 11144100, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 29/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:38:13 - Numero: 67, Faturando GUIA: 11144099, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 29/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:38:18 - Numero: 68, Faturando GUIA: 11144098, Cartão: 09942115505953308, Beneficiário: Ester de Cássia Machado Gomes, Data execução: 29/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:38:23 - Numero: 69, Faturando GUIA: 11144097, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 29/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:38:29 - Numero: 70, Faturando GUIA: 11144096, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 29/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:38:34 - Numero: 71, Faturando GUIA: 11144095, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 29/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:38:40 - Numero: 72, Faturando GUIA: 11144094, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 29/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:38:45 - Numero: 73, Faturando GUIA: 11144093, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 29/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:38:51 - Numero: 74, Faturando GUIA: 11144092, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 29/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:38:57 - Numero: 75, Faturando GUIA: 11137398, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 26/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:39:03 - Numero: 76, Faturando GUIA: 11137396, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 26/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:39:09 - Numero: 77, Faturando GUIA: 11137390, Cartão: 09942115505953308, Beneficiário: Ester de Cássia Machado Gomes, Data execução: 26/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:39:15 - Numero: 78, Faturando GUIA: 11137385, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 26/01/24, Médico: CRM 7123 - Fernando Rezek Rodrigues
+19/03/2024, 00:39:21 - Numero: 79, Faturando GUIA: 11137365, Cartão: 02222200000080000, Beneficiário: Mayda Pimenta de Medeiros, Data execução: 26/01/24, Médico: CRM 124 - Aloisio Bolwerk
+19/03/2024, 00:39:27 - Numero: 80, Faturando GUIA: 11137360, Cartão: 02227601004329003, Beneficiário: Alex Tonaco Milhomem, Data execução: 26/01/24, Médico: CRM 2556 - Joao Paulo Borges de Moraes
+19/03/2024, 00:39:33 - Numero: 81, Faturando GUIA: 11137358, Cartão: 02223167000167016, Beneficiário: Maria Cirqueira da Silva, Data execução: 26/01/24, Médico: CRM 3873 - Hugo de Carlos Maciel Rossoni
+19/03/2024, 00:39:39 - Numero: 82, Faturando GUIA: 11137353, Cartão: 02220969000036010, Beneficiário: Eder Coelho, Data execução: 26/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:39:45 - Numero: 83, Faturando GUIA: 11137350, Cartão: 02223167000189001, Beneficiário: Danubia Carlos Fernandes Lopes, Data execução: 26/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:39:51 - Numero: 84, Faturando GUIA: 11137348, Cartão: 00060503633005014, Beneficiário: SAVIA BARBOSA DA SILVA, Data execução: 26/01/24, Médico: CRM 2530 - Andre Luiz Pereira
+19/03/2024, 00:39:57 - Numero: 85, Faturando GUIA: 11137347, Cartão: 02223187000001007, Beneficiário: Dulcilene Freitas Oliveira, Data execução: 26/01/24, Médico: CRM 2980 - Mauricio Ernesto de Assis
+19/03/2024, 00:40:03 - Numero: 86, Faturando GUIA: 11137099, Cartão: 02222380000001007, Beneficiário: Iraci Rodrigues Santana, Data execução: 25/01/24, Médico: CRM 1129 - Rosabel Andino Rose Dias
+19/03/2024, 00:40:10 - Numero: 87, Faturando GUIA: 11137098, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 25/01/24, Médico: CRM 1682 - Luis Antonio Faria Mota
+19/03/2024, 00:40:16 - Numero: 88, Faturando GUIA: 11137097, Cartão: 09942115505953308, Beneficiário: Ester de Cássia Machado Gomes, Data execução: 25/01/24, Médico: CRM 3993 - Higor Kazumi Moribe
+19/03/2024, 00:40:22 - Numero: 89, Faturando GUIA: 11137096, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 25/01/24, Médico: CRM 7123 - Fernando Rezek Rodrigues
+19/03/2024, 00:40:29 - Numero: 90, Faturando GUIA: 11137095, Cartão: 02222200000080000, Beneficiário: Mayda Pimenta de Medeiros, Data execução: 25/01/24, Médico: CRM 124 - Aloisio Bolwerk
+==> 90 Faturmentos concluídos em 7 minutos e 47 segundos
+Dialog message: Informe o médico solicitante.
+Dialog message: Informe o médico solicitante.
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+21/03/2024, 17:31:48 - Numero: 1, Faturando GUIA: 11191079, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 20/02/24, Médico: CRM 545 - Marcelo Faria Mota
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+Dialog message: Informe o médico solicitante.
+21/03/2024, 17:32:30 - Numero: 1, Faturando GUIA: 11191079, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 20/02/24, Médico: CRM 545 - Marcelo Faria Mota
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+21/03/2024, 17:32:34 - Numero: 2, Faturando GUIA: 11186064, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 19/02/24, Médico: CRM 40461 - Ricardo Cardoso Guimaraes
+21/03/2024, 17:32:39 - Numero: 3, Faturando GUIA: 11186062, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 19/02/24, Médico: CRM 532 - Lendl do Vale Mendonca
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+21/03/2024, 17:32:44 - Numero: 4, Faturando GUIA: 11186055, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 19/02/24, Médico: CRM 51542 - Andre Luiz Pereira
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+21/03/2024, 17:32:49 - Numero: 5, Faturando GUIA: 11186052, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 19/02/24, Médico: CRM 591 - Silvio Delorenzo Filho
+Dialog message: Médico não encontrado na base.
+21/03/2024, 17:32:55 - Numero: 6, Faturando GUIA: 11186043, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 203928 - Fabiana Rocha Brito
+Dialog message: Médico não encontrado na base.
+21/03/2024, 17:33:00 - Numero: 7, Faturando GUIA: 11186042, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/24, Médico: CRM 203928 - Fabiana Rocha Brito
+Dialog message: Informe o médico solicitante.
+21/03/2024, 17:33:05 - Numero: 8, Faturando GUIA: 11186040, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 19/02/24, Médico: CRM 545 - Marcelo Faria Mota
+21/03/2024, 17:33:09 - Numero: 9, Faturando GUIA: 11182011, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 16/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+21/03/2024, 17:33:14 - Numero: 10, Faturando GUIA: 11182009, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 16/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+21/03/2024, 17:33:19 - Numero: 11, Faturando GUIA: 11181996, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 16/02/24, Médico: CRM 1281 - Silvio Delorenzo Filho
+21/03/2024, 17:33:24 - Numero: 12, Faturando GUIA: 11181992, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+21/03/2024, 17:33:29 - Numero: 13, Faturando GUIA: 11181991, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+21/03/2024, 17:33:34 - Numero: 14, Faturando GUIA: 11181989, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 16/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+21/03/2024, 17:33:39 - Numero: 15, Faturando GUIA: 11181988, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 16/02/24, Médico: CRM 5864 - Miguel Angel Corrales Coutinho
+21/03/2024, 17:33:44 - Numero: 16, Faturando GUIA: 11178647, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 15/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+21/03/2024, 17:33:48 - Numero: 17, Faturando GUIA: 11178640, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 15/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+21/03/2024, 17:33:53 - Numero: 18, Faturando GUIA: 11178638, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 15/02/24, Médico: CRM 1281 - Silvio Delorenzo Filho
+21/03/2024, 17:33:58 - Numero: 19, Faturando GUIA: 11178635, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+21/03/2024, 17:34:04 - Numero: 20, Faturando GUIA: 11178634, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+21/03/2024, 17:34:08 - Numero: 21, Faturando GUIA: 11178633, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 15/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+21/03/2024, 17:34:13 - Numero: 22, Faturando GUIA: 11178632, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 15/02/24, Médico: CRM 5864 - Miguel Angel Corrales Coutinho
+21/03/2024, 17:34:18 - Numero: 23, Faturando GUIA: 11175583, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 14/02/24, Médico: CRM 3125 - Ricardo Cardoso Guimaraes
+21/03/2024, 17:34:23 - Numero: 24, Faturando GUIA: 11175581, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 14/02/24, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
+21/03/2024, 17:34:28 - Numero: 25, Faturando GUIA: 11175579, Cartão: 02640103760001800, Beneficiário: MARIA GABRIELA BRITO TEIXEIRA, Data execução: 14/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+21/03/2024, 17:34:33 - Numero: 26, Faturando GUIA: 11175577, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 14/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+21/03/2024, 17:34:37 - Numero: 27, Faturando GUIA: 11175576, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 14/02/24, Médico: CRM 1281 - Silvio Delorenzo Filho
+21/03/2024, 17:34:42 - Numero: 28, Faturando GUIA: 11175575, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 14/02/24, Médico: CRM 2736 - Flavio Dias Silva
+21/03/2024, 17:34:47 - Numero: 29, Faturando GUIA: 11175574, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 14/02/24, Médico: CRM 2736 - Flavio Dias Silva
+21/03/2024, 17:34:52 - Numero: 30, Faturando GUIA: 11175572, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+21/03/2024, 17:34:58 - Numero: 31, Faturando GUIA: 11175571, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/24, Médico: CRM 4112 - Fabiana Rocha Brito
+21/03/2024, 17:35:03 - Numero: 32, Faturando GUIA: 11175569, Cartão: 02220411000034137, Beneficiário: Pedro Lucas Mota Pereira, Data execução: 14/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+21/03/2024, 17:35:08 - Numero: 33, Faturando GUIA: 11175567, Cartão: 01830000000399723, Beneficiário: Nilda De Godoy Zarpellon, Data execução: 14/02/24, Médico: CRM 2799 - Edson Pedroza dos Santos Junior
+21/03/2024, 17:35:13 - Numero: 34, Faturando GUIA: 11175564, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 14/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+21/03/2024, 17:35:18 - Numero: 35, Faturando GUIA: 11175563, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 14/02/24, Médico: CRM 5864 - Miguel Angel Corrales Coutinho
+21/03/2024, 17:35:23 - Numero: 36, Faturando GUIA: 11175562, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+21/03/2024, 17:35:28 - Numero: 37, Faturando GUIA: 11175561, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/24, Médico: CRM 1810 - Marcelo Faria Mota
+21/03/2024, 17:35:33 - Numero: 38, Faturando GUIA: 11169467, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 08/02/24, Médico: CRM 5864 - Miguel Angel Corrales Coutinho
+21/03/2024, 17:35:38 - Numero: 39, Faturando GUIA: 11169466, Cartão: 01830000000399723, Beneficiário: Nilda De Godoy Zarpellon, Data execução: 08/02/24, Médico: CRM 2799 - Edson Pedroza dos Santos Junior
+21/03/2024, 17:35:43 - Numero: 40, Faturando GUIA: 11169465, Cartão: 02220411000034137, Beneficiário: Pedro Lucas Mota Pereira, Data execução: 08/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+21/03/2024, 17:35:48 - Numero: 41, Faturando GUIA: 11169464, Cartão: 02640103760001800, Beneficiário: MARIA GABRIELA BRITO TEIXEIRA, Data execução: 08/02/24, Médico: CRM 2530 - Andre Luiz Pereira
+21/03/2024, 17:35:53 - Numero: 42, Faturando GUIA: 11169463, Cartão: 00643740000035122, Beneficiário: Filipe Simoes Dias Mendes, Data execução: 08/02/24, Médico: CRM 1582 - Gustavo Machado Vasconcelos
+21/03/2024, 17:35:58 - Numero: 43, Faturando GUIA: 11169462, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 08/02/24, Médico: CRM 2736 - Flavio Dias Silva
+21/03/2024, 17:36:03 - Numero: 44, Faturando GUIA: 11169461, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 08/02/24, Médico: CRM 2736 - Flavio Dias Silva
+21/03/2024, 17:36:09 - Numero: 45, Faturando GUIA: 11169460, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 08/02/24, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
