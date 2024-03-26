@@ -2086,3 +2086,183 @@ Dialog message: Informe o médico solicitante.
 21/03/2024, 17:35:58 - Numero: 43, Faturando GUIA: 11169462, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 08/02/24, Médico: CRM 2736 - Flavio Dias Silva
 21/03/2024, 17:36:03 - Numero: 44, Faturando GUIA: 11169461, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 08/02/24, Médico: CRM 2736 - Flavio Dias Silva
 21/03/2024, 17:36:09 - Numero: 45, Faturando GUIA: 11169460, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 08/02/24, Médico: CRM 2520 - Angela Beatriz Dal Molin Augusco
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:11:17 - Numero: 1, Faturando GUIA: 11264013, Cartão: 02222303000031018, Beneficiário: Tomariza das Merces Parente Lopes, Data execução: 22/03/2024 20:50:38, Médico: CRM 182469 - Edson Pedroza dos Santos Junior
+23/03/2024, 02:11:22 - Numero: 2, Faturando GUIA: 11264012, Cartão: 02222345000001009, Beneficiário: Alice Rodrigues Pinto, Data execução: 22/03/2024 20:50:27, Médico: CRM 429 - Claudson Teixeira da Silva
+23/03/2024, 02:11:27 - Numero: 3, Faturando GUIA: 11264011, Cartão: 09942271251852014, Beneficiário: LUSINETE RUBINS SANTOS GAMA, Data execução: 22/03/2024 20:50:03, Médico: CRM 545 - Marcelo Faria Mota
+23/03/2024, 02:11:32 - Numero: 4, Faturando GUIA: 11264010, Cartão: 09941984254390004, Beneficiário: Diogo Almeida de Souza, Data execução: 22/03/2024 20:49:46, Médico: CRM 529 - Jose Ronaldo De Assis
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:11:37 - Numero: 5, Faturando GUIA: 11264009, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 22/03/2024 20:49:35, Médico: CRM 557 - Mauricio Ernesto de Assis
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:11:42 - Numero: 6, Faturando GUIA: 11264008, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 22/03/2024 20:49:35, Médico: CRM 557 - Mauricio Ernesto de Assis
+23/03/2024, 02:11:47 - Numero: 7, Faturando GUIA: 11264007, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 22/03/2024 20:48:55, Médico: CRM 417 - Angela Beatriz Dal Molin Augusco
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:11:52 - Numero: 8, Faturando GUIA: 11264006, Cartão: 02228000000867034, Beneficiário: Murilo Jose Cardoso, Data execução: 22/03/2024 20:48:25, Médico: CRM 591 - Silvio Delorenzo Filho
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:11:57 - Numero: 9, Faturando GUIA: 11264005, Cartão: 02228000000867034, Beneficiário: Murilo Jose Cardoso, Data execução: 22/03/2024 20:48:25, Médico: CRM 585 - Rogerio Derval do Brasil Cardoso
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:12:02 - Numero: 10, Faturando GUIA: 11264003, Cartão: 02223167000171030, Beneficiário: Onilza Naves Rabelo, Data execução: 22/03/2024 20:47:43, Médico: CRM 113485 - Leandro Rodrigues Cunha
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:12:08 - Numero: 11, Faturando GUIA: 11264002, Cartão: 02222303000119012, Beneficiário: Maria do Espirito Santo, Data execução: 22/03/2024 20:47:14, Médico: CRM 408 - Aloisio Bolwerk
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:12:13 - Numero: 12, Faturando GUIA: 11264001, Cartão: 02222200000080000, Beneficiário: Mayda Pimenta de Medeiros, Data execução: 22/03/2024 20:46:36, Médico: CRM 408 - Aloisio Bolwerk
+23/03/2024, 02:12:18 - Numero: 13, Faturando GUIA: 11264000, Cartão: 02220411001958014, Beneficiário: Benavenuta Lira Cavalcante, Data execução: 22/03/2024 20:45:43, Médico: CRM 472 - Elton Stecca Santana
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:12:23 - Numero: 14, Faturando GUIA: 11261170, Cartão: 02222303000031018, Beneficiário: Tomariza das Merces Parente Lopes, Data execução: 21/03/2024 17:19:03, Médico: CRM 182469 - Edson Pedroza dos Santos Junior
+23/03/2024, 02:12:28 - Numero: 15, Faturando GUIA: 11261169, Cartão: 02222345000001009, Beneficiário: Alice Rodrigues Pinto, Data execução: 21/03/2024 17:18:51, Médico: CRM 429 - Claudson Teixeira da Silva
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:12:33 - Numero: 16, Faturando GUIA: 11261167, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 21/03/2024 17:18:32, Médico: CRM 40461 - Ricardo Cardoso Guimaraes
+23/03/2024, 02:12:38 - Numero: 17, Faturando GUIA: 11261166, Cartão: 09942271251852014, Beneficiário: LUSINETE RUBINS SANTOS GAMA, Data execução: 21/03/2024 17:18:19, Médico: CRM 545 - Marcelo Faria Mota
+23/03/2024, 02:12:43 - Numero: 18, Faturando GUIA: 11261165, Cartão: 09941984254390004, Beneficiário: Diogo Almeida de Souza, Data execução: 21/03/2024 17:18:01, Médico: CRM 529 - Jose Ronaldo De Assis
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:12:48 - Numero: 19, Faturando GUIA: 11261164, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 21/03/2024 17:17:48, Médico: CRM 557 - Mauricio Ernesto de Assis
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:12:53 - Numero: 20, Faturando GUIA: 11261163, Cartão: 09941852262087000, Beneficiário: Tahiana Miranda Pires, Data execução: 21/03/2024 17:17:48, Médico: CRM 557 - Mauricio Ernesto de Assis
+23/03/2024, 02:12:58 - Numero: 21, Faturando GUIA: 11261160, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 21/03/2024 17:17:01, Médico: CRM 417 - Angela Beatriz Dal Molin Augusco
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:13:03 - Numero: 22, Faturando GUIA: 11261158, Cartão: 02228000000867034, Beneficiário: Murilo Jose Cardoso, Data execução: 21/03/2024 17:16:27, Médico: CRM 591 - Silvio Delorenzo Filho
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:13:09 - Numero: 23, Faturando GUIA: 11261157, Cartão: 02228000000867034, Beneficiário: Murilo Jose Cardoso, Data execução: 21/03/2024 17:16:27, Médico: CRM 585 - Rogerio Derval do Brasil Cardoso
+==> 23 Faturmentos concluídos em 2 minutos e 3 segundos
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:26:10 - Numero: 1, Faturando GUIA: 11195875, Cartão: 02222303000092009, Beneficiário: Adriana Santana Gomes Gomides, Data execução: 22/02/2024 12:16:34, Médico: CRM 124302 - Caroline Coelho Falcão Teixeira Morais
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:26:14 - Numero: 2, Faturando GUIA: 11192718, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 21/02/2024 11:54:20, Médico: CRM 40461 - Ricardo Cardoso Guimaraes
+23/03/2024, 02:26:19 - Numero: 3, Faturando GUIA: 11192716, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 21/02/2024 11:53:45, Médico: CRM 532 - Lendl do Vale Mendonca
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:26:24 - Numero: 4, Faturando GUIA: 11192713, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 21/02/2024 11:53:02, Médico: CRM 51542 - Andre Luiz Pereira
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:26:29 - Numero: 5, Faturando GUIA: 11192711, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 21/02/2024 11:52:41, Médico: CRM 591 - Silvio Delorenzo Filho
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:26:34 - Numero: 6, Faturando GUIA: 11192705, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 21/02/2024 11:50:14, Médico: CRM 545 - Marcelo Faria Mota
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:26:38 - Numero: 7, Faturando GUIA: 11191086, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 20/02/2024 19:30:37, Médico: CRM 40461 - Ricardo Cardoso Guimaraes
+23/03/2024, 02:26:43 - Numero: 8, Faturando GUIA: 11191085, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 20/02/2024 19:30:13, Médico: CRM 532 - Lendl do Vale Mendonca
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:26:47 - Numero: 9, Faturando GUIA: 11191083, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 20/02/2024 19:29:44, Médico: CRM 51542 - Andre Luiz Pereira
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:26:52 - Numero: 10, Faturando GUIA: 11191082, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 20/02/2024 19:29:29, Médico: CRM 591 - Silvio Delorenzo Filho
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:26:57 - Numero: 11, Faturando GUIA: 11191081, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/2024 19:28:23, Médico: CRM 203928 - Fabiana Rocha Brito
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:27:02 - Numero: 12, Faturando GUIA: 11191080, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 20/02/2024 19:28:23, Médico: CRM 203928 - Fabiana Rocha Brito
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:27:07 - Numero: 13, Faturando GUIA: 11191079, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 20/02/2024 19:27:47, Médico: CRM 545 - Marcelo Faria Mota
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:27:12 - Numero: 14, Faturando GUIA: 11186064, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 19/02/2024 11:42:49, Médico: CRM 40461 - Ricardo Cardoso Guimaraes
+23/03/2024, 02:27:16 - Numero: 15, Faturando GUIA: 11186062, Cartão: 08650002978590000, Beneficiário: Edison Mendes Rodrigues, Data execução: 19/02/2024 11:42:24, Médico: CRM 532 - Lendl do Vale Mendonca
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:27:21 - Numero: 16, Faturando GUIA: 11186055, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 19/02/2024 11:41:52, Médico: CRM 51542 - Andre Luiz Pereira
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:27:26 - Numero: 17, Faturando GUIA: 11186052, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 19/02/2024 11:41:37, Médico: CRM 591 - Silvio Delorenzo Filho
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:27:31 - Numero: 18, Faturando GUIA: 11186043, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/2024 11:40:27, Médico: CRM 203928 - Fabiana Rocha Brito
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:27:37 - Numero: 19, Faturando GUIA: 11186042, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 19/02/2024 11:40:27, Médico: CRM 203928 - Fabiana Rocha Brito
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:27:41 - Numero: 20, Faturando GUIA: 11186040, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 19/02/2024 11:39:49, Médico: CRM 545 - Marcelo Faria Mota
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:27:46 - Numero: 21, Faturando GUIA: 11182011, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 16/02/2024 12:15:21, Médico: CRM 40461 - Ricardo Cardoso Guimaraes
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:27:51 - Numero: 22, Faturando GUIA: 11182009, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 16/02/2024 12:14:26, Médico: CRM 51542 - Andre Luiz Pereira
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:27:55 - Numero: 23, Faturando GUIA: 11181996, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 16/02/2024 12:09:57, Médico: CRM 591 - Silvio Delorenzo Filho
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:28:01 - Numero: 24, Faturando GUIA: 11181992, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/2024 12:08:47, Médico: CRM 203928 - Fabiana Rocha Brito
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:28:06 - Numero: 25, Faturando GUIA: 11181991, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 16/02/2024 12:08:47, Médico: CRM 203928 - Fabiana Rocha Brito
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:28:11 - Numero: 26, Faturando GUIA: 11181989, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 16/02/2024 12:08:10, Médico: CRM 545 - Marcelo Faria Mota
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:28:16 - Numero: 27, Faturando GUIA: 11181988, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 16/02/2024 12:07:59, Médico: CRM 145684 - Miguel Angel Corrales Coutinho
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:28:20 - Numero: 28, Faturando GUIA: 11178647, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 15/02/2024 12:04:52, Médico: CRM 40461 - Ricardo Cardoso Guimaraes
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:28:25 - Numero: 29, Faturando GUIA: 11178640, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 15/02/2024 12:00:46, Médico: CRM 51542 - Andre Luiz Pereira
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:28:30 - Numero: 30, Faturando GUIA: 11178638, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 15/02/2024 12:00:27, Médico: CRM 591 - Silvio Delorenzo Filho
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:28:35 - Numero: 31, Faturando GUIA: 11178635, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/2024 11:58:47, Médico: CRM 203928 - Fabiana Rocha Brito
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:28:41 - Numero: 32, Faturando GUIA: 11178634, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 15/02/2024 11:58:47, Médico: CRM 203928 - Fabiana Rocha Brito
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:28:46 - Numero: 33, Faturando GUIA: 11178633, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 15/02/2024 11:57:57, Médico: CRM 545 - Marcelo Faria Mota
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:28:50 - Numero: 34, Faturando GUIA: 11178632, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 15/02/2024 11:57:45, Médico: CRM 145684 - Miguel Angel Corrales Coutinho
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:28:55 - Numero: 35, Faturando GUIA: 11175583, Cartão: 09949369256910309, Beneficiário: Laura Rodrigues Camargo, Data execução: 14/02/2024 10:59:48, Médico: CRM 40461 - Ricardo Cardoso Guimaraes
+23/03/2024, 02:29:00 - Numero: 36, Faturando GUIA: 11175581, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 14/02/2024 10:59:09, Médico: CRM 417 - Angela Beatriz Dal Molin Augusco
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:29:05 - Numero: 37, Faturando GUIA: 11175579, Cartão: 02640103760001800, Beneficiário: MARIA GABRIELA BRITO TEIXEIRA, Data execução: 14/02/2024 10:58:58, Médico: CRM 51542 - Andre Luiz Pereira
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:29:10 - Numero: 38, Faturando GUIA: 11175577, Cartão: 02538441000001825, Beneficiário: Nicolas Andre Oliveira Zilio, Data execução: 14/02/2024 10:58:47, Médico: CRM 51542 - Andre Luiz Pereira
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:29:15 - Numero: 39, Faturando GUIA: 11175576, Cartão: 02228000000812000, Beneficiário: Cleber Mendes Mota, Data execução: 14/02/2024 10:58:31, Médico: CRM 591 - Silvio Delorenzo Filho
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:29:20 - Numero: 40, Faturando GUIA: 11175575, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 14/02/2024 10:57:54, Médico: CRM 18030 - Flavio Dias Silva
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:29:25 - Numero: 41, Faturando GUIA: 11175574, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 14/02/2024 10:57:54, Médico: CRM 18030 - Flavio Dias Silva
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:29:30 - Numero: 42, Faturando GUIA: 11175572, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/2024 10:57:12, Médico: CRM 203928 - Fabiana Rocha Brito
+Dialog message: Médico não encontrado na base.
+23/03/2024, 02:29:36 - Numero: 43, Faturando GUIA: 11175571, Cartão: 02220937000092035, Beneficiário: Ivonete Cirqueira da Mota Silva, Data execução: 14/02/2024 10:57:12, Médico: CRM 203928 - Fabiana Rocha Brito
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:29:41 - Numero: 44, Faturando GUIA: 11175569, Cartão: 02220411000034137, Beneficiário: Pedro Lucas Mota Pereira, Data execução: 14/02/2024 10:56:47, Médico: CRM 51542 - Andre Luiz Pereira
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:29:46 - Numero: 45, Faturando GUIA: 11175567, Cartão: 01830000000399723, Beneficiário: Nilda De Godoy Zarpellon, Data execução: 14/02/2024 10:56:37, Médico: CRM 182469 - Edson Pedroza dos Santos Junior
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:29:51 - Numero: 46, Faturando GUIA: 11175564, Cartão: 01782428011707004, Beneficiário: GUSTAVO LUZ VALADAO, Data execução: 14/02/2024 10:56:25, Médico: CRM 545 - Marcelo Faria Mota
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:29:56 - Numero: 47, Faturando GUIA: 11175563, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 14/02/2024 10:56:15, Médico: CRM 145684 - Miguel Angel Corrales Coutinho
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:30:01 - Numero: 48, Faturando GUIA: 11175562, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/2024 10:55:59, Médico: CRM 545 - Marcelo Faria Mota
+23/03/2024, 02:30:06 - Numero: 49, Faturando GUIA: 11175561, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 14/02/2024 10:55:59, Médico: CRM 545 - Marcelo Faria Mota
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:30:11 - Numero: 50, Faturando GUIA: 11169467, Cartão: 00648000068721718, Beneficiário: JOSE FRANCISCO DOS SANTOS, Data execução: 08/02/2024 18:24:05, Médico: CRM 145684 - Miguel Angel Corrales Coutinho
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:30:16 - Numero: 51, Faturando GUIA: 11169466, Cartão: 01830000000399723, Beneficiário: Nilda De Godoy Zarpellon, Data execução: 08/02/2024 18:23:51, Médico: CRM 182469 - Edson Pedroza dos Santos Junior
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:30:21 - Numero: 52, Faturando GUIA: 11169465, Cartão: 02220411000034137, Beneficiário: Pedro Lucas Mota Pereira, Data execução: 08/02/2024 18:23:37, Médico: CRM 51542 - Andre Luiz Pereira
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:30:26 - Numero: 53, Faturando GUIA: 11169464, Cartão: 02640103760001800, Beneficiário: MARIA GABRIELA BRITO TEIXEIRA, Data execução: 08/02/2024 18:23:24, Médico: CRM 51542 - Andre Luiz Pereira
+23/03/2024, 02:30:31 - Numero: 54, Faturando GUIA: 11169463, Cartão: 00643740000035122, Beneficiário: Filipe Simoes Dias Mendes, Data execução: 08/02/2024 18:23:10, Médico: CRM 33586 - Gustavo Machado Vasconcelos
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:30:37 - Numero: 55, Faturando GUIA: 11169462, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 08/02/2024 18:22:57, Médico: CRM 18030 - Flavio Dias Silva
+Dialog message: Médico não encontrado na base.
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:30:42 - Numero: 56, Faturando GUIA: 11169461, Cartão: 02223167000166001, Beneficiário: Veraluce Teodoro Goncalves, Data execução: 08/02/2024 18:22:57, Médico: CRM 18030 - Flavio Dias Silva
+23/03/2024, 02:30:47 - Numero: 57, Faturando GUIA: 11169460, Cartão: 08650001114424009, Beneficiário: Sabrine Araujo Pacheco, Data execução: 08/02/2024 18:22:43, Médico: CRM 417 - Angela Beatriz Dal Molin Augusco
+Dialog message: Informe o médico solicitante.
+23/03/2024, 02:30:53 - Numero: 58, Faturando GUIA: 11169459, Cartão: 00306151000256000, Beneficiário: DALTON OLIVEIRA MOTA, Data execução: 08/02/2024 18:22:29, Médico: CRM 545 - Marcelo Faria Mota

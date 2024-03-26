@@ -47,4 +47,7 @@
 09880008014104003;Ana Maria Vilarins
 02222345000001009;Alice Rodrigues
 02222303000031018;Tomariza das Merces Parente Lopes
+09940055535742005;Ademir Whitman
+00482083141009866;Esio Harrison
+02222055000218006;Maria Rodrigues
 03177702200172606;Pedro Lucas Enomoto Lima
