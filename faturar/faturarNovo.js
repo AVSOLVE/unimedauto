@@ -1,17 +1,7 @@
 const fs = require('fs').promises;
-const { log } = require('console');
+const logColors = require('ansi-colors');
 const { chromium } = require('playwright');
 const { login, password } = { login: 'fisiocep', password: 'fisiocep2022' };
-
-function displayTime() {
-  const now = new Date();
-
-  const elapsedTime = formatElapsedTime(now - startTime);
-
-  console.log(
-    `Elapsed Time: ${elapsedTime}`
-  );
-}
 
 function formatElapsedTime(elapsedTime) {
   const totalSeconds = Math.floor(elapsedTime / 1000);
@@ -24,10 +14,7 @@ function formatElapsedTime(elapsedTime) {
     '0'
   )}:${String(seconds).padStart(2, '0')}`;
 }
-async function loginAuth() {
-  const browser = await chromium.launch({ headless: false });
-  const context = await browser.newContext();
-  const page = await context.newPage();
+async function loginAuth(page) {
   const timeout = 5000;
   page.setDefaultTimeout(timeout);
   await page.setViewportSize({ width: 1280, height: 800 });
@@ -220,6 +207,7 @@ async function processCSV(page) {
       .frameLocator('#paginaPrincipal')
       .locator('#nr_crm_solicitante')
       .fill(crmMedico);
+
     await page
       .frameLocator('iframe >> nth=0')
       .frameLocator('#principal')
@@ -229,24 +217,22 @@ async function processCSV(page) {
       .press('Tab');
 
     try {
-      if (
-        await page
-          .frameLocator('iframe >> nth=0')
-          .frameLocator('#principal')
-          .frameLocator('td iframe')
-          .frameLocator('#paginaPrincipal')
-          .locator('#idListaMedico_solicitante')
-      ) {
-        await page
-          .frameLocator('iframe >> nth=0')
-          .frameLocator('#principal')
-          .frameLocator('td iframe')
-          .frameLocator('#paginaPrincipal')
-          .locator('#idListaMedico_solicitante')
-          .selectOption(codUnimedMedico);
+      const listaMedicoSolicitante = await page
+        .frameLocator('iframe >> nth=0')
+        .frameLocator('#principal')
+        .frameLocator('td iframe')
+        .frameLocator('#paginaPrincipal')
+        .locator('#idListaMedico_solicitante');
+      if (listaMedicoSolicitante) {
+        await listaMedicoSolicitante.selectOption(codUnimedMedico);
+        console.log(
+          logColors.bgRedBright(
+            'Médico não identificado automaticamente, injetando credenciais...'
+          )
+        );
       }
     } catch (error) {
-      console.error('An error occurred:', error);
+      console.log(logColors.bgGreenBright('Médico identificado automaticamente!'));
     }
 
     await monkeyBusiness(page);
@@ -268,6 +254,7 @@ async function processCSV(page) {
       .frameLocator('iframe[name="frame_2"]')
       .locator('#CD_GUIA_PRESTADOR')
       .fill(codigoGuia);
+
     await page
       .frameLocator('iframe >> nth=0')
       .frameLocator('#principal')
@@ -285,6 +272,7 @@ async function processCSV(page) {
       .frameLocator('iframe[name="frame_2"]')
       .locator('#CD_USUARIO_PLANO')
       .fill(numeroCarteirinha);
+
     await page
       .frameLocator('iframe >> nth=0')
       .frameLocator('#principal')
@@ -338,10 +326,7 @@ async function processCSV(page) {
       .frameLocator('iframe[name="frame_2"]')
       .getByRole('button', { name: 'Salvar conta' })
       .click();
-    page.once('dialog', (dialog) => {
-      console.log(`Dialog message: ${dialog.message()}`);
-      dialog.dismiss().catch(() => {});
-    });
+
     await page
       .frameLocator('iframe >> nth=0')
       .frameLocator('#principal')
@@ -350,6 +335,7 @@ async function processCSV(page) {
       .frameLocator('iframe[name="frame_2"]')
       .getByRole('button', { name: 'Consistir' })
       .click();
+
     await page
       .frameLocator('iframe >> nth=0')
       .frameLocator('#principal')
@@ -375,17 +361,25 @@ async function processCSV(page) {
 
   console.log(`Total time: ${formatElapsedTime(totalTime)}`);
   console.log(`Total loops: ${totalLoops}`);
-  console.log(`Average time per loop: ${formatElapsedTime(averageTime)}`);
+  console.log(logColors.bgYellow(`Average time per loop: ${formatElapsedTime(averageTime)}`));
 }
 
 (async () => {
   console.clear();
-  const page = await loginAuth();
+  const browser = await chromium.launch({ headless: false });
+  const context = await browser.newContext();
+  const page = await context.newPage();
+  await loginAuth(page);
   page.on('dialog', async (dialog) => {
     const logMessage = `Dialog message: ${dialog.message()}\n`;
-    console.log(logMessage);
     await dialog.dismiss();
     // await dialog.accept();
+    console.log(logMessage);
+  });
+  page.on('popup', async (popup) => {
+    await popup.waitForLoadState();
+    popup.close();
   });
   await processCSV(page);
+  browser.close();
 })();
