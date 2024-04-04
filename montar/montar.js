@@ -8,9 +8,9 @@ async function loginAuth() {
   const page = await context.newPage();
   const timeout = 5000;
   page.setDefaultTimeout(timeout);
-  await page.setViewportSize({ width: 1280, height: 800 });
+  await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto('https://portal.unimedpalmas.coop.br/', {
-    waitUntil: 'networkidle',
+    waitUntil: 'load',
   });
 
   await page
@@ -71,9 +71,45 @@ async function loginAuth() {
   return page;
 }
 
+async function extractAndSavePaginationLinks(pageContent) {
+  await fs.writeFile('base.csv', '');
+  await fs.writeFile('basePagination.csv', '');
+  const paginationRegex = /href="pls_montarConsultaAut(.*?)"/gs;
+  const matches = pageContent.matchAll(paginationRegex);
+  let lastPaginationUrl = '';
+  for (const match of matches) {
+    const cleanUrlPart = match[1].replace(/amp;/g, '');
+    lastPaginationUrl = `view-source:https://portal.unimedpalmas.coop.br/pls_montarConsultaAut${cleanUrlPart}`;
+    await fs.appendFile('basePagination.csv', `${lastPaginationUrl}\n`);
+  }
+  let paginationStart = 300;
+  const increment = 30;
+  for (let i = 0; i < 10; i++) {
+    paginationStart += increment;
+    const newUrl = lastPaginationUrl.replace(
+      /(=S&nrRegistroInicio=)[0-9]+/,
+      `$1${paginationStart}`
+    );
+    await fs.appendFile('basePagination.csv', `${newUrl}\n`);
+  }
+  console.log('Pagination Links extraction completed!');
+}
+
+async function extractAndSaveData(pageContent) {
+  const regex = /<td class="line-content">\["(.*?)"],<\/td>/gs;
+  let match = 0;
+  let count = 0;
+  while ((match = regex.exec(pageContent)) !== null && count < 30) {
+    let aux = await concatenateDataAtPositions(match[1]);
+    console.log(aux);
+    await fs.appendFile('base.csv', `${aux}\n`);
+    count++;
+  }
+  console.log('Data extracted and saved!');
+}
 async function concatenateDataAtPositions(dataString) {
   const dataArray = await clearData(dataString);
-  const positions = [1, 29, 2, 3, 16, 5, 17];
+  const positions = [1, 29, 2, 3, 17, 5, 16];
   const concatenatedData = positions
     .map((position) => {
       if (position === 29) {
@@ -92,7 +128,6 @@ async function concatenateDataAtPositions(dataString) {
     .join(';');
   return concatenatedData;
 }
-
 async function clearData(dataString) {
   return dataString
     .replace(/"/g, '')
@@ -100,81 +135,52 @@ async function clearData(dataString) {
     .filter((item) => item.trim() !== '')
     .map((item) => item.trim());
 }
-
-async function extractAndSaveData(pageContent) {
-  const regex = /<td class="line-content">\["(.*?)"],<\/td>/gs;
-  let match;
-  let count = 0;
-  while ((match = regex.exec(pageContent)) !== null && count < 30) {
-    let aux = await concatenateDataAtPositions(match[1]);
-    console.log(aux);
-    await fs.appendFile('base.csv', `${aux}\n`);
-    count++;
-  }
-  console.log('Data extracted and saved!');
-}
-
-async function extractAndSavePaginationLinks(pageContent) {
-  const paginationRegex = /href="pls_montarConsultaAut(.*?)"/gs;
-  const matches = pageContent.matchAll(paginationRegex);
-  await fs.writeFile('basePagination.csv', '');
-  for (const match of matches) {
-    let aux = match[1].replace(/amp;/g, '');
-    await fs.appendFile(
-      'basePagination.csv',
-      `view-source:https://portal.unimedpalmas.coop.br/pls_montarConsultaAut${aux}\n`
-    );
-  }
-  console.log('Pagination Links extraction completed!');
-}
-
 async function processPaginationCSV(page) {
   const fileContent = await fs.readFile('basePagination.csv', 'utf-8');
   const lines = fileContent.trim().split('\n');
   for (const [index, line] of lines.entries()) {
     if (index === 0) continue;
     const page = await loginAuth();
-    await page
-      .frameLocator('iframe >> nth=0')
-      .frameLocator('#principal')
-      .frameLocator('td iframe')
-      .frameLocator('#paginaPrincipal')
-      .frameLocator('iframe[name="frame_1"]')
-      .getByRole('link', { name: `| ${index + 1}` })
-      .click();
+    // await page
+    //   .frameLocator('iframe >> nth=0')
+    //   .frameLocator('#principal')
+    //   .frameLocator('td iframe')
+    //   .frameLocator('#paginaPrincipal')
+    //   .frameLocator('iframe[name="frame_1"]')
+    //   .getByRole('link', { name: `| ${index + 1}` })
+    //   .click();
 
     await page.goto(line, {
-      waitUntil: 'networkidle',
+      waitUntil: 'load',
     });
-
     await extractAndSaveData(await page.content());
   }
 }
 
 async function mergeFiles(file1Path, file2Path, mergedFilePath) {
   try {
-      const file1Data = await fsPromises.readFile(file1Path, 'utf-8');
-      const file2Data = await fsPromises.readFile(file2Path, 'utf-8');
+    const file1Data = await fsPromises.readFile(file1Path, 'utf-8');
+    const file2Data = await fsPromises.readFile(file2Path, 'utf-8');
 
-      const linesFile1 = file1Data.split('\n');
-      const linesFile2 = file2Data.split('\n');
+    const linesFile1 = file1Data.split('\n');
+    const linesFile2 = file2Data.split('\n');
 
-      const maxLength = Math.max(linesFile1.length, linesFile2.length);
+    const maxLength = Math.max(linesFile1.length, linesFile2.length);
 
-      let mergedContent = '';
-      for (let i = 0; i < maxLength; i++) {
-          if (i < linesFile1.length) {
-              mergedContent += linesFile1[i] + '\n';
-          }
-          if (i < linesFile2.length) {
-              mergedContent += linesFile2[i] + '\n';
-          }
+    let mergedContent = '';
+    for (let i = 0; i < maxLength; i++) {
+      if (i < linesFile1.length) {
+        mergedContent += linesFile1[i] + '\n';
       }
+      if (i < linesFile2.length) {
+        mergedContent += linesFile2[i] + '\n';
+      }
+    }
 
-      await fsPromises.writeFile(mergedFilePath, mergedContent.trim());
-      console.log("Files merged successfully!");
+    await fsPromises.writeFile(mergedFilePath, mergedContent.trim());
+    console.log('Files merged successfully!');
   } catch (error) {
-      console.error("An error occurred:", error);
+    console.error('An error occurred:', error);
   }
 }
 

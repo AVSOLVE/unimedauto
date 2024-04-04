@@ -200,6 +200,12 @@ async function processCSV(page) {
       .getByRole('button', { name: 'Novo' })
       .click();
 
+    console.log(
+      logColors.bgWhiteBright(
+        `Faturando => ${nomePaciente} com guia de ${dataExec}!`
+      )
+    );
+
     await page
       .frameLocator('iframe >> nth=0')
       .frameLocator('#principal')
@@ -216,6 +222,7 @@ async function processCSV(page) {
       .locator('#nr_crm_solicitante')
       .press('Tab');
 
+    //  SE NÃO ACHAR O MÉDICO VIA CRM, DEVE TESTAR O CÓD UNIMED
     try {
       const listaMedicoSolicitante = await page
         .frameLocator('iframe >> nth=0')
@@ -226,13 +233,17 @@ async function processCSV(page) {
       if (listaMedicoSolicitante) {
         await listaMedicoSolicitante.selectOption(codUnimedMedico);
         console.log(
-          logColors.bgRedBright(
-            'Médico não identificado automaticamente, injetando credenciais...'
+          logColors.bgYellowBright(
+            `Credenciais para o Dr. ${nomeMedico} injetadas!`
           )
         );
       }
     } catch (error) {
-      console.log(logColors.bgGreenBright('Médico identificado automaticamente!'));
+      console.log(
+        logColors.bgGreenBright(
+          `Dr. ${nomeMedico} identificado automaticamente!`
+        )
+      );
     }
 
     await monkeyBusiness(page);
@@ -288,6 +299,42 @@ async function processCSV(page) {
       .frameLocator('td iframe')
       .frameLocator('#paginaPrincipal')
       .frameLocator('iframe[name="frame_2"]')
+      .locator('#nr_crm_solicitante')
+      .fill(crmMedico);
+
+    await page
+      .frameLocator('iframe >> nth=0')
+      .frameLocator('#principal')
+      .frameLocator('td iframe')
+      .frameLocator('#paginaPrincipal')
+      .frameLocator('iframe[name="frame_2"]')
+      .locator('#nr_crm_solicitante')
+      .press('Tab');
+
+    //  PREENCHER CBO VIA CRM => SE NÃO ACHAR O MÉDICO VIA CRM, DEVE TESTAR O CÓD UNIMED
+    try {
+      const listaMedicoSolicitante = await page
+        .frameLocator('iframe >> nth=0')
+        .frameLocator('#principal')
+        .frameLocator('td iframe')
+        .frameLocator('#paginaPrincipal')
+        .frameLocator('iframe[name="frame_2"]')
+        .locator('#idListaMedico_solicitante');
+      if (listaMedicoSolicitante) {
+        await listaMedicoSolicitante.selectOption(codUnimedMedico);
+        await listaMedicoSolicitante.press('Tab');
+        console.log(logColors.bgYellowBright(`CBO injetada!`));
+      }
+    } catch (error) {
+      console.log(logColors.bgGreenBright(`CBO identificado automaticamente!`));
+    }
+
+    await page
+      .frameLocator('iframe >> nth=0')
+      .frameLocator('#principal')
+      .frameLocator('td iframe')
+      .frameLocator('#paginaPrincipal')
+      .frameLocator('iframe[name="frame_2"]')
       .locator('#IE_CARATER_INTERNACAO')
       .selectOption('E');
 
@@ -336,14 +383,42 @@ async function processCSV(page) {
       .getByRole('button', { name: 'Consistir' })
       .click();
 
-    await page
-      .frameLocator('iframe >> nth=0')
-      .frameLocator('#principal')
-      .frameLocator('td iframe')
-      .frameLocator('#paginaPrincipal')
-      .frameLocator('iframe[name="frame_2"]')
-      .getByRole('button', { name: 'Voltar' })
-      .click();
+    const codigoGlosa = 1;
+    try {
+      const codigoGlosaLocator = await page
+        .frameLocator('iframe >> nth=0')
+        .frameLocator('#principal')
+        .frameLocator('td iframe')
+        .frameLocator('#paginaPrincipal')
+        .frameLocator('iframe[name="frame_2"]')
+        .locator('tr.registroLista > td:nth-child(2)')
+        .textContent();
+
+      codigoGlosa = await codigoGlosaLocator.trim();
+    } catch (error) {
+      console.log(logColors.bgRed(`Não foi possível excluir a conta!`));
+    }
+
+    if (codigoGlosa === 'CM552') {
+      console.log(logColors.bgRed('GLOSA: CM552 - essa guia já foi faturada!'));
+      await page
+        .frameLocator('iframe >> nth=0')
+        .frameLocator('#principal')
+        .frameLocator('td iframe')
+        .frameLocator('#paginaPrincipal')
+        .frameLocator('iframe[name="frame_2"]')
+        .getByRole('button', { name: 'Excluir conta' })
+        .click();
+    } else {
+      await page
+        .frameLocator('iframe >> nth=0')
+        .frameLocator('#principal')
+        .frameLocator('td iframe')
+        .frameLocator('#paginaPrincipal')
+        .frameLocator('iframe[name="frame_2"]')
+        .getByRole('button', { name: 'Voltar' })
+        .click();
+    }
 
     const loopEndTime = new Date();
     const loopElapsedTime = loopEndTime - loopStartTime;
@@ -361,7 +436,11 @@ async function processCSV(page) {
 
   console.log(`Total time: ${formatElapsedTime(totalTime)}`);
   console.log(`Total loops: ${totalLoops}`);
-  console.log(logColors.bgYellow(`Average time per loop: ${formatElapsedTime(averageTime)}`));
+  console.log(
+    logColors.bgYellow(
+      `Average time per loop: ${formatElapsedTime(averageTime)}`
+    )
+  );
 }
 
 (async () => {
@@ -371,10 +450,10 @@ async function processCSV(page) {
   const page = await context.newPage();
   await loginAuth(page);
   page.on('dialog', async (dialog) => {
-    const logMessage = `Dialog message: ${dialog.message()}\n`;
-    await dialog.dismiss();
-    // await dialog.accept();
-    console.log(logMessage);
+    const logMessage = `Dialog message: ${dialog.message()}`;
+    // await dialog.dismiss();
+    await dialog.accept();
+    console.log(logColors.bgBlueBright(logMessage));
   });
   page.on('popup', async (popup) => {
     await popup.waitForLoadState();
