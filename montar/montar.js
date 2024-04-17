@@ -8,9 +8,9 @@ async function loginAuth() {
   const page = await context.newPage();
   const timeout = 5000;
   page.setDefaultTimeout(timeout);
-  await page.setViewportSize({ width: 1280, height: 720 });
+  await page.setViewportSize({ width: 1024, height: 680 });
   await page.goto('https://portal.unimedpalmas.coop.br/', {
-    waitUntil: 'domcontentloaded',
+    waitUntil:'domcontentloaded',
   });
 
   await page
@@ -150,7 +150,7 @@ async function processPaginationCSV() {
     const { page, browser } = await loginAuth();
 
     await page.goto(line, {
-      waitUntil: 'domcontentloaded',
+      waitUntil: 'networkidle',
     });
 
     await extractAndSaveData(await page.content());
