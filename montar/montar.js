@@ -3,14 +3,14 @@ const { chromium } = require('playwright');
 const { login, password } = { login: 'fisiocep', password: 'fisiocep2022' };
 
 async function loginAuth() {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
   const page = await context.newPage();
   const timeout = 5000;
   page.setDefaultTimeout(timeout);
   await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto('https://portal.unimedpalmas.coop.br/', {
-    waitUntil: 'load',
+    waitUntil: 'domcontentloaded',
   });
 
   await page
@@ -68,7 +68,7 @@ async function loginAuth() {
 
   console.log('Logged in!');
 
-  return page;
+  return { page, browser };
 }
 
 async function extractAndSavePaginationLinks(pageContent) {
@@ -82,16 +82,16 @@ async function extractAndSavePaginationLinks(pageContent) {
     lastPaginationUrl = `view-source:https://portal.unimedpalmas.coop.br/pls_montarConsultaAut${cleanUrlPart}`;
     await fs.appendFile('basePagination.csv', `${lastPaginationUrl}\n`);
   }
-  let paginationStart = 300;
-  const increment = 30;
-  for (let i = 0; i < 10; i++) {
-    paginationStart += increment;
-    const newUrl = lastPaginationUrl.replace(
-      /(=S&nrRegistroInicio=)[0-9]+/,
-      `$1${paginationStart}`
-    );
-    await fs.appendFile('basePagination.csv', `${newUrl}\n`);
-  }
+  // let paginationStart = 300;
+  // const increment = 30;
+  // for (let i = 0; i < 10; i++) {
+  //   paginationStart += increment;
+  //   const newUrl = lastPaginationUrl.replace(
+  //     /(=S&nrRegistroInicio=)[0-9]+/,
+  //     `$1${paginationStart}`
+  //   );
+  //   await fs.appendFile('basePagination.csv', `${newUrl}\n`);
+  // }
   console.log('Pagination Links extraction completed!');
 }
 
@@ -101,12 +101,14 @@ async function extractAndSaveData(pageContent) {
   let count = 0;
   while ((match = regex.exec(pageContent)) !== null && count < 30) {
     let aux = await concatenateDataAtPositions(match[1]);
-    console.log(aux);
+    
     await fs.appendFile('base.csv', `${aux}\n`);
     count++;
   }
+
   console.log('Data extracted and saved!');
 }
+
 async function concatenateDataAtPositions(dataString) {
   const dataArray = await clearData(dataString);
   const positions = [1, 29, 2, 3, 17, 5, 16];
@@ -128,6 +130,7 @@ async function concatenateDataAtPositions(dataString) {
     .join(';');
   return concatenatedData;
 }
+
 async function clearData(dataString) {
   return dataString
     .replace(/"/g, '')
@@ -135,66 +138,65 @@ async function clearData(dataString) {
     .filter((item) => item.trim() !== '')
     .map((item) => item.trim());
 }
-async function processPaginationCSV(page) {
+
+async function processPaginationCSV() {
   const fileContent = await fs.readFile('basePagination.csv', 'utf-8');
+
   const lines = fileContent.trim().split('\n');
+
   for (const [index, line] of lines.entries()) {
     if (index === 0) continue;
-    const page = await loginAuth();
-    // await page
-    //   .frameLocator('iframe >> nth=0')
-    //   .frameLocator('#principal')
-    //   .frameLocator('td iframe')
-    //   .frameLocator('#paginaPrincipal')
-    //   .frameLocator('iframe[name="frame_1"]')
-    //   .getByRole('link', { name: `| ${index + 1}` })
-    //   .click();
+
+    const { page, browser } = await loginAuth();
 
     await page.goto(line, {
-      waitUntil: 'load',
+      waitUntil: 'domcontentloaded',
     });
+
     await extractAndSaveData(await page.content());
+    await browser.close();
   }
 }
 
-async function mergeFiles(file1Path, file2Path, mergedFilePath) {
-  try {
-    const file1Data = await fsPromises.readFile(file1Path, 'utf-8');
-    const file2Data = await fsPromises.readFile(file2Path, 'utf-8');
+// async function mergeFiles(file1Path, file2Path, mergedFilePath) {
+//   try {
+//     const file1Data = await fsPromises.readFile(file1Path, 'utf-8');
+//     const file2Data = await fsPromises.readFile(file2Path, 'utf-8');
 
-    const linesFile1 = file1Data.split('\n');
-    const linesFile2 = file2Data.split('\n');
+//     const linesFile1 = file1Data.split('\n');
+//     const linesFile2 = file2Data.split('\n');
 
-    const maxLength = Math.max(linesFile1.length, linesFile2.length);
+//     const maxLength = Math.max(linesFile1.length, linesFile2.length);
 
-    let mergedContent = '';
-    for (let i = 0; i < maxLength; i++) {
-      if (i < linesFile1.length) {
-        mergedContent += linesFile1[i] + '\n';
-      }
-      if (i < linesFile2.length) {
-        mergedContent += linesFile2[i] + '\n';
-      }
-    }
+//     let mergedContent = '';
+//     for (let i = 0; i < maxLength; i++) {
+//       if (i < linesFile1.length) {
+//         mergedContent += linesFile1[i] + '\n';
+//       }
+//       if (i < linesFile2.length) {
+//         mergedContent += linesFile2[i] + '\n';
+//       }
+//     }
 
-    await fsPromises.writeFile(mergedFilePath, mergedContent.trim());
-    console.log('Files merged successfully!');
-  } catch (error) {
-    console.error('An error occurred:', error);
-  }
-}
+//     await fsPromises.writeFile(mergedFilePath, mergedContent.trim());
+//     console.log('Files merged successfully!');
+//   } catch (error) {
+//     console.error('An error occurred:', error);
+//   }
+// }
 
 (async () => {
   console.clear();
-  const page = await loginAuth();
+  const { page, browser } = await loginAuth();
   await page.goto(
     'view-source:https://portal.unimedpalmas.coop.br/wheb_gridDet.jsp',
     {
-      waitUntil: 'networkidle',
+      waitUntil: 'domcontentloaded',
     }
   );
 
   await extractAndSavePaginationLinks(await page.content());
   await extractAndSaveData(await page.content());
-  await processPaginationCSV(page);
+  await processPaginationCSV();
+  browser.close();
 })();
