@@ -14,10 +14,11 @@ function formatElapsedTime(elapsedTime) {
     '0'
   )}:${String(seconds).padStart(2, '0')}`;
 }
+
 async function loginAuth(page) {
   const timeout = 5000;
   page.setDefaultTimeout(timeout);
-  await page.setViewportSize({ width: 1280, height: 800 });
+  await page.setViewportSize({ width: 1024, height: 768 });
   await page.goto('https://portal.unimedpalmas.coop.br/', {
     waitUntil: 'networkidle',
   });
@@ -72,6 +73,7 @@ async function loginAuth(page) {
     .frameLocator('td iframe')
     .frameLocator('#paginaPrincipal')
     .getByRole('link', { name: 'Utilizar' })
+    .first()
     .click();
 
   console.log('Logged in and routed in!');
@@ -80,55 +82,55 @@ async function loginAuth(page) {
 }
 
 async function monkeyBusiness(page) {
-  await page
-    .frameLocator('iframe >> nth=0')
-    .frameLocator('#principal')
-    .frameLocator('td iframe')
-    .frameLocator('#paginaPrincipal')
-    .locator('#CD_PRESTADOR_EXEC')
-    .dblclick();
-  await page
-    .frameLocator('iframe >> nth=0')
-    .frameLocator('#principal')
-    .frameLocator('td iframe')
-    .frameLocator('#paginaPrincipal')
-    .locator('#CD_PRESTADOR_EXEC')
-    .fill('330001343');
-  await page
-    .frameLocator('iframe >> nth=0')
-    .frameLocator('#principal')
-    .frameLocator('td iframe')
-    .frameLocator('#paginaPrincipal')
-    .locator('#CD_PRESTADOR_EXEC')
-    .click();
-  await page
-    .frameLocator('iframe >> nth=0')
-    .frameLocator('#principal')
-    .frameLocator('td iframe')
-    .frameLocator('#paginaPrincipal')
-    .locator('#CD_PRESTADOR_EXEC')
-    .click();
-  await page
-    .frameLocator('iframe >> nth=0')
-    .frameLocator('#principal')
-    .frameLocator('td iframe')
-    .frameLocator('#paginaPrincipal')
-    .locator('#CD_PRESTADOR_EXEC')
-    .fill('30001343');
-  await page
-    .frameLocator('iframe >> nth=0')
-    .frameLocator('#principal')
-    .frameLocator('td iframe')
-    .frameLocator('#paginaPrincipal')
-    .locator('#CD_PRESTADOR_EXEC')
-    .press('Tab');
-  await page
-    .frameLocator('iframe >> nth=0')
-    .frameLocator('#principal')
-    .frameLocator('td iframe')
-    .frameLocator('#paginaPrincipal')
-    .locator('#NR_SEQ_PRESTADOR_EXEC')
-    .press('Tab');
+  // await page
+  //   .frameLocator('iframe >> nth=0')
+  //   .frameLocator('#principal')
+  //   .frameLocator('td iframe')
+  //   .frameLocator('#paginaPrincipal')
+  //   .locator('#CD_PRESTADOR_EXEC')
+  //   .dblclick();
+  // await page
+  //   .frameLocator('iframe >> nth=0')
+  //   .frameLocator('#principal')
+  //   .frameLocator('td iframe')
+  //   .frameLocator('#paginaPrincipal')
+  //   .locator('#CD_PRESTADOR_EXEC')
+  //   .fill('30001343');
+  // await page
+  //   .frameLocator('iframe >> nth=0')
+  //   .frameLocator('#principal')
+  //   .frameLocator('td iframe')
+  //   .frameLocator('#paginaPrincipal')
+  //   .locator('#CD_PRESTADOR_EXEC')
+  //   .click();
+  // await page
+  //   .frameLocator('iframe >> nth=0')
+  //   .frameLocator('#principal')
+  //   .frameLocator('td iframe')
+  //   .frameLocator('#paginaPrincipal')
+  //   .locator('#CD_PRESTADOR_EXEC')
+  //   .click();
+  // await page
+  //   .frameLocator('iframe >> nth=0')
+  //   .frameLocator('#principal')
+  //   .frameLocator('td iframe')
+  //   .frameLocator('#paginaPrincipal')
+  //   .locator('#CD_PRESTADOR_EXEC')
+  //   .fill('30001343');
+  // await page
+  //   .frameLocator('iframe >> nth=0')
+  //   .frameLocator('#principal')
+  //   .frameLocator('td iframe')
+  //   .frameLocator('#paginaPrincipal')
+  //   .locator('#CD_PRESTADOR_EXEC')
+  //   .press('Tab');
+  // await page
+  //   .frameLocator('iframe >> nth=0')
+  //   .frameLocator('#principal')
+  //   .frameLocator('td iframe')
+  //   .frameLocator('#paginaPrincipal')
+  //   .locator('#NR_SEQ_PRESTADOR_EXEC')
+  //   .press('Tab');
   await page
     .frameLocator('iframe >> nth=0')
     .frameLocator('#principal')
@@ -136,6 +138,7 @@ async function monkeyBusiness(page) {
     .frameLocator('#paginaPrincipal')
     .locator('#id_grau_participacao_filtro')
     .selectOption('10');
+
   await page
     .frameLocator('iframe >> nth=0')
     .frameLocator('#principal')
@@ -143,6 +146,7 @@ async function monkeyBusiness(page) {
     .frameLocator('#paginaPrincipal')
     .locator('#id_grau_participacao_filtro')
     .press('Tab');
+
   await page
     .frameLocator('iframe >> nth=0')
     .frameLocator('#principal')
@@ -150,6 +154,7 @@ async function monkeyBusiness(page) {
     .frameLocator('#paginaPrincipal')
     .locator('#nr_crm_participante')
     .fill('152447');
+
   await page
     .frameLocator('iframe >> nth=0')
     .frameLocator('#principal')
@@ -157,6 +162,7 @@ async function monkeyBusiness(page) {
     .frameLocator('#paginaPrincipal')
     .locator('#nr_crm_participante')
     .press('Tab');
+
   await page
     .frameLocator('iframe >> nth=0')
     .frameLocator('#principal')
@@ -164,6 +170,7 @@ async function monkeyBusiness(page) {
     .frameLocator('#paginaPrincipal')
     .locator('#idListaMedico_participante')
     .selectOption('225793');
+
   await page
     .frameLocator('iframe >> nth=0')
     .frameLocator('#principal')
@@ -171,6 +178,22 @@ async function monkeyBusiness(page) {
     .frameLocator('#paginaPrincipal')
     .locator('#idListaMedico_participante')
     .press('Tab');
+
+  await page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('#paginaPrincipal')
+    .locator('#NR_SEQ_TIPO_ATENDIMENTO')
+    .selectOption('3');
+
+  await page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('#paginaPrincipal')
+    .locator('#IE_REGIME_ATENDIMENTO')
+    .selectOption('01');
 }
 
 async function processCSV(page) {
@@ -187,9 +210,9 @@ async function processCSV(page) {
       numeroCarteirinha,
       dataExec,
       nomePaciente,
-      codUnimedMedico,
-      nomeMedico,
       crmMedico,
+      nomeMedico,
+      codUnimedMedico,
     ] = line.trim().split(';');
 
     await page
@@ -263,7 +286,7 @@ async function processCSV(page) {
       .frameLocator('td iframe')
       .frameLocator('#paginaPrincipal')
       .frameLocator('iframe[name="frame_2"]')
-      .locator('#CD_GUIA_PRESTADOR')
+      .locator('#cd_guia')
       .fill(codigoGuia);
 
     await page
@@ -272,7 +295,43 @@ async function processCSV(page) {
       .frameLocator('td iframe')
       .frameLocator('#paginaPrincipal')
       .frameLocator('iframe[name="frame_2"]')
-      .locator('#CD_GUIA_PRESTADOR')
+      .locator('#cd_guia')
+      .press('Tab');
+
+    // await page
+    //   .frameLocator('iframe >> nth=0')
+    //   .frameLocator('#principal')
+    //   .frameLocator('td iframe')
+    //   .frameLocator('#paginaPrincipal')
+    //   .frameLocator('iframe[name="frame_2"]')
+    //   .locator('#CD_GUIA_PRESTADOR')
+    //   .fill(codigoGuia);
+
+    // await page
+    //   .frameLocator('iframe >> nth=0')
+    //   .frameLocator('#principal')
+    //   .frameLocator('td iframe')
+    //   .frameLocator('#paginaPrincipal')
+    //   .frameLocator('iframe[name="frame_2"]')
+    //   .locator('#CD_GUIA_PRESTADOR')
+    //   .press('Tab');
+
+    await page
+      .frameLocator('iframe >> nth=0')
+      .frameLocator('#principal')
+      .frameLocator('td iframe')
+      .frameLocator('#paginaPrincipal')
+      .frameLocator('iframe[name="frame_2"]')
+      .locator('#CD_GUIA_REFERENCIA')
+      .fill(codigoGuia);
+
+    await page
+      .frameLocator('iframe >> nth=0')
+      .frameLocator('#principal')
+      .frameLocator('td iframe')
+      .frameLocator('#paginaPrincipal')
+      .frameLocator('iframe[name="frame_2"]')
+      .locator('#CD_GUIA_REFERENCIA')
       .press('Tab');
 
     await page
@@ -396,7 +455,7 @@ async function processCSV(page) {
 
       codigoGlosa = await codigoGlosaLocator.trim();
     } catch (error) {
-      console.log(logColors.bgRed(`Não foi possível excluir a conta!`));
+      console.log(logColors.bgGreen('GLOSA: Nenhuma glosa encontrada!'));
     }
 
     if (codigoGlosa === 'CM552') {
@@ -410,6 +469,94 @@ async function processCSV(page) {
         .getByRole('button', { name: 'Excluir conta' })
         .click();
     } else {
+      // await page
+      //   .frameLocator('iframe >> nth=0')
+      //   .frameLocator('#principal')
+      //   .frameLocator('td iframe')
+      //   .frameLocator('#paginaPrincipal')
+      //   .frameLocator('iframe[name="frame_2"]')
+      //   .getByRole('button', { name: 'Proc/Mat' })
+      //   .click();
+
+      // await page
+      // .frameLocator('iframe >> nth=0')
+      // .frameLocator('#principal')
+      // .frameLocator('td iframe')
+      // .frameLocator('#paginaPrincipal')
+      // .frameLocator('iframe[name="frame_2"]')
+      //   .locator('#linha_1 > td:nth-child(6)')
+      //   .click();
+
+      // await page
+      //   .frameLocator('iframe >> nth=0')
+      //   .frameLocator('#principal')
+      //   .frameLocator('td iframe')
+      //   .frameLocator('#paginaPrincipal')
+      //   .frameLocator('#frameParticipantes_1')
+      //   .getByRole('link', { name: 'Detalhes' })
+      //   .click();
+
+      // await page
+      //   .frameLocator('iframe >> nth=0')
+      //   .frameLocator('#principal')
+      //   .frameLocator('td iframe')
+      //   .frameLocator('#paginaPrincipal')
+      //   .frameLocator('#frameParticipantes_1')
+      //   .locator('#nr_seq_cbo_saude')
+      //   .fill('445');
+
+      // await page
+      //   .frameLocator('iframe >> nth=0')
+      //   .frameLocator('#principal')
+      //   .frameLocator('td iframe')
+      //   .frameLocator('#paginaPrincipal')
+      //   .frameLocator('#frameParticipantes_1')
+      //   .locator('#nr_seq_cbo_saude')
+      //   .press('Tab');
+
+      // page.once('dialog', (dialog) => {
+      //   console.log(`Dialog message: ${dialog.message()}`);
+      //   dialog.dismiss().catch(() => {});
+      // });
+
+      // await page
+      //   .frameLocator('iframe >> nth=0')
+      //   .frameLocator('#principal')
+      //   .frameLocator('td iframe')
+      //   .frameLocator('#paginaPrincipal')
+      //   .frameLocator('#frameParticipantes_1')
+      //   .getByRole('button', { name: 'Salvar' })
+      //   .click();
+
+      // page.once('dialog', (dialog) => {
+      //   console.log(`Dialog message: ${dialog.message()}`);
+      //   dialog.dismiss().catch(() => {});
+      // });
+
+      // await page
+      //   .frameLocator('iframe >> nth=0')
+      //   .frameLocator('#principal')
+      //   .frameLocator('td iframe')
+      //   .frameLocator('#paginaPrincipal')
+      //   .getByRole('button', { name: 'Consistir' })
+      //   .click();
+
+      // await page
+      //   .frameLocator('iframe >> nth=0')
+      //   .frameLocator('#principal')
+      //   .frameLocator('td iframe')
+      //   .frameLocator('#paginaPrincipal')
+      //   .getByRole('button', { name: 'Voltar' })
+      //   .click();
+
+      // await page
+      //   .frameLocator('iframe >> nth=0')
+      //   .frameLocator('#principal')
+      //   .frameLocator('td iframe')
+      //   .frameLocator('#paginaPrincipal')
+      //   .getByRole('button', { name: 'Voltar' })
+      //   .click();
+
       await page
         .frameLocator('iframe >> nth=0')
         .frameLocator('#principal')
@@ -424,7 +571,7 @@ async function processCSV(page) {
     const loopElapsedTime = loopEndTime - loopStartTime;
     loopTimes.push(loopElapsedTime);
     console.log(
-      `Time spent on loop ${index + 1}: ${formatElapsedTime(loopElapsedTime)}`
+      `Tempo gasto no item ${index + 1}: ${formatElapsedTime(loopElapsedTime)}`
     );
   }
 
