@@ -6,11 +6,10 @@ async function loginAuth() {
   const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
   const page = await context.newPage();
-  const timeout = 5000;
-  page.setDefaultTimeout(timeout);
-  await page.setViewportSize({ width: 1024, height: 680 });
+  page.setDefaultTimeout(5000);
+  await page.setViewportSize({ width: 800, height: 600 });
   await page.goto('https://portal.unimedpalmas.coop.br/', {
-    waitUntil:'domcontentloaded',
+    waitUntil: 'domcontentloaded',
   });
 
   await page
@@ -82,16 +81,6 @@ async function extractAndSavePaginationLinks(pageContent) {
     lastPaginationUrl = `view-source:https://portal.unimedpalmas.coop.br/pls_montarConsultaAut${cleanUrlPart}`;
     await fs.appendFile('basePagination.csv', `${lastPaginationUrl}\n`);
   }
-  // let paginationStart = 300;
-  // const increment = 30;
-  // for (let i = 0; i < 10; i++) {
-  //   paginationStart += increment;
-  //   const newUrl = lastPaginationUrl.replace(
-  //     /(=S&nrRegistroInicio=)[0-9]+/,
-  //     `$1${paginationStart}`
-  //   );
-  //   await fs.appendFile('basePagination.csv', `${newUrl}\n`);
-  // }
   console.log('Pagination Links extraction completed!');
 }
 
@@ -101,7 +90,6 @@ async function extractAndSaveData(pageContent) {
   let count = 0;
   while ((match = regex.exec(pageContent)) !== null && count < 30) {
     let aux = await concatenateDataAtPositions(match[1]);
-    
     await fs.appendFile('base.csv', `${aux}\n`);
     count++;
   }
@@ -111,16 +99,22 @@ async function extractAndSaveData(pageContent) {
 
 async function concatenateDataAtPositions(dataString) {
   const dataArray = await clearData(dataString);
-  const positions = [1, 29, 2, 3, 17, 5, 16];
+  const positions = [1, 45, 2, 3, 17, 5, 16];
   const concatenatedData = positions
     .map((position) => {
-      if (position === 29) {
+      if (position === 45) {
         let id = () => {
+          if (dataArray[position - 5].length === 17) return position - 5;
+          if (dataArray[position - 4].length === 17) return position - 4;
+          if (dataArray[position - 3].length === 17) return position - 3;
           if (dataArray[position - 2].length === 17) return position - 2;
           if (dataArray[position - 1].length === 17) return position - 1;
           if (dataArray[position].length === 17) return position;
           if (dataArray[position + 1].length === 17) return position + 1;
           if (dataArray[position + 2].length === 17) return position + 2;
+          if (dataArray[position + 3].length === 17) return position + 3;
+          if (dataArray[position + 4].length === 17) return position + 4;
+          if (dataArray[position + 5].length === 17) return position + 5;
         };
         return dataArray[id()] || '';
       } else {
@@ -150,7 +144,7 @@ async function processPaginationCSV() {
     const { page, browser } = await loginAuth();
 
     await page.goto(line, {
-      waitUntil: 'networkidle',
+      waitUntil: 'load',
     });
 
     await extractAndSaveData(await page.content());
@@ -197,6 +191,6 @@ async function processPaginationCSV() {
 
   await extractAndSavePaginationLinks(await page.content());
   await extractAndSaveData(await page.content());
-  await processPaginationCSV();
   browser.close();
+  await processPaginationCSV();
 })();
