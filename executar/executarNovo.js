@@ -8,7 +8,7 @@ async function loginAuth() {
   const page = await context.newPage();
   const timeout = 5000;
   page.setDefaultTimeout(timeout);
-  await page.setViewportSize({ width: 1280, height: 720 });
+  await page.setViewportSize({ width: 800, height: 600 });
   await page.goto('https://portal.unimedpalmas.coop.br/', {
     waitUntil: 'load',
   });
@@ -73,7 +73,7 @@ async function loginAuth() {
     .frameLocator('td iframe')
     .frameLocator('#paginaPrincipal')
     .locator('#CD_USUARIO_PLANO')
-    .type('02222303000068000');
+    .type('02222507000017002');
 
   await page
     .frameLocator('iframe >> nth=0')
@@ -91,41 +91,81 @@ async function loginAuth() {
     .getByRole('button', { name: 'Consultar' })
     .click();
 
-// Intercepting HTTP request
-page.route('**/*', route => {
-  console.log('Intercepted URL:', route.request().url());
-  route.continue();
-});
+  await page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('#paginaPrincipal')
+    .locator('input[type="checkbox"]')
+    .first()
+    .click();
 
-// Navigate to a page
-await page.goto('https://example.com');
+  await page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('#paginaPrincipal')
+    .getByRole('button', { name: 'Gerar guia' })
+    .click();
 
-// Ensure that all route handlers are removed
-page.off('route');
+  await page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('#paginaPrincipal')
+    .locator('select')
+    .selectOption('3');
 
+  await page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('#paginaPrincipal')
+    .locator('input[type="text"]')
+    .fill('1');
 
-
-  let counter = 0;
-  try {
-    const checkboxesLocator = page
-      .frameLocator('iframe >> nth=0')
-      .frameLocator('#principal')
-      .frameLocator('td iframe')
-      .frameLocator('#paginaPrincipal')
-      .locator('input[type="checkbox"]');
-
-    //   for (counter; ; counter += 1) {
-    //     await checkboxesLocator.nth(counter).click();
-    //   }
-  } catch (e) {}
-
+  await page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('#paginaPrincipal')
+    .getByRole('button', { name: 'Confirmar geração de guias' })
+    .click();
+    
   // await page
   //   .frameLocator('iframe >> nth=0')
   //   .frameLocator('#principal')
   //   .frameLocator('td iframe')
   //   .frameLocator('#paginaPrincipal')
-  //   .getByRole('button', { name: 'Gerar guia' })
+  //   .locator('div')
+  //   .filter({ hasText: 'Requisição Dt requisição Dt' })
   //   .click();
+
+  // Intercepting HTTP request
+  // page.route('**/*', (route) => {
+  //   console.log('Intercepted URL:', route.request().url());
+  //   route.continue();
+  // });
+
+  // // Navigate to a page
+  // await page.goto('https://example.com');
+
+  // // Ensure that all route handlers are removed
+  // page.off('route');
+
+  // let counter = 0;
+  // try {
+  //   const checkboxesLocator = page
+  //     .frameLocator('iframe >> nth=0')
+  //     .frameLocator('#principal')
+  //     .frameLocator('td iframe')
+  //     .frameLocator('#paginaPrincipal')
+  //     .locator('input[type="checkbox"]');
+
+  //     for (counter; ; counter += 1) {
+  //       await checkboxesLocator.nth(counter).click();
+  //     }
+  // } catch (e) {}
 
   // try {
   //   let aux = page
