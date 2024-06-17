@@ -96,27 +96,36 @@ async function extractAndSaveData(pageContent) {
 
   console.log('Data extracted and saved!');
 }
+function findSpecificData(data, length = 17) {
+  for (let item of data) {
+      if (item.length === length && /^\d+$/.test(item)) {
+          return item;
+      }
+  }
+  return null;
+}
 
-async function concatenateDataAtPositions(dataString) {
+async function concatenateDataAtPositions(dataString, length = 17) {
   const dataArray = await clearData(dataString);
-  const positions = [1, 45, 2, 3, 17, 5, 16];
+  const positions = [1, 29, 2, 3, 17, 5, 16];
   const concatenatedData = positions
     .map((position) => {
-      if (position === 45) {
-        let id = () => {
-          if (dataArray[position - 5].length === 17) return position - 5;
-          if (dataArray[position - 4].length === 17) return position - 4;
-          if (dataArray[position - 3].length === 17) return position - 3;
-          if (dataArray[position - 2].length === 17) return position - 2;
-          if (dataArray[position - 1].length === 17) return position - 1;
-          if (dataArray[position].length === 17) return position;
-          if (dataArray[position + 1].length === 17) return position + 1;
-          if (dataArray[position + 2].length === 17) return position + 2;
-          if (dataArray[position + 3].length === 17) return position + 3;
-          if (dataArray[position + 4].length === 17) return position + 4;
-          if (dataArray[position + 5].length === 17) return position + 5;
-        };
-        return dataArray[id()] || '';
+      if (position === 29) {
+        // let id = () => {
+        //   if (dataArray[position - 5].length === length && /^\d+$/.test(dataArray[position - 5])) return position - 5;
+        //   if (dataArray[position - 4].length === length && /^\d+$/.test(dataArray[position - 4])) return position - 4;
+        //   if (dataArray[position - 3].length === length && /^\d+$/.test(dataArray[position - 3])) return position - 3;
+        //   if (dataArray[position - 2].length === length && /^\d+$/.test(dataArray[position - 2])) return position - 2;
+        //   if (dataArray[position - 1].length === length && /^\d+$/.test(dataArray[position - 1])) return position - 1;
+        //   if (dataArray[position].length === length && /^\d+$/.test(dataArray[position])) return position;
+        //   if (dataArray[position + 1].length === length && /^\d+$/.test(dataArray[position + 1])) return position + 1;
+        //   if (dataArray[position + 2].length === length && /^\d+$/.test(dataArray[position + 2])) return position + 2;
+        //   if (dataArray[position + 3].length === length && /^\d+$/.test(dataArray[position + 3])) return position + 3;
+        //   if (dataArray[position + 4].length === length && /^\d+$/.test(dataArray[position + 4])) return position + 4;
+        //   if (dataArray[position + 5].length === length && /^\d+$/.test(dataArray[position + 5])) return position + 5;
+        // };
+        // return dataArray[id()] || '';
+        return findSpecificData(dataArray) || '';
       } else {
         return dataArray[position - 1] || '';
       }
@@ -151,33 +160,6 @@ async function processPaginationCSV() {
     await browser.close();
   }
 }
-
-// async function mergeFiles(file1Path, file2Path, mergedFilePath) {
-//   try {
-//     const file1Data = await fsPromises.readFile(file1Path, 'utf-8');
-//     const file2Data = await fsPromises.readFile(file2Path, 'utf-8');
-
-//     const linesFile1 = file1Data.split('\n');
-//     const linesFile2 = file2Data.split('\n');
-
-//     const maxLength = Math.max(linesFile1.length, linesFile2.length);
-
-//     let mergedContent = '';
-//     for (let i = 0; i < maxLength; i++) {
-//       if (i < linesFile1.length) {
-//         mergedContent += linesFile1[i] + '\n';
-//       }
-//       if (i < linesFile2.length) {
-//         mergedContent += linesFile2[i] + '\n';
-//       }
-//     }
-
-//     await fsPromises.writeFile(mergedFilePath, mergedContent.trim());
-//     console.log('Files merged successfully!');
-//   } catch (error) {
-//     console.error('An error occurred:', error);
-//   }
-// }
 
 (async () => {
   console.clear();

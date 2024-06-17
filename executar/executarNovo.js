@@ -117,7 +117,7 @@ async function loginAuth() {
     .selectOption('3');
 
   await page
-    .frameLocator('iframe >> nth=0')
+    .frameLocator('iframe >> nth=0') 
     .frameLocator('#principal')
     .frameLocator('td iframe')
     .frameLocator('#paginaPrincipal')
