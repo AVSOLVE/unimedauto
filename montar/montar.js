@@ -3,64 +3,64 @@ const logColors = require('ansi-colors');
 const { chromium } = require('playwright');
 const { login, password } = { login: 'fisiocep', password: 'fisiocep2022' };
 
-async function loginAuth(retries) {
-  let mainBrowser, mainPage;
+async function loginAuth() {
+  let retries = 3;
   while (retries > 0) {
     try {
-      mainBrowser = await chromium.launch({ headless: false });
-      const mainContext = await mainBrowser.newContext();
-      mainPage = await mainContext.newPage();
-      mainPage.setDefaultTimeout(5000);
-      await mainPage.setViewportSize({ width: 800, height: 600 });
-      await mainPage.goto('https://portal.unimedpalmas.coop.br/', {
+      const browser = await chromium.launch({ headless: false });
+      const context = await browser.newContext();
+      const page = await context.newPage();
+      page.setDefaultTimeout(10000);
+      await page.setViewportSize({ width: 800, height: 600 });
+      await page.goto('https://portal.unimedpalmas.coop.br/', {
         waitUntil: 'domcontentloaded',
       });
 
-      await mainPage
+      await page
         .frameLocator('iframe >> nth=0')
         .frameLocator('#principal')
         .locator('#tipoUsuario')
         .selectOption('P');
-      await mainPage
+      await page
         .frameLocator('iframe >> nth=0')
         .frameLocator('#principal')
         .locator('#nmUsuario')
         .click();
-      await mainPage
+      await page
         .frameLocator('iframe >> nth=0')
         .frameLocator('#principal')
         .locator('#nmUsuario')
         .fill(login);
-      await mainPage
+      await page
         .frameLocator('iframe >> nth=0')
         .frameLocator('#principal')
         .locator('#dsSenha')
         .click();
-      await mainPage
+      await page
         .frameLocator('iframe >> nth=0')
         .frameLocator('#principal')
         .locator('#dsSenha')
         .fill(password);
-      await mainPage
+      await page
         .frameLocator('iframe >> nth=0')
         .frameLocator('#principal')
         .getByRole('button', { name: 'Entrar' })
         .click();
-      await mainPage
+      await page
         .frameLocator('iframe >> nth=0')
         .frameLocator('#principal')
         .frameLocator('td iframe')
         .frameLocator('frame >> nth=0')
         .getByText('Autorização', { exact: true })
         .click();
-      await mainPage
+      await page
         .frameLocator('iframe >> nth=0')
         .frameLocator('#principal')
         .frameLocator('td iframe')
         .frameLocator('frame >> nth=0')
         .getByText('» Consulta de autorizações')
         .click();
-      await mainPage
+      await page
         .frameLocator('iframe >> nth=0')
         .frameLocator('#principal')
         .frameLocator('td iframe')
@@ -71,11 +71,11 @@ async function loginAuth(retries) {
 
       console.log(logColors.bgGreenBright(`LOGIN ACEITO! AGUARDE...`));
 
-      return { mainPage, mainBrowser };
+      return { mainPage: page, mainBrowser: browser };
     } catch (error) {
       retries--;
-      if (mainPage) await mainPage.close();
-      if (mainBrowser) await mainBrowser.close();
+      if (page) await page.close();
+      if (browser) await browser.close();
 
       console.error(
         logColors.bgYellowBright(
@@ -104,44 +104,29 @@ function extractDates(url) {
   }
 }
 
-async function extractAndSavePaginationLinks(pageContent) {
-  await fs.writeFile('base.csv', '');
-  await fs.writeFile('basePagination.csv', '');
-  const paginationRegex = /href="pls_montarConsultaAut(.*?)"/gs;
-  const match = pageContent.match(paginationRegex);
-  let lastPaginationUrl = '';
-  let index = 0;
-  for (let i = 0; i < 20; i++) {
-    const { dtInicio, dtFim } = extractDates(match[0]);
-    lastPaginationUrl = `view-source:https://portal.unimedpalmas.coop.br/pls_montarConsultaAut.action?dtInicio=${dtInicio}&dtFim=${dtFim}&ieTipoProcesso=&ieTipoGuia=&ieTipoConsulta=&cdGuia=&cdBeneficiario=&cdMedico=&cdPrestador=&cdSenha=&ieStatus=&cdGuiaManual=&clickPaginacao=S&nrRegistroInicio=${index}`;
-    await fs.appendFile('basePagination.csv', `${lastPaginationUrl}\n`);
-    index += 30;
-  }
-  console.log('Pagination Links extraction completed!');
-}
-
 async function extractAndSaveData(pageContent) {
   const regex = /<td class="line-content">\["(.*?)"],<\/td>/gs;
   let match = 0;
   let count = 0;
+  let data = null;
   while ((match = regex.exec(pageContent)) !== null && count < 30) {
-    let aux = await concatenateDataAtPositions(match[1]);
-    await fs.appendFile('base.csv', `${aux}\n`);
+    data = await concatenateDataAtPositions(match[1]);
+    await fs.appendFile('base.csv', `${data}\n`);
     count++;
   }
-  console.log('Data extracted and saved!');
+  return data;
 }
 
-function findSpecificData(data, length = 17) {
+function findSpecificData(data) {
   for (let item of data) {
-    if (item.length === length && /^\d+$/.test(item)) {
+    if (item.length === 17 && /^\d+$/.test(item)) {
       return item;
     }
   }
   return null;
 }
 
-async function concatenateDataAtPositions(dataString, length = 17) {
+async function concatenateDataAtPositions(dataString) {
   const dataArray = await clearData(dataString);
   const positions = [1, 29, 2, 3, 17, 5, 16];
   const concatenatedData = positions
@@ -164,37 +149,61 @@ async function clearData(dataString) {
     .map((item) => item.trim());
 }
 
-async function processPaginationCSV(page, browser) {
-  const fileContent = await fs.readFile('basePagination.csv', 'utf-8');
-
-  const lines = fileContent.trim().split('\n');
-
-  for (const [index, line] of lines.entries()) {
-    if (index === 0) continue;
-
-    // const { page, browser } = await loginAuth(3);
-    await page.goto(line, {
-      waitUntil: 'load',
-    });
-
-    await extractAndSaveData(await page.content());
-    // await browser.close();
-  }
+function isAtLeastOneMonthOld(dateString) {
+  const dateParts = dateString.split(';')[2].split(' ')[0].split('/');
+  const inputDate = new Date(`${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`);
+  const today = new Date();
+  const diffInMilliseconds = today - inputDate;
+  const diffInDays = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24));
+  return diffInDays >= 30;
 }
 
 (async () => {
   console.clear();
-  const { mainPage, mainBrowser } = await loginAuth(3);
-  let page = mainPage;
-  await page.goto(
-    'view-source:https://portal.unimedpalmas.coop.br/wheb_gridDet.jsp',
-    {
-      waitUntil: 'domcontentloaded',
-    }
-  );
+  await fs.writeFile('base.csv', '');
+  const { mainPage, mainBrowser } = await loginAuth();
+  const paginationRegex = /href="pls_montarConsultaAut(.*?)"/gs;
 
-  await extractAndSavePaginationLinks(await page.content());
-  await extractAndSaveData(await page.content());
-  // browser.close();
-  await processPaginationCSV(mainPage, mainBrowser);
+  try {
+    let page = mainPage;
+    let browser = mainBrowser;
+    await page.goto(
+      'view-source:https://portal.unimedpalmas.coop.br/wheb_gridDet.jsp',
+      {
+        waitUntil: 'domcontentloaded',
+      }
+    );
+
+    const pageContent = await page.content();
+    const match = pageContent.match(paginationRegex);
+    const { dtInicio, dtFim } = extractDates(match[0]);
+    let paginationUrl = '';
+    let index = 0;
+    let counter = 1;
+    let lastDataString = null;
+
+    do {
+      paginationUrl = `view-source:https://portal.unimedpalmas.coop.br/pls_montarConsultaAut.action?dtInicio=${dtInicio}&dtFim=${dtFim}&ieTipoProcesso=&ieTipoGuia=&ieTipoConsulta=&cdGuia=&cdBeneficiario=&cdMedico=&cdPrestador=&cdSenha=&ieStatus=&cdGuiaManual=&clickPaginacao=S&nrRegistroInicio=${index}`;
+
+      await page.goto(paginationUrl, {
+        waitUntil: 'load',
+      });
+
+      const pageContent = await page.content();
+      lastDataString = await extractAndSaveData(pageContent);
+      lastDataString &&
+        console.log(
+          logColors.bgCyanBright(
+            `LOTE ${counter} EXTRAIDO COM SUCESSO! AGUARDE...`
+          )
+        );
+
+      index += 30;
+      counter++;
+    } while (lastDataString && !isAtLeastOneMonthOld(lastDataString));
+
+    await browser.close();
+  } catch (error) {
+    console.error(`ERRO FATAL DE EXECUÇÃO: ${error}!`);
+  }
 })();
