@@ -203,6 +203,11 @@ function isAtLeastOneMonthOld(dateString) {
     } while (lastDataString && !isAtLeastOneMonthOld(lastDataString));
 
     await browser.close();
+    console.log(
+      logColors.bgGreen(
+        `PROCESSO FINALIZADO! ARQUIVO base.csv GERADO COM SUCESSO!`
+      )
+    );
   } catch (error) {
     console.error(`ERRO FATAL DE EXECUÇÃO: ${error}!`);
   }

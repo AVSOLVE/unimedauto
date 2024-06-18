@@ -133,21 +133,21 @@ async function monkeyBusiness(page) {
     .locator('#idListaMedico_participante')
     .press('Tab');
 
-  await page
-    .frameLocator('iframe >> nth=0')
-    .frameLocator('#principal')
-    .frameLocator('td iframe')
-    .frameLocator('#paginaPrincipal')
-    .locator('#NR_SEQ_TIPO_ATENDIMENTO')
-    .selectOption('3');
+  // await page
+  //   .frameLocator('iframe >> nth=0')
+  //   .frameLocator('#principal')
+  //   .frameLocator('td iframe')
+  //   .frameLocator('#paginaPrincipal')
+  //   .locator('#NR_SEQ_TIPO_ATENDIMENTO')
+  //   .selectOption('3');
 
-  await page
-    .frameLocator('iframe >> nth=0')
-    .frameLocator('#principal')
-    .frameLocator('td iframe')
-    .frameLocator('#paginaPrincipal')
-    .locator('#IE_REGIME_ATENDIMENTO')
-    .selectOption('01');
+  // await page
+  //   .frameLocator('iframe >> nth=0')
+  //   .frameLocator('#principal')
+  //   .frameLocator('td iframe')
+  //   .frameLocator('#paginaPrincipal')
+  //   .locator('#IE_REGIME_ATENDIMENTO')
+  //   .selectOption('01');
 }
 
 async function processCSV(page) {
