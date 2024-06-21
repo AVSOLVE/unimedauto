@@ -7,7 +7,7 @@ async function loginAuth() {
   let retries = 3;
   while (retries > 0) {
     try {
-      const browser = await chromium.launch({ headless: false });
+      const browser = await chromium.launch({ headless: true });
       const context = await browser.newContext();
       const page = await context.newPage();
       page.setDefaultTimeout(10000);
