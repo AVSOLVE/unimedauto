@@ -1,95 +1,6 @@
 const fs = require('fs').promises;
 const logColors = require('ansi-colors');
-const { chromium } = require('playwright');
-const { login, password } = { login: 'fisiocep', password: 'fisiocep2022' };
-
-async function loginAuth() {
-  let retries = 3;
-  while (retries > 0) {
-    try {
-      const browser = await chromium.launch({ headless: true });
-      const context = await browser.newContext();
-      const page = await context.newPage();
-      page.setDefaultTimeout(10000);
-      await page.setViewportSize({ width: 800, height: 600 });
-      await page.goto('https://portal.unimedpalmas.coop.br/', {
-        waitUntil: 'domcontentloaded',
-      });
-
-      await page
-        .frameLocator('iframe >> nth=0')
-        .frameLocator('#principal')
-        .locator('#tipoUsuario')
-        .selectOption('P');
-      await page
-        .frameLocator('iframe >> nth=0')
-        .frameLocator('#principal')
-        .locator('#nmUsuario')
-        .click();
-      await page
-        .frameLocator('iframe >> nth=0')
-        .frameLocator('#principal')
-        .locator('#nmUsuario')
-        .fill(login);
-      await page
-        .frameLocator('iframe >> nth=0')
-        .frameLocator('#principal')
-        .locator('#dsSenha')
-        .click();
-      await page
-        .frameLocator('iframe >> nth=0')
-        .frameLocator('#principal')
-        .locator('#dsSenha')
-        .fill(password);
-      await page
-        .frameLocator('iframe >> nth=0')
-        .frameLocator('#principal')
-        .getByRole('button', { name: 'Entrar' })
-        .click();
-      await page
-        .frameLocator('iframe >> nth=0')
-        .frameLocator('#principal')
-        .frameLocator('td iframe')
-        .frameLocator('frame >> nth=0')
-        .getByText('Autorização', { exact: true })
-        .click();
-      await page
-        .frameLocator('iframe >> nth=0')
-        .frameLocator('#principal')
-        .frameLocator('td iframe')
-        .frameLocator('frame >> nth=0')
-        .getByText('» Consulta de autorizações')
-        .click();
-      await page
-        .frameLocator('iframe >> nth=0')
-        .frameLocator('#principal')
-        .frameLocator('td iframe')
-        .frameLocator('#paginaPrincipal')
-        .frameLocator('iframe[name="filtroAutorizacoes"]')
-        .getByRole('button', { name: 'Atualizar' })
-        .click();
-
-      console.log(logColors.bgGreenBright(`LOGIN ACEITO! AGUARDE...`));
-
-      return { mainPage: page, mainBrowser: browser };
-    } catch (error) {
-      retries--;
-      if (page) await page.close();
-      if (browser) await browser.close();
-
-      console.error(
-        logColors.bgYellowBright(
-          `A TENTATIVA DE LOGIN FALHOU! ERRO: ${error.name}!`
-        )
-      );
-      console.log(
-        logColors.bgWhiteBright(
-          `TENTATIVAS DE LOGIN RESTANTES: ${retries}! AGUARDE...`
-        )
-      );
-    }
-  }
-}
+const { loginAuth } = require('../shared/loginAuth');
 
 function extractDates(url) {
   const dateRegex = /dtInicio=([\d\/]+)&amp;dtFim=([\d\/]+)/;
@@ -111,19 +22,10 @@ async function extractAndSaveData(pageContent) {
   let data = null;
   while ((match = regex.exec(pageContent)) !== null && count < 30) {
     data = await concatenateDataAtPositions(match[1]);
-    await fs.appendFile('base.csv', `${data}\n`);
+    await fs.appendFile('dataBase.csv', `${data}\n`);
     count++;
   }
   return data;
-}
-
-function findSpecificData(data) {
-  for (let item of data) {
-    if (item.length === 17 && /^\d+$/.test(item)) {
-      return item;
-    }
-  }
-  return null;
 }
 
 async function concatenateDataAtPositions(dataString) {
@@ -141,12 +43,13 @@ async function concatenateDataAtPositions(dataString) {
   return concatenatedData;
 }
 
-async function clearData(dataString) {
-  return dataString
-    .replace(/"/g, '')
-    .split(',')
-    .filter((item) => item.trim() !== '')
-    .map((item) => item.trim());
+function findSpecificData(data) {
+  for (let item of data) {
+    if (item.length === 17 && /^\d+$/.test(item)) {
+      return item;
+    }
+  }
+  return null;
 }
 
 function isAtLeastOneMonthOld(dateString) {
@@ -158,12 +61,21 @@ function isAtLeastOneMonthOld(dateString) {
   return diffInDays >= 30;
 }
 
+
+async function clearData(dataString) {
+  return dataString
+    .replace(/"/g, '')
+    .split(',')
+    .filter((item) => item.trim() !== '')
+    .map((item) => item.trim());
+}
+
+
+
 (async () => {
-  console.clear();
   await fs.writeFile('base.csv', '');
   const { mainPage, mainBrowser } = await loginAuth();
-  const paginationRegex = /href="pls_montarConsultaAut(.*?)"/gs;
-
+  
   try {
     let page = mainPage;
     let browser = mainBrowser;
@@ -173,8 +85,9 @@ function isAtLeastOneMonthOld(dateString) {
         waitUntil: 'domcontentloaded',
       }
     );
-
+    
     const pageContent = await page.content();
+    const paginationRegex = /href="pls_montarConsultaAut(.*?)"/gs;
     const match = pageContent.match(paginationRegex);
     const { dtInicio, dtFim } = extractDates(match[0]);
     let paginationUrl = '';
