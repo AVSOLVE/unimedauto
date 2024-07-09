@@ -18,7 +18,7 @@ async function loginAuth() {
     let browser;
     let page;
     try {
-      browser = await chromium.launch({ headless: true });
+      browser = await chromium.launch({ headless: false });
       const context = await browser.newContext();
       page = await context.newPage();
       page.setDefaultTimeout(5000);
@@ -37,12 +37,13 @@ async function loginAuth() {
       await frame.locator('#dsSenha').click();
       await frame.locator('#dsSenha').fill(password);
       await frame.getByRole('button', { name: 'Entrar' }).click();
-
+      
+      console.clear();
       console.log('LOGIN ACEITO! AGUARDE...');
 
       return { page, browser };
     } catch (error) {
-      console.error(`A TENTATIVA DE LOGIN FALHOU! ERRO: ${error.name}!`);
+      console.error(`A TENTATIVA DE LOGIN FALHOU! ERRO: ${error}!`);
       console.log(`TENTATIVAS DE LOGIN RESTANTES: ${retries - 1}! AGUARDE...`);
 
       if (page) await page.close();

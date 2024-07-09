@@ -15,7 +15,8 @@ async function loginAndRedirect() {
     await frame.getByText('Execução da requisição').click();
 
     await frame.getByText('» Executar requisição').click();
-
+    
+    console.clear();
     console.log(logColors.bgGreenBright(`REDIRECIONANDO! AGUARDE...`));
     return { page, browser };
   } catch (error) {
@@ -48,6 +49,7 @@ async function procuraGuia(frame, codigoBeneficiario, nomeBeneficiario) {
       throw new Error('Beneficiário não encontrado!');
     } else {
       await frame.getByRole('button', { name: 'Consultar' }).click();
+      let validadeGuia = await frame.getByRole('cell').nth(19).innerText();
       let req = await frame.getByRole('cell').nth(23).innerText();
       let qtdAp = await frame.getByRole('cell').nth(29).innerText();
       let qtdRes = await frame.getByRole('cell').nth(31).innerText();
@@ -62,7 +64,9 @@ async function procuraGuia(frame, codigoBeneficiario, nomeBeneficiario) {
       }
 
       console.log(
-        logColors.whiteBright(`*******************************************************\n`) +
+        logColors.whiteBright(
+          `*******************************************************\n`
+        ) +
           logColors.bgWhiteBright(
             `REQUISIÇÃO ${req} \nQTD APROVADA: ${qtdAp} `
           ) +
@@ -108,13 +112,13 @@ async function procuraGuia(frame, codigoBeneficiario, nomeBeneficiario) {
 
           continue;
         } else {
-          // await frame.getByRole('button', { name: 'Gerar guia' }).click();
-          // await frame.locator('select').selectOption('3');
-          // await frame.locator('input[type="text"]').fill('1');
-          // await frame
-          //   .getByRole('button', { name: 'Confirmar geração de guias' })
-          //   .click();
-          // await frame.getByRole('button', { name: 'Voltar' }).click();
+          await frame.getByRole('button', { name: 'Gerar guia' }).click();
+          await frame.locator('select').selectOption('3');
+          await frame.locator('input[type="text"]').fill('1');
+          await frame
+            .getByRole('button', { name: 'Confirmar geração de guias' })
+            .click();
+          await frame.getByRole('button', { name: 'Voltar' }).click();
         }
       } else {
         console.warn(
