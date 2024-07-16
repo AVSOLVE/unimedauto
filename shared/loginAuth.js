@@ -18,7 +18,7 @@ async function loginAuth() {
     let browser;
     let page;
     try {
-      browser = await chromium.launch({ headless: false });
+      browser = await chromium.launch({ headless: true });
       const context = await browser.newContext();
       page = await context.newPage();
       page.setDefaultTimeout(5000);
