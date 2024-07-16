@@ -22,7 +22,7 @@ async function extractAndSaveData(pageContent) {
   let data = null;
   while ((match = regex.exec(pageContent)) !== null && count < 30) {
     data = await concatenateDataAtPositions(match[1]);
-    await fs.appendFile('dataBase.csv', `${data}\n`);
+    await fs.appendFile('guiasFaturar.csv', `${data}\n`);
     count++;
   }
   return data;
@@ -61,7 +61,6 @@ function isAtLeastOneMonthOld(dateString) {
   return diffInDays >= 30;
 }
 
-
 async function clearData(dataString) {
   return dataString
     .replace(/"/g, '')
@@ -70,22 +69,41 @@ async function clearData(dataString) {
     .map((item) => item.trim());
 }
 
+async function loginAndRedirect() {
+  const { page, browser } = await loginAuth();
 
+  const frame = page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('frame >> nth=0');
 
-(async () => {
-  await fs.writeFile('base.csv', '');
-  const { mainPage, mainBrowser } = await loginAuth();
-  
   try {
-    let page = mainPage;
-    let browser = mainBrowser;
-    await page.goto(
-      'view-source:https://portal.unimedpalmas.coop.br/wheb_gridDet.jsp',
-      {
-        waitUntil: 'domcontentloaded',
-      }
+    await frame.getByText('Autorização', { exact: true }).click();
+    await frame.getByText('» Consulta de autorizações').click();
+
+    console.clear();
+    console.log(logColors.bgGreenBright(`REDIRECIONANDO! AGUARDE...`));
+    return { page, browser };
+  } catch (error) {
+    console.error(
+      logColors.bgYellowBright(
+        `O REDIRECIONAMENTO FALHOU! ERRO: ${error.name}!`
+      )
     );
-    
+    await browser.close();
+    throw error;
+  }
+}
+(async () => {
+  const { page, browser } = await loginAndRedirect();
+  try {
+    await page.waitForResponse(
+      'https://portal.unimedpalmas.coop.br/wheb_gridDet.jsp'
+    );
+    await page.goto('https://portal.unimedpalmas.coop.br/wheb_gridDet.jsp', {
+      waitUntil: 'domcontentloaded',
+    });
     const pageContent = await page.content();
     const paginationRegex = /href="pls_montarConsultaAut(.*?)"/gs;
     const match = pageContent.match(paginationRegex);
@@ -94,14 +112,11 @@ async function clearData(dataString) {
     let index = 0;
     let counter = 1;
     let lastDataString = null;
-
     do {
       paginationUrl = `view-source:https://portal.unimedpalmas.coop.br/pls_montarConsultaAut.action?dtInicio=${dtInicio}&dtFim=${dtFim}&ieTipoProcesso=&ieTipoGuia=&ieTipoConsulta=&cdGuia=&cdBeneficiario=&cdMedico=&cdPrestador=&cdSenha=&ieStatus=&cdGuiaManual=&clickPaginacao=S&nrRegistroInicio=${index}`;
-
       await page.goto(paginationUrl, {
         waitUntil: 'load',
       });
-
       const pageContent = await page.content();
       lastDataString = await extractAndSaveData(pageContent);
       lastDataString &&
@@ -110,17 +125,10 @@ async function clearData(dataString) {
             `LOTE ${counter} EXTRAIDO COM SUCESSO! AGUARDE...`
           )
         );
-
       index += 30;
       counter++;
     } while (lastDataString && !isAtLeastOneMonthOld(lastDataString));
-
     await browser.close();
-    console.log(
-      logColors.bgGreen(
-        `PROCESSO FINALIZADO! ARQUIVO base.csv GERADO COM SUCESSO!`
-      )
-    );
   } catch (error) {
     console.error(`ERRO FATAL DE EXECUÇÃO: ${error}!`);
   }

@@ -1,228 +1,249 @@
-const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
+const logColors = require('ansi-colors');
+const { loginAuth } = require('../shared/loginAuth');
 
-function formatDateTime(dateTime) {
-  return dateTime.toLocaleString('pt-BR');
+async function redirectToContasMedicas(page) {
+  const frame = page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe');
+  await frame
+    .frameLocator('frame >> nth=0')
+    .getByText('Digitação de contas médicas')
+    .click();
+  await frame
+    .frameLocator('frame >> nth=0')
+    .getByText('» Digitar conta médica')
+    .click();
+  await frame
+    .frameLocator('#paginaPrincipal')
+    .getByRole('link', { name: 'Utilizar' })
+    .first()
+    .click();
+  console.log('Routed in!');
 }
 
-function extractNrSeqProtocolo(url) {
-  const match = url.match(/nrSeqProtocolo=(\d+)/);
-  return match ? match[1] : null;
-}
-function elapsedTime(startTime) {
-  const timeInSeconds = (new Date() - startTime) / 1000;
-  if (timeInSeconds < 60) {
-    return timeInSeconds + ' segundo' + (timeInSeconds !== 1 ? 's' : '');
-  } else {
-    const minutes = Math.floor(timeInSeconds / 60);
-    const remainingSeconds = Math.floor(timeInSeconds % 60);
+async function processCSV(page) {
+  const startTime = new Date();
+  const fileContent = await fs.readFile('guiasFaturar.csv', 'utf-8');
+  const lines = fileContent.trim().split('\n');
+  const loopTimes = [];
 
-    if (remainingSeconds === 0) {
-      return minutes + ' minuto' + (minutes !== 1 ? 's' : '');
-    } else {
-      return (
-        minutes +
-        ' minuto' +
-        (minutes !== 1 ? 's' : '') +
-        ' e ' +
-        remainingSeconds +
-        ' segundo' +
-        (remainingSeconds !== 1 ? 's' : '')
+  const frame = page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('#paginaPrincipal');
+
+  for (const [index, line] of lines.entries()) {
+    const loopStartTime = new Date();
+
+    const [
+      codigoGuia,
+      numeroCarteirinha,
+      dataExec,
+      nomePaciente,
+      crmMedico,
+      nomeMedico,
+      codUnimedMedico,
+    ] = line.trim().split(';');
+
+    // await fixGlosa(frame);
+
+    await frame.getByRole('button', { name: 'Novo' }).click();
+    console.log(
+      logColors.bgWhiteBright(
+        `Faturando => ${nomePaciente} com guia de ${dataExec}!`
+      )
+    );
+
+    await frame.locator('#nr_crm_solicitante').fill(crmMedico);
+    await frame.locator('#nr_crm_solicitante').press('Tab');
+
+    //  SE NÃO ACHAR O MÉDICO VIA CRM, DEVE TESTAR O CÓD UNIMED
+    try {
+      const listaMedicoSolicitante = await frame.locator(
+        '#idListaMedico_solicitante'
       );
+      if (listaMedicoSolicitante) {
+        await listaMedicoSolicitante.selectOption(codUnimedMedico);
+        await listaMedicoSolicitante.press('Tab');
+        console.log(logColors.bgYellowBright(`CBO injetada!`));
+      }
+    } catch (error) {
+      console.log(logColors.bgGreenBright(`CBO identificado automaticamente!`));
     }
+
+    await monkeyBusiness(page);
+
+    const frame2 = frame.frameLocator('iframe[name="frame_2"]');
+
+    await frame2.getByRole('button', { name: 'Novo' }).click();
+    await frame2.locator('#CD_GUIA_REFERENCIA').fill(codigoGuia);
+    await frame2.locator('#CD_GUIA_REFERENCIA').press('Tab');
+    await frame2.locator('#cd_guia').fill(codigoGuia);
+    await frame2.locator('#cd_guia').press('Tab');
+    await frame2.locator('#CD_USUARIO_PLANO').fill(numeroCarteirinha);
+    await frame2.locator('#CD_USUARIO_PLANO').press('Tab');
+    await frame2.locator('#nr_crm_solicitante').fill(crmMedico);
+    await frame2.locator('#nr_crm_solicitante').press('Tab');
+
+    //  PREENCHER CBO VIA CRM => SE NÃO ACHAR O MÉDICO VIA CRM, DEVE TESTAR O CÓD UNIMED
+    try {
+      const listaMedicoSolicitante = await frame2.locator(
+        '#idListaMedico_solicitante'
+      );
+      if (listaMedicoSolicitante) {
+        await listaMedicoSolicitante.selectOption(codUnimedMedico);
+        await listaMedicoSolicitante.press('Tab');
+        console.log(logColors.bgYellowBright(`CBO injetada!`));
+      }
+    } catch (error) {
+      console.log(logColors.bgGreenBright(`CBO identificado automaticamente!`));
+    }
+
+    await frame2.locator('#IE_CARATER_INTERNACAO').selectOption('E');
+    await frame2.locator('#NR_SEQ_TIPO_ATENDIMENTO').selectOption('3');
+    await frame2.locator('#IE_INDICACAO_ACIDENTE').selectOption('9');
+    await frame2.locator('#IE_REGIME_ATENDIMENTO').selectOption('01');
+    await frame2.getByRole('button', { name: 'Salvar conta' }).click();
+    await frame2.getByRole('button', { name: 'Consistir' }).click();
+
+    let codigoGlosa = 1;
+    try {
+      const codigoGlosaLocator = await frame2
+        .locator('tr.registroLista > td:nth-child(2)')
+        .textContent();
+
+      codigoGlosa = await codigoGlosaLocator.trim();
+    } catch (error) {
+      console.log(logColors.bgGreen('GLOSA: Nenhuma glosa encontrada!', error));
+    }
+
+    if (codigoGlosa === 'CM552') {
+      console.log(logColors.bgRed('GLOSA: CM552 - essa guia já foi faturada!'));
+      await frame2.getByRole('button', { name: 'Excluir conta' }).click();
+    } else {
+      await frame2.getByRole('button', { name: 'Voltar' }).click();
+    }
+
+    const loopEndTime = new Date();
+    const loopElapsedTime = loopEndTime - loopStartTime;
+    loopTimes.push(loopElapsedTime);
+    console.log(
+      `Tempo gasto na guia ${index + 1}: ${formatElapsedTime(loopElapsedTime)}`
+    );
+  }
+
+  const endTime = new Date();
+  const totalTime = endTime - startTime;
+  const totalLoops = lines.length;
+  const averageTime =
+    loopTimes.reduce((acc, curr) => acc + curr, 0) / totalLoops;
+
+  console.log(`Tempo total: ${formatElapsedTime(totalTime)}`);
+  console.log(`Total de guias: ${totalLoops}`);
+  console.log(
+    logColors.bgYellow(
+      `Tempo médio por guia: ${formatElapsedTime(averageTime)}`
+    )
+  );
+}
+
+async function fixGlosa(frame) {
+  try {
+    const condition = await frame
+      .getByRole('cell', { name: 'Possui inconsistências' })
+      .first();
+
+    if (condition) {
+      console.log(`Condition met. Performing actions...`);
+
+      await frame
+        .locator('tr:has-text("Possui inconsistências") > td:nth-child(9)')
+        .first()
+        .click();
+
+      let codigoGlosa = 1;
+      try {
+        const codigoGlosaLocator = await frame
+          .frameLocator('iframe[name="frame_2"]')
+          .getByRole('cell')
+          .textContent();
+
+        codigoGlosa = await codigoGlosaLocator.trim();
+        console.log(`GLOSA: ${codigoGlosa}`);
+      } catch (error) {
+        console.log(
+          logColors.bgGreen('GLOSA: Nenhuma glosa encontrada!', error)
+        );
+      }
+
+      if (codigoGlosa === 'CM552') {
+        console.log(
+          logColors.bgRed('GLOSA: CM552 - essa guia já foi faturada!')
+        );
+        await frame
+          .frameLocator('iframe[name="frame_2"]')
+          .getByRole('button', { name: 'Excluir conta' })
+          .click();
+      } else {
+        await frame
+          .frameLocator('iframe[name="frame_2"]')
+          .getByRole('button', { name: 'Voltar' })
+          .click();
+      }
+
+      await frame.getByRole('button', { name: 'Proc/Mat' }).click();
+
+      await frame.getByRole('img', { name: 'Alterar serviço' }).click();
+    } else {
+      console.log(`Condition not met.`);
+    }
+  } catch (error) {
+    console.error(`Error processing row:`, error);
   }
 }
 
-async function logToFile(
-  index,
-  codigoGuia,
-  numeroCarteirinha,
-  nomePaciente,
-  dataExec,
-  crmMedico,
-  nomeMedico
-) {
-  const timestamp = formatDateTime(new Date());
-  const logMessage = `${timestamp} - Numero: ${
-    index + 1
-  }, Faturando GUIA: ${codigoGuia}, Cartão: ${numeroCarteirinha}, Beneficiário: ${nomePaciente}, Data execução: ${dataExec}, Médico: CRM ${crmMedico} - ${nomeMedico}\n`;
+async function monkeyBusiness(page) {
+  const frame = page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('#paginaPrincipal');
 
-  // Log to console
-  console.log(logMessage);
-  try {
-    await fs.appendFile('log faturamento.txt', logMessage);
-  } catch (error) {
-    console.error('Error writing to log file:', error);
-  }
+  await frame.locator('#id_grau_participacao_filtro').selectOption('10');
+  await frame.locator('#id_grau_participacao_filtro').press('Tab');
+  await frame.locator('#nr_crm_participante').fill('152447');
+  await frame.locator('#nr_crm_participante').press('Tab');
+  await frame.locator('#idListaMedico_participante').selectOption('225793');
+  await frame.locator('#idListaMedico_participante').press('Tab');
+}
+
+function formatElapsedTime(elapsedTime) {
+  const totalSeconds = Math.floor(elapsedTime / 1000);
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(
+    2,
+    '0'
+  )}:${String(seconds).padStart(2, '0')}`;
 }
 
 (async () => {
-  console.clear();
-  const startTime = new Date();
-  const browser = await puppeteer.launch({
-    headless: false,
-    defaultViewport: null,
-  });
-
-  const page = await browser.newPage();
+  const { page, browser } = await loginAuth();
+  await redirectToContasMedicas(page);
 
   page.on('dialog', async (dialog) => {
-    const logMessage = `Dialog message: ${dialog.message()}\n`;
-    await fs.appendFile('log faturamento.txt', logMessage);
-    console.log(logMessage);
-    // await dialog.dismiss();
     await dialog.accept();
+    console.log(logColors.bgBlueBright(`===> ${dialog.message()}`));
   });
-
-  try {
-    const fileContent = await fs.readFile('faturar.csv', 'utf-8');
-    const lines = fileContent.trim().split('\n');
-
-    await page.goto('https://portal.unimedpalmas.coop.br/');
-    const iframes = page.frames();
-    for (const iframe of iframes) {
-      if (iframe.name() === 'principal') {
-        // LOGIN PROCESS
-        await iframe.waitForSelector('#tipoUsuario');
-        await iframe.select('select#tipoUsuario', 'P');
-        await iframe.type('#nmUsuario', 'fisiocep');
-        await iframe.type('#dsSenha', 'fisiocep2022');
-        await iframe.waitForSelector('#btn_entrar');
-        await iframe.$eval('#btn_entrar', (button) => button.click());
-        console.log('LOGIN SUCCESSFUL!');
-        // NAVIGATE TO PAGE
-        await iframe.waitForNavigation();
-        await iframe.goto(
-          'https://portal.unimedpalmas.coop.br/pls_montarListaProtocolosDigitacao.action'
-        );
-
-        // // CLICK ON ANCHOR ELEMENT AND GET PROTOCOL NUMBER
-        const firstAnchorElement = await iframe.$('a');
-        const hrefContent = await iframe.evaluate(
-          (anchor) => anchor.getAttribute('href'),
-          firstAnchorElement
-        );
-        const nrSeqProtocoloValue = extractNrSeqProtocolo(hrefContent);
-        await firstAnchorElement.evaluate((a) => a.click());
-
-        for (const [index, line] of lines.entries()) {
-          const [
-            codigoGuia,
-            numeroCarteirinha,
-            dataExec,
-            nomePaciente,
-            crmMedico,
-            nomeMedico,
-            codUnimedMedico,
-          ] = line.trim().split(';');
-          const startTimeLoop = new Date();
-
-          // CLICK TO EVALUATE
-          // await iframe.waitForNavigation();
-          await iframe.goto(
-            `https://portal.unimedpalmas.coop.br/pls_montarTelaDigitacaoContasMedicas.action?nrSeqProtocolo=${nrSeqProtocoloValue}&ieTipoGuia=4`
-          );
-
-          // TYPE IN CLIENT DATA AND SEARCH
-          if (await iframe.waitForSelector('#nr_crm_solicitante')) {
-            await iframe.type('#nr_crm_solicitante', crmMedico);
-            await page.keyboard.press('Tab');
-
-            if (await iframe.waitForSelector('#nm_medico_solicitante')) {
-              const medicoExists = await iframe.$eval(
-                '#nm_medico_solicitante',
-                (el) => el.value
-              );
-
-              if (!medicoExists) {
-                console.log(
-                  'Médico não identificado automaticamente, injetando credenciais...'
-                );
-                await iframe.select(
-                  'select#idListaMedico_solicitante',
-                  codUnimedMedico
-                );
-                await page.keyboard.press('Tab');
-              }
-            }
-            await page.waitForTimeout(500);
-          }
-
-          await iframe.type('#CD_PRESTADOR_EXEC', '30001343');
-          await page.keyboard.press('Tab');
-
-          await iframe.select('select#id_grau_participacao_filtro', '10');
-
-          await iframe.type('#nr_crm_participante', '152447');
-          await page.keyboard.press('Tab');
-
-          await iframe.select('select#idListaMedico_participante', '225793');
-          await page.keyboard.press('Tab');
-
-          // ACCESS NEW FRAME CONTAINING BUTTON
-          const iframes = page.frames();
-          for (const iframe of iframes) {
-            if (iframe.name() === 'frame_2') {
-              await iframe.waitForSelector('#btnNovaConta');
-              await iframe.$eval('#btnNovaConta', (button) => button.click());
-              await page.waitForTimeout(500);
-
-              // FILL IN FORMAT WITH CLIENT DATA
-              await iframe.waitForSelector('#cd_guia');
-              await iframe.type('#cd_guia', codigoGuia);
-              await page.keyboard.press('Tab');
-              await page.waitForTimeout(500);
-
-              await iframe.waitForSelector('#CD_USUARIO_PLANO');
-              await iframe.type('#CD_USUARIO_PLANO', numeroCarteirinha);
-              await page.keyboard.press('Tab');
-
-              await iframe.waitForSelector('#IE_CARATER_INTERNACAO');
-              await iframe.select('select#IE_CARATER_INTERNACAO', 'E');
-
-              await iframe.waitForSelector('#NR_SEQ_TIPO_ATENDIMENTO');
-              await iframe.select('select#NR_SEQ_TIPO_ATENDIMENTO', '3');
-
-              await iframe.waitForSelector('#IE_INDICACAO_ACIDENTE');
-              await iframe.select('select#IE_INDICACAO_ACIDENTE', '9');
-
-              await iframe.waitForSelector('#IE_REGIME_ATENDIMENTO');
-              await iframe.select('select#IE_REGIME_ATENDIMENTO', '01');
-
-              await iframe.waitForSelector('#btnSalvar');
-              await iframe.$eval('#btnSalvar', (button) => button.click());
-              await page.waitForTimeout(500);
-
-              await iframe.waitForSelector('#btnVoltar');
-              await iframe.$eval('#btnVoltar', (button) => button.click());
-              await page.waitForTimeout(1000);
-
-              // Print the time spent running the application
-              await logToFile(
-                index,
-                codigoGuia,
-                numeroCarteirinha,
-                nomePaciente,
-                dataExec,
-                crmMedico,
-                nomeMedico
-              );
-
-              if (index === lines.length - 1) {
-                const completionMessage = `==> ${
-                  index + 1
-                } Faturmentos concluídos em ${elapsedTime(startTime)}\n`;
-                console.log(completionMessage);
-                await fs.appendFile('log faturamento.txt', completionMessage);
-              }
-            }
-          }
-        }
-      }
-    }
-  } catch (error) {
-    console.error('Error:', error);
-  } finally {
-    await browser.close();
-  }
+  page.on('popup', async (popup) => {
+    await popup.waitForLoadState();
+    popup.close();
+  });
+  await processCSV(page);
+  browser.close();
 })();
