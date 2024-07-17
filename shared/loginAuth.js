@@ -1,57 +1,41 @@
 const { chromium } = require('playwright');
-const path = require('path');
-const dotenv = require('dotenv');
-dotenv.config({ path: path.resolve(__dirname, '../.env') });
+const { credentials, urls, retrySettings } = require('./config');
+const { logMessage, retry } = require('./helper');
 
-const login = process.env.LOGIN;
-const password = process.env.PASSWORD;
-
-if (!login || !password) {
-  console.error('Environment variables LOGIN and PASSWORD are required');
-  process.exit(1);
-}
 async function loginAuth() {
-  console.clear();
-  console.log('INICIANDO LOGIN...');
-  let retries = 3;
-  while (retries > 0) {
-    let browser;
-    let page;
-    try {
-      browser = await chromium.launch({ headless: false });
-      const context = await browser.newContext();
-      page = await context.newPage();
-      page.setDefaultTimeout(5000);
-      await page.setViewportSize({ width: 1024, height: 800 });
-      await page.goto('https://portal.unimedpalmas.coop.br/', {
-        waitUntil: 'domcontentloaded',
-      });
+  let browser, page;
 
-      const frame = page
-        .frameLocator('iframe >> nth=0')
-        .frameLocator('#principal');
+  const execute = async () => {
+    browser = await chromium.launch({ headless: false });
+    const context = await browser.newContext();
+    page = await context.newPage();
+    page.setDefaultTimeout(retrySettings.defaultTimeout);
+    await page.setViewportSize({ width: 1024, height: 800 });
+    await page.goto(urls.loginPage, {
+      waitUntil: 'domcontentloaded',
+    });
 
-      await frame.locator('#tipoUsuario').selectOption('P');
-      await frame.locator('#nmUsuario').click();
-      await frame.locator('#nmUsuario').fill(login);
-      await frame.locator('#dsSenha').click();
-      await frame.locator('#dsSenha').fill(password);
-      await frame.getByRole('button', { name: 'Entrar' }).click();
+    const frame = page
+      .frameLocator('iframe >> nth=0')
+      .frameLocator('#principal');
 
-      console.clear();
-      console.log('LOGIN ACEITO! AGUARDE...');
+    await frame.locator('#tipoUsuario').selectOption('P');
+    await frame.locator('#nmUsuario').click();
+    await frame.locator('#nmUsuario').fill(credentials.login);
+    await frame.locator('#dsSenha').click();
+    await frame.locator('#dsSenha').fill(credentials.password);
+    await frame.getByRole('button', { name: 'Entrar' }).click();
+  };
 
-      return { page, browser };
-    } catch (error) {
-      console.error(`A TENTATIVA DE LOGIN FALHOU! ERRO: ${error}!`);
-      console.log(`TENTATIVAS DE LOGIN RESTANTES: ${retries - 1}! AGUARDE...`);
-
-      if (page) await page.close();
-      if (browser) await browser.close();
-    }
-    retries--;
+  try {
+    await retry(execute);
+    console.clear();
+    logMessage('green', 'USUÁRIO LOGADO!');
+    return { page, browser };
+  } catch (error) {
+    logMessage('red', 'Falha ao processar dados do usuário: ' + error.message);
+    throw error;
   }
-  throw new Error('Login failed after 3 attempts');
 }
 
 module.exports = { loginAuth };

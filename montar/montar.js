@@ -1,48 +1,41 @@
 const fs = require('fs').promises;
-const winston = require('winston');
-const logColors = require('ansi-colors');
 const { loginAuth } = require('../shared/loginAuth');
-const config = require('./config');
+const { logMessage, isAMonthOlder } = require('../shared/helper');
+const config = require('../shared/config');
 
-const logger = winston.createLogger({
-  level: 'info',
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.printf(({ timestamp, level, message }) => {
-      return `${timestamp} [${level}]: ${message}`;
-    })
-  ),
-  transports: [
-    new winston.transports.Console(),
-    new winston.transports.File({ filename: 'app.log' }),
-  ],
-});
+async function getPaginationUrls(pageContent) {
+  const paginationRegex = /href="pls_montarConsultaAut(.*?)"/gs;
+  return pageContent.match(paginationRegex) || [];
+}
 
 async function extractDates(pageContent) {
-  const paginationRegex = /href="pls_montarConsultaAut(.*?)"/gs;
-  const paginationMatch = pageContent.match(paginationRegex);
+  const paginationMatch = await getPaginationUrls(pageContent);
 
   if (!paginationMatch) {
-    throw new Error('Pagination URLs not found in page content.');
+    throw new Error(
+      'function extractDates: Pagination URLs not found in page content.'
+    );
   }
 
   const dateRegex = /dtInicio=([\d\/]+)&amp;dtFim=([\d\/]+)/;
   const match = paginationMatch[0].match(dateRegex);
 
   if (!match) {
-    throw new Error('Dates not found in pagination URL.');
+    throw new Error(
+      'function extractDates: Dates not found in pagination URL.'
+    );
   }
   return { dtInicio: match[1], dtFim: match[2] };
 }
 
 async function extractAndSaveData(pageContent) {
   const regex = /<td class="line-content">\["(.*?)"],<\/td>/gs;
-  let match = 0;
-  let count = 0;
-  let data = null;
+  let match,
+    count = 0,
+    data = null;
   while ((match = regex.exec(pageContent)) !== null && count < 30) {
     data = await concatenateDataAtPositions(match[1]);
-    await fs.appendFile('guiasFaturar.csv', `${data}\n`);
+    await fs.appendFile(config.paths.outputFile, `${data}\n`);
     count++;
   }
   return data;
@@ -50,35 +43,19 @@ async function extractAndSaveData(pageContent) {
 
 async function concatenateDataAtPositions(dataString) {
   const dataArray = await clearData(dataString);
-  const positions = [1, 29, 2, 3, 17, 5, 16];
+  const positions = config.dataPositions;
   const concatenatedData = positions
-    .map((position) => {
-      if (position === 29) {
-        return findSpecificData(dataArray) || '';
-      } else {
-        return dataArray[position - 1] || '';
-      }
-    })
+    .map((position) =>
+      position === 29
+        ? findSpecificData(dataArray) || ''
+        : dataArray[position - 1] || ''
+    )
     .join(';');
   return concatenatedData;
 }
 
 function findSpecificData(data) {
-  for (let item of data) {
-    if (item.length === 17 && /^\d+$/.test(item)) {
-      return item;
-    }
-  }
-  return null;
-}
-
-function isAtLeastOneMonthOld(dateString) {
-  const dateParts = dateString.split(';')[2].split(' ')[0].split('/');
-  const inputDate = new Date(`${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`);
-  const today = new Date();
-  const diffInMilliseconds = today - inputDate;
-  const diffInDays = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24));
-  return diffInDays >= 30;
+  return data.find((item) => item.length === 17 && /^\d+$/.test(item)) || null;
 }
 
 async function clearData(dataString) {
@@ -89,65 +66,68 @@ async function clearData(dataString) {
     .map((item) => item.trim());
 }
 
-async function loginAndRedirect() {
-  const { page, browser } = await loginAuth();
+async function loginAndNavigate() {
+  try {
+    const { page, browser } = await loginAuth();
+    const frame = await getFrame(page);
+    await frame.getByText('Autorização', { exact: true }).click();
+    await frame.getByText('» Consulta de autorizações').click();
+    logMessage('green', 'REDIRECIONANDO! AGUARDE...');
+    return { page, browser };
+  } catch (error) {
+    logMessage('yellow', `O REDIRECIONAMENTO FALHOU! ERRO: ${error.message}!`);
+    throw error;
+  }
+}
 
-  const frame = page
+async function getFrame(page) {
+  return page
     .frameLocator('iframe >> nth=0')
     .frameLocator('#principal')
     .frameLocator('td iframe')
     .frameLocator('frame >> nth=0');
-
-  try {
-    await frame.getByText('Autorização', { exact: true }).click();
-    await frame.getByText('» Consulta de autorizações').click();
-
-    console.clear();
-    console.log(logColors.bgGreenBright(`REDIRECIONANDO! AGUARDE...`));
-    return { page, browser };
-  } catch (error) {
-    console.error(
-      logColors.bgYellowBright(
-        `O REDIRECIONAMENTO FALHOU! ERRO: ${error.name}!`
-      )
-    );
-    await browser.close();
-    throw error;
-  }
 }
+
+async function constructPaginationUrl(dtInicio, dtFim, index) {
+  return `view-source:https://portal.unimedpalmas.coop.br/pls_montarConsultaAut.action?dtInicio=${dtInicio}&dtFim=${dtFim}&ieTipoProcesso=&ieTipoGuia=&ieTipoConsulta=&cdGuia=&cdBeneficiario=&cdMedico=&cdPrestador=&cdSenha=&ieStatus=&cdGuiaManual=&clickPaginacao=S&nrRegistroInicio=${index}`;
+}
+
+async function getPaginationUrls(pageContent) {
+  const paginationRegex = /href="pls_montarConsultaAut(.*?)"/gs;
+  return pageContent.match(paginationRegex) || [];
+}
+
 (async () => {
-  const { page, browser } = await loginAndRedirect();
+  fs.appendFile(config.paths.outputFile, '');
+  const { page, browser } = await loginAndNavigate();
   try {
-    await page.waitForResponse(
-      'https://portal.unimedpalmas.coop.br/wheb_gridDet.jsp'
-    );
-    await page.goto('https://portal.unimedpalmas.coop.br/wheb_gridDet.jsp', {
+    await page.waitForResponse(config.urls.targetPage);
+    await page.goto(config.urls.targetPage, {
       waitUntil: 'domcontentloaded',
     });
-    const pageContent = await page.content()
+    const pageContent = await page.content();
     const { dtInicio, dtFim } = await extractDates(pageContent);
-    let paginationUrl = '';
+
     let index = 0;
     let counter = 1;
     let lastDataString = null;
+
     do {
-      paginationUrl = `view-source:https://portal.unimedpalmas.coop.br/pls_montarConsultaAut.action?dtInicio=${dtInicio}&dtFim=${dtFim}&ieTipoProcesso=&ieTipoGuia=&ieTipoConsulta=&cdGuia=&cdBeneficiario=&cdMedico=&cdPrestador=&cdSenha=&ieStatus=&cdGuiaManual=&clickPaginacao=S&nrRegistroInicio=${index}`;
-      await page.goto(paginationUrl, {
-        waitUntil: 'load',
-      });
+      const paginationUrl = await constructPaginationUrl(
+        dtInicio,
+        dtFim,
+        index
+      );
+      await page.goto(paginationUrl, { waitUntil: 'load' });
       const pageContent = await page.content();
       lastDataString = await extractAndSaveData(pageContent);
       lastDataString &&
-        console.log(
-          logColors.bgCyanBright(
-            `LOTE ${counter} EXTRAIDO COM SUCESSO! AGUARDE...`
-          )
-        );
+        logMessage('white', `LOTE ${counter} EXTRAIDO COM SUCESSO! AGUARDE...`);
       index += 30;
       counter++;
-    } while (lastDataString && !isAtLeastOneMonthOld(lastDataString));
+    } while (lastDataString && !isAMonthOlder(lastDataString));
     await browser.close();
   } catch (error) {
-    console.error(`ERRO FATAL DE EXECUÇÃO: ${error}!`);
+    logMessage('red', `ERRO FATAL DE EXECUÇÃO: ${error}!`);
   }
 })();
