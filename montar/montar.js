@@ -1,7 +1,7 @@
 const fs = require('fs').promises;
 const { loginAuth } = require('../shared/loginAuth');
 const { logMessage, isAMonthOlder } = require('../shared/helper');
-const config = require('../shared/config');
+const { paths, dataPositions, urls } = require('../shared/config');
 
 async function getPaginationUrls(pageContent) {
   const paginationRegex = /href="pls_montarConsultaAut(.*?)"/gs;
@@ -35,7 +35,7 @@ async function extractAndSaveData(pageContent) {
     data = null;
   while ((match = regex.exec(pageContent)) !== null && count < 30) {
     data = await concatenateDataAtPositions(match[1]);
-    await fs.appendFile(config.paths.outputFile, `${data}\n`);
+    await fs.appendFile(paths.outputFile, `${data}\n`);
     count++;
   }
   return data;
@@ -43,7 +43,7 @@ async function extractAndSaveData(pageContent) {
 
 async function concatenateDataAtPositions(dataString) {
   const dataArray = await clearData(dataString);
-  const positions = config.dataPositions;
+  const positions = dataPositions;
   const concatenatedData = positions
     .map((position) =>
       position === 29
@@ -98,11 +98,11 @@ async function getPaginationUrls(pageContent) {
 }
 
 (async () => {
-  fs.appendFile(config.paths.outputFile, '');
+  fs.writeFile(paths.outputFile, '');
   const { page, browser } = await loginAndNavigate();
   try {
-    await page.waitForResponse(config.urls.targetPage);
-    await page.goto(config.urls.targetPage, {
+    await page.waitForResponse(urls.targetPage);
+    await page.goto(urls.targetPage, {
       waitUntil: 'domcontentloaded',
     });
     const pageContent = await page.content();

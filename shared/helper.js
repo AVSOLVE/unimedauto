@@ -16,6 +16,7 @@ module.exports = {
     const colorFunction = colorFunctions[level] || logColors.white;
     console.log(colorFunction(message));
   },
+
   getElapsedTime: (startTime) => {
     const timeInSeconds = Math.floor((new Date() - startTime) / 1000);
     if (timeInSeconds < 60) {
@@ -39,6 +40,7 @@ module.exports = {
       }
     }
   },
+
   formatElapsedTime: (elapsedTime) => {
     const totalSeconds = Math.floor(elapsedTime / 1000);
     const hours = Math.floor(totalSeconds / 3600);
@@ -50,6 +52,7 @@ module.exports = {
       '0'
     )}:${String(seconds).padStart(2, '0')}`;
   },
+
   isAMonthOlder: (dateString) => {
     const [day, month, year] = dateString
       .split(';')[2]
@@ -58,8 +61,9 @@ module.exports = {
     const inputDate = new Date(`${year}-${month}-${day}`);
     const today = new Date();
     const diffInDays = Math.floor((today - inputDate) / (1000 * 60 * 60 * 24));
-    return diffInDays >= 31;
+    return diffInDays >= 30;
   },
+
   retry: async (fn) => {
     const retries = retrySettings.maxRetries;
     const delay = retrySettings.delayBetweenRetries;

@@ -1,30 +1,30 @@
 const fs = require('fs').promises;
-const logColors = require('ansi-colors');
 const { loginAuth } = require('../shared/loginAuth');
+const { logMessage, retry } = require('../shared/helper');
 
-async function loginAndRedirect() {
-  const { page, browser } = await loginAuth();
-
-  const frame = page
+async function getFrame(page) {
+  return page
     .frameLocator('iframe >> nth=0')
     .frameLocator('#principal')
     .frameLocator('td iframe')
     .frameLocator('frame >> nth=0');
+}
 
-  try {
+async function loginAndNavigate() {
+  const { page, browser } = await loginAuth();
+
+  const execute = async () => {
+    const frame = await getFrame(page);
     await frame.getByText('Execução da requisição').click();
-
     await frame.getByText('» Executar requisição').click();
-    
+  };
+  try {
+    await retry(execute);
     console.clear();
-    console.log(logColors.bgGreenBright(`REDIRECIONANDO! AGUARDE...`));
+    logMessage('green', 'REDIRECIONANDO! AGUARDE...');
     return { page, browser };
   } catch (error) {
-    console.error(
-      logColors.bgYellowBright(
-        `O REDIRECIONAMENTO FALHOU! ERRO: ${error.name}!`
-      )
-    );
+    logMessage('yellow', `O REDIRECIONAMENTO FALHOU! ERRO: ${error.message}!`);
     await browser.close();
     throw error;
   }
@@ -58,30 +58,25 @@ async function procuraGuia(frame, codigoBeneficiario, nomeBeneficiario) {
         .count();
 
       if (qtdGuia > 1) {
-        console.log(
-          logColors.bgRedBright(`QTD DE GUIAS: ${qtdGuia} \nVERIFIQUE!`)
-        );
+        logMessage('red', `QTD DE GUIAS: ${qtdGuia} \nVERIFIQUE!`);
       }
 
-      console.log(
-        logColors.whiteBright(
-          `*******************************************************\n`
-        ) +
-          logColors.bgWhiteBright(
-            `REQUISIÇÃO ${req} \nQTD APROVADA: ${qtdAp} `
-          ) +
-          logColors.bgYellowBright(`\nQTD RESTANTE: ${qtdRes - 1} `)
-      );
+      logMessage(
+        'white',
+        `*******************************************************\n`
+      ) +
+        logMessage('white', `REQUISIÇÃO ${req} \nQTD APROVADA: ${qtdAp} `) +
+        logMessage('yellow', `\nQTD RESTANTE: ${qtdRes - 1} `);
 
       await frame.locator('input[type="checkbox"]').first().click();
       return true;
     }
   } catch (error) {
-    console.warn(
-      logColors.bgWhiteBright(
-        `${nomeBeneficiario.toUpperCase()} ==> SEM GUIAS PARA EXECUTAR!`
-      )
+    logMessage(
+      'white',
+      `${nomeBeneficiario.toUpperCase()} ==> SEM GUIAS PARA EXECUTAR!`
     );
+
     return false;
   }
 }
@@ -90,26 +85,20 @@ async function procuraGuia(frame, codigoBeneficiario, nomeBeneficiario) {
   const fileContent = await fs.readFile('guiasExecutar.csv', 'utf-8');
   const lines = fileContent.trim().split('\n');
   try {
-    const { page, browser } = await loginAndRedirect();
+    const { page, browser } = await loginAndNavigate();
     for (const line of lines) {
       const [codigoBeneficiario, nomePaciente] = line.trim().split(';');
       if (codigoBeneficiario.trim().length === 17) {
-        console.log(
-          logColors.bgGreenBright(
-            `Executando GUIA: ${codigoBeneficiario} -  ${nomePaciente.toUpperCase()}`
-          )
+        logMessage(
+          'green',
+          `Executando GUIA: ${codigoBeneficiario} -  ${nomePaciente.toUpperCase()}`
         );
-        const frame = page
-          .frameLocator('iframe >> nth=0')
-          .frameLocator('#principal')
-          .frameLocator('td iframe')
-          .frameLocator('#paginaPrincipal');
+
+        const frame = await getFrame(page);
 
         if ((await procuraGuia(frame, codigoBeneficiario, '***')) === false) {
           await frame.getByRole('button', { name: 'Nova consulta' }).click();
-
-          console.log(logColors.bgWhiteBright('PRÓXIMO! AGUARDE...'));
-
+          logMessage('white', 'PRÓXIMO! AGUARDE...');
           continue;
         } else {
           await frame.getByRole('button', { name: 'Gerar guia' }).click();
@@ -121,13 +110,11 @@ async function procuraGuia(frame, codigoBeneficiario, nomeBeneficiario) {
           await frame.getByRole('button', { name: 'Voltar' }).click();
         }
       } else {
-        console.warn(
-          logColors.bgYellowBright(`Invalid code: ${codigoBeneficiario}`)
-        );
+        logMessage('yellow', `Invalid code: ${codigoBeneficiario}`);
       }
     }
     await browser.close();
   } catch (error) {
-    console.error('Error processing guide codes:', error);
+    logMessage('red', 'Error processing guide codes:', error);
   }
 })();
