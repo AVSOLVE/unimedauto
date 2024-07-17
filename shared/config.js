@@ -16,8 +16,8 @@ module.exports = {
   },
   dataPositions: [1, 29, 2, 3, 17, 5, 16],
   retrySettings: {
-    defaultTimeout: 3000,
+    defaultTimeout: 5000,
     maxRetries: 3,
-    delayBetweenRetries: 2000,
+    delayBetweenRetries: 3000,
   },
 };

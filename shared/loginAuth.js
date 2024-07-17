@@ -9,6 +9,10 @@ async function loginAuth() {
     browser = await chromium.launch({ headless: false });
     const context = await browser.newContext();
     page = await context.newPage();
+    page.on('dialog', async (dialog) => {
+      logMessage('cyan', `DIALOG: ${dialog.message()}`);
+      await dialog.accept();
+    });
     page.setDefaultTimeout(retrySettings.defaultTimeout);
     await page.setViewportSize({ width: 1024, height: 800 });
     await page.goto(urls.loginPage, {
