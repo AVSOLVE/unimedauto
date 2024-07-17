@@ -36,13 +36,15 @@ async function extractDates(pageContent) {
 }
 
 async function extractAndSaveData(pageContent) {
-  const regex = /<td class="line-content">\["(.*?)"],<\/td>/gs;
-  let match = 0;
-  let count = 0;
-  let data = null;
+  const regex = /var\s+vlColunas\s*=\s*(\[[^\]]*\])/;
+  console.log('extractAndSaveData', pageContent, regex.exec(pageContent));
+  let match,
+    count = 0,
+    data = null;
   while ((match = regex.exec(pageContent)) !== null && count < 30) {
     data = await concatenateDataAtPositions(match[1]);
-    await fs.appendFile('guiasFaturar.csv', `${data}\n`);
+    console.log('extractAndSaveData', data);
+    await fs.appendFile(config.paths.outputFile, `${data}\n`);
     count++;
   }
   return data;
@@ -50,34 +52,26 @@ async function extractAndSaveData(pageContent) {
 
 async function concatenateDataAtPositions(dataString) {
   const dataArray = await clearData(dataString);
-  const positions = [1, 29, 2, 3, 17, 5, 16];
+  const positions = config.dataPositions;
   const concatenatedData = positions
-    .map((position) => {
-      if (position === 29) {
-        return findSpecificData(dataArray) || '';
-      } else {
-        return dataArray[position - 1] || '';
-      }
-    })
+    .map((position) =>
+      position === 29
+        ? findSpecificData(dataArray) || ''
+        : dataArray[position - 1] || ''
+    )
     .join(';');
   return concatenatedData;
 }
 
 function findSpecificData(data) {
-  for (let item of data) {
-    if (item.length === 17 && /^\d+$/.test(item)) {
-      return item;
-    }
-  }
-  return null;
+  return data.find((item) => item.length === 17 && /^\d+$/.test(item)) || null;
 }
 
 function isAtLeastOneMonthOld(dateString) {
-  const dateParts = dateString.split(';')[2].split(' ')[0].split('/');
-  const inputDate = new Date(`${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`);
+  const [day, month, year] = dateString.split(';')[2].split(' ')[0].split('/');
+  const inputDate = new Date(`${year}-${month}-${day}`);
   const today = new Date();
-  const diffInMilliseconds = today - inputDate;
-  const diffInDays = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24));
+  const diffInDays = Math.floor((today - inputDate) / (1000 * 60 * 60 * 24));
   return diffInDays >= 30;
 }
 
@@ -89,54 +83,65 @@ async function clearData(dataString) {
     .map((item) => item.trim());
 }
 
-async function loginAndRedirect() {
-  const { page, browser } = await loginAuth();
-
-  const frame = page
-    .frameLocator('iframe >> nth=0')
-    .frameLocator('#principal')
-    .frameLocator('td iframe')
-    .frameLocator('frame >> nth=0');
-
+async function loginAndNavigate() {
   try {
+    const { page, browser } = await loginAuth();
+    const frame = await getFrame(page);
     await frame.getByText('Autorização', { exact: true }).click();
     await frame.getByText('» Consulta de autorizações').click();
-
-    console.clear();
-    console.log(logColors.bgGreenBright(`REDIRECIONANDO! AGUARDE...`));
+    console.log(logColors.bgGreenBright('REDIRECIONANDO! AGUARDE...'));
     return { page, browser };
   } catch (error) {
     console.error(
       logColors.bgYellowBright(
-        `O REDIRECIONAMENTO FALHOU! ERRO: ${error.name}!`
+        `O REDIRECIONAMENTO FALHOU! ERRO: ${error.message}!`
       )
     );
-    await browser.close();
     throw error;
   }
 }
+
+async function getFrame(page) {
+  return page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('frame >> nth=0');
+}
+
+async function extractAndSaveDataParallel(paginationUrls) {
+  const { page } = await loginAndNavigate(); // Login and get the page instance
+  const promises = paginationUrls.map(async (url) => {
+    await page.goto(url, { waitUntil: 'load' });
+    const pageContent = await page.content();
+    return await extractAndSaveData(pageContent);
+  });
+  const results = await Promise.all(promises);
+  await page.browser().close(); // Close the browser instance after processing
+  return results;
+}
+
+function constructPaginationUrl(dtInicio, dtFim, index) {
+  return `https://portal.unimedpalmas.coop.br/pls_montarConsultaAut.action?dtInicio=${dtInicio}&dtFim=${dtFim}&ieTipoProcesso=&ieTipoGuia=&ieTipoConsulta=&cdGuia=&cdBeneficiario=&cdMedico=&cdPrestador=&cdSenha=&ieStatus=&cdGuiaManual=&clickPaginacao=S&nrRegistroInicio=${index}`;
+}
+
 (async () => {
-  const { page, browser } = await loginAndRedirect();
+  const { page, browser } = await loginAndNavigate();
   try {
-    await page.waitForResponse(
-      'https://portal.unimedpalmas.coop.br/wheb_gridDet.jsp'
-    );
-    await page.goto('https://portal.unimedpalmas.coop.br/wheb_gridDet.jsp', {
-      waitUntil: 'domcontentloaded',
-    });
-    const pageContent = await page.content()
+    await page.waitForResponse(config.urls.targetPage);
+    await page.goto(config.urls.targetPage, { waitUntil: 'domcontentloaded' });
+    const pageContent = await page.content();
     const { dtInicio, dtFim } = await extractDates(pageContent);
-    let paginationUrl = '';
+    console.log(dtInicio, dtFim);
     let index = 0;
     let counter = 1;
     let lastDataString = null;
     do {
-      paginationUrl = `view-source:https://portal.unimedpalmas.coop.br/pls_montarConsultaAut.action?dtInicio=${dtInicio}&dtFim=${dtFim}&ieTipoProcesso=&ieTipoGuia=&ieTipoConsulta=&cdGuia=&cdBeneficiario=&cdMedico=&cdPrestador=&cdSenha=&ieStatus=&cdGuiaManual=&clickPaginacao=S&nrRegistroInicio=${index}`;
-      await page.goto(paginationUrl, {
-        waitUntil: 'load',
-      });
+      const paginationUrl = constructPaginationUrl(dtInicio, dtFim, index);
+      await page.goto(paginationUrl, { waitUntil: 'load' });
       const pageContent = await page.content();
       lastDataString = await extractAndSaveData(pageContent);
+
       lastDataString &&
         console.log(
           logColors.bgCyanBright(
@@ -146,8 +151,9 @@ async function loginAndRedirect() {
       index += 30;
       counter++;
     } while (lastDataString && !isAtLeastOneMonthOld(lastDataString));
-    await browser.close();
+    // await browser.close();
   } catch (error) {
     console.error(`ERRO FATAL DE EXECUÇÃO: ${error}!`);
+    // await browser.close();
   }
 })();
