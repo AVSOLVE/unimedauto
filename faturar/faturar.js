@@ -290,17 +290,6 @@ async function processCSV(page) {
 
 (async () => {
   const { page, browser } = await loginAndNavigate();
-
-  page.on('dialog', async (dialog) => {
-    await dialog.accept();
-    logMessage('blue', `===> ${dialog.message()}`);
-  });
-
-  page.on('popup', async (popup) => {
-    await popup.waitForLoadState();
-    popup.close();
-  });
-
   await processCSV(page);
   browser.close();
 })();

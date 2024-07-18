@@ -28,7 +28,7 @@ async function loginAndNavigate() {
     logMessage('green', 'REDIRECIONANDO! AGUARDE...');
     return { page, browser };
   } catch (error) {
-    logMessage('yellow', `O REDIRECIONAMENTO FALHOU! ${error.message}!`);
+    logMessage('yellow', `O REDIRECIONAMENTO FALHOU! ERRO: ${error.message}!`);
     throw error;
   }
 }
@@ -44,15 +44,23 @@ async function getFrame(page) {
 (async () => {
   const { page, browser } = await loginAndNavigate();
   const frame = await getFrame(page);
-  let limit = 90;
-  while (limit > 0) {
+  while (true) {
     try {
-      await frame.getByRole('cell', { name: 'Detalhe' }).first().click();
-      await frame.locator('#btnExcluir').click();
+      const condition = await frame
+        .getByRole('cell', { name: 'Possui inconsistências' })
+        .first();
+
+      if (condition) {
+        await frame
+          .locator('tr:has-text("Possui inconsistências") > td:nth-child(9)')
+          .first()
+          .click();
+
+        await frame.locator('#btnExcluir').click();
+      }
     } catch (error) {
       break;
     }
-    limit--;
   }
-  await browser.close();
+  browser.close();
 })();

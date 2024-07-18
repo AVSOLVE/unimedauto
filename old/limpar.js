@@ -10,7 +10,7 @@ function extractNumberFromOnClick(onClickAttribute) {
 
 (async () => {
   console.clear();
-  for (let i = 0; i < 27; i++) {
+  for (let i = 0; i < 18; i++) {
     const browser = await puppeteer.launch({
       headless: false,
       defaultViewport: null,

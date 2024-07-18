@@ -61,7 +61,7 @@ module.exports = {
     const inputDate = new Date(`${year}-${month}-${day}`);
     const today = new Date();
     const diffInDays = Math.floor((today - inputDate) / (1000 * 60 * 60 * 24));
-    return diffInDays >= 30;
+    return diffInDays >= 32;
   },
 
   retry: async (fn) => {
