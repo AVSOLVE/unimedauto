@@ -33,7 +33,6 @@ async function loginAndNavigate() {
 async function procuraGuia(frame, codigoBeneficiario, nomeBeneficiario) {
   try {
     await frame.locator('#CD_USUARIO_PLANO').type(codigoBeneficiario);
-
     const codigoBenef = await frame.locator('#CD_USUARIO_PLANO').inputValue();
 
     if ((codigoBenef && codigoBenef !== codigoBeneficiario) || !codigoBenef) {
@@ -44,7 +43,6 @@ async function procuraGuia(frame, codigoBeneficiario, nomeBeneficiario) {
     await frame.locator('#CD_USUARIO_PLANO').press('Tab');
 
     nomeBeneficiario = await frame.locator('#NM_SEGURADO').inputValue();
-
     if (!nomeBeneficiario) {
       throw new Error('Beneficiário não encontrado!');
     } else {
@@ -94,7 +92,11 @@ async function procuraGuia(frame, codigoBeneficiario, nomeBeneficiario) {
           `Executando GUIA: ${codigoBeneficiario} -  ${nomePaciente.toUpperCase()}`
         );
 
-        const frame = await getFrame(page);
+        const frame = page
+          .frameLocator('iframe >> nth=0')
+          .frameLocator('#principal')
+          .frameLocator('td iframe')
+          .frameLocator('#paginaPrincipal');
 
         if ((await procuraGuia(frame, codigoBeneficiario, '***')) === false) {
           await frame.getByRole('button', { name: 'Nova consulta' }).click();
