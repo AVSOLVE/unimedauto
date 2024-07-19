@@ -1,34 +1,6 @@
 const fs = require('fs').promises;
-const { loginAuth } = require('../shared/loginAuth');
-const { logMessage, retry } = require('../shared/helper');
-
-async function getFrame(page) {
-  return page
-    .frameLocator('iframe >> nth=0')
-    .frameLocator('#principal')
-    .frameLocator('td iframe')
-    .frameLocator('frame >> nth=0');
-}
-
-async function loginAndNavigate() {
-  const { page, browser } = await loginAuth();
-
-  const execute = async () => {
-    const frame = await getFrame(page);
-    await frame.getByText('Execução da requisição').click();
-    await frame.getByText('» Executar requisição').click();
-  };
-  try {
-    await retry(execute);
-    console.clear();
-    logMessage('green', 'REDIRECIONANDO! AGUARDE...');
-    return { page, browser };
-  } catch (error) {
-    logMessage('yellow', `O REDIRECIONAMENTO FALHOU! ERRO: ${error.message}!`);
-    await browser.close();
-    throw error;
-  }
-}
+const { loginAndNavigate } = require('../shared/loginAuth');
+const { logMessage, retry, getPrincipalFrame } = require('../shared/helper');
 
 async function procuraGuia(frame, codigoBeneficiario, nomeBeneficiario) {
   try {
@@ -79,11 +51,23 @@ async function procuraGuia(frame, codigoBeneficiario, nomeBeneficiario) {
   }
 }
 
+async function executeNavigation(page) {
+  const frame = page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('frame >> nth=0');
+  await frame.getByText('Execução da requisição').click();
+  await frame.getByText('» Executar requisição').click();
+}
+
 (async () => {
   const fileContent = await fs.readFile('guiasExecutar.csv', 'utf-8');
   const lines = fileContent.trim().split('\n');
+
   try {
-    const { page, browser } = await loginAndNavigate();
+    const { page, browser } = await loginAndNavigate(executeNavigation);
+
     for (const line of lines) {
       const [codigoBeneficiario, nomePaciente] = line.trim().split(';');
       if (codigoBeneficiario.trim().length === 17) {
@@ -92,11 +76,7 @@ async function procuraGuia(frame, codigoBeneficiario, nomeBeneficiario) {
           `Executando GUIA: ${codigoBeneficiario} -  ${nomePaciente.toUpperCase()}`
         );
 
-        const frame = page
-          .frameLocator('iframe >> nth=0')
-          .frameLocator('#principal')
-          .frameLocator('td iframe')
-          .frameLocator('#paginaPrincipal');
+        const frame = await getPrincipalFrame(page);
 
         if ((await procuraGuia(frame, codigoBeneficiario, '***')) === false) {
           await frame.getByRole('button', { name: 'Nova consulta' }).click();

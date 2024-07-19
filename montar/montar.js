@@ -1,5 +1,5 @@
 const fs = require('fs').promises;
-const { loginAuth } = require('../shared/loginAuth');
+const { loginAndNavigate } = require('../shared/loginAuth');
 const { logMessage, isAMonthOlder } = require('../shared/helper');
 const { paths, dataPositions, urls } = require('../shared/config');
 
@@ -66,28 +66,6 @@ async function clearData(dataString) {
     .map((item) => item.trim());
 }
 
-async function loginAndNavigate() {
-  try {
-    const { page, browser } = await loginAuth();
-    const frame = await getFrame(page);
-    await frame.getByText('Autorização', { exact: true }).click();
-    await frame.getByText('» Consulta de autorizações').click();
-    logMessage('green', 'REDIRECIONANDO! AGUARDE...');
-    return { page, browser };
-  } catch (error) {
-    logMessage('yellow', `O REDIRECIONAMENTO FALHOU! ERRO: ${error.message}!`);
-    throw error;
-  }
-}
-
-async function getFrame(page) {
-  return page
-    .frameLocator('iframe >> nth=0')
-    .frameLocator('#principal')
-    .frameLocator('td iframe')
-    .frameLocator('frame >> nth=0');
-}
-
 async function constructPaginationUrl(dtInicio, dtFim, index) {
   return `view-source:https://portal.unimedpalmas.coop.br/pls_montarConsultaAut.action?dtInicio=${dtInicio}&dtFim=${dtFim}&ieTipoProcesso=&ieTipoGuia=&ieTipoConsulta=&cdGuia=&cdBeneficiario=&cdMedico=&cdPrestador=&cdSenha=&ieStatus=&cdGuiaManual=&clickPaginacao=S&nrRegistroInicio=${index}`;
 }
@@ -97,9 +75,19 @@ async function getPaginationUrls(pageContent) {
   return pageContent.match(paginationRegex) || [];
 }
 
+async function executeNavigation(page) {
+  const frame = page
+    .frameLocator('iframe >> nth=0')
+    .frameLocator('#principal')
+    .frameLocator('td iframe')
+    .frameLocator('frame >> nth=0');
+  await frame.getByText('Autorização', { exact: true }).click();
+  await frame.getByText('» Consulta de autorizações').click();
+}
+
 (async () => {
   fs.writeFile(paths.outputFile, '');
-  const { page, browser } = await loginAndNavigate();
+  const { page, browser } = await loginAndNavigate(executeNavigation);
   try {
     await page.waitForResponse(urls.targetPage);
     await page.goto(urls.targetPage, {

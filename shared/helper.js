@@ -87,4 +87,20 @@ module.exports = {
       }
     }
   },
+  
+  getNthFrame: async (page) => {
+    return page
+      .frameLocator('iframe >> nth=0')
+      .frameLocator('#principal')
+      .frameLocator('td iframe')
+      .frameLocator('frame >> nth=0');
+  },
+
+  getPrincipalFrame: async (page) => {
+    return page
+      .frameLocator('iframe >> nth=0')
+      .frameLocator('#principal')
+      .frameLocator('td iframe')
+      .frameLocator('#paginaPrincipal');
+  },
 };

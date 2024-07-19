@@ -6,7 +6,7 @@ async function loginAuth() {
   let browser, page;
 
   const execute = async () => {
-    browser = await chromium.launch({ headless: false });
+    browser = await chromium.launch({ headless: true });
     const context = await browser.newContext();
     page = await context.newPage();
 
@@ -49,4 +49,22 @@ async function loginAuth() {
   }
 }
 
-module.exports = { loginAuth };
+async function loginAndNavigate(executeFn) {
+  const { page, browser } = await loginAuth();
+  try {
+    await retry(() => executeFn(page));
+    console.clear();
+    logMessage('green', 'REDIRECIONANDO! AGUARDE...');
+    return { page, browser };
+  } catch (error) {
+    logMessage('yellow', `O REDIRECIONAMENTO FALHOU! ERRO: ${error.message}!`);
+    await browser.close();
+    throw error;
+  }
+}
+
+
+module.exports = {
+  loginAuth,
+  loginAndNavigate
+};
