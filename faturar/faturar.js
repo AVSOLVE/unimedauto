@@ -120,7 +120,7 @@ async function handleDadosUsuario(
     await retry(execute);
     logMessage('green', 'Dados do usuário processados com sucesso!');
   } catch (error) {
-    logMessage('red', 'Falha ao processar dados do usuário: ' + error.message);
+    logMessage('red', 'Falha ao processar dados do beneficiário: ' + error.message);
     throw error;
   }
 }
