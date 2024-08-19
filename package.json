@@ -17,7 +17,7 @@
     "playwright-chromium": "^1.42.1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.42.1",
+    "@playwright/test": "^1.46.1",
     "@types/node": "^20.11.30",
     "pkg": "^5.5.1"
   }

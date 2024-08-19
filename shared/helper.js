@@ -87,7 +87,7 @@ module.exports = {
       }
     }
   },
-  
+
   getNthFrame: async (page) => {
     return page
       .frameLocator('iframe >> nth=0')
@@ -102,5 +102,29 @@ module.exports = {
       .frameLocator('#principal')
       .frameLocator('td iframe')
       .frameLocator('#paginaPrincipal');
+  },
+
+  matchCode: async (code) => {
+    console.log(code);
+    if (code.toString().length !== 8) {
+      return false;
+    }
+
+    const codeMap = {
+      20103131: '24,00',
+      20103220: '8,09',
+      20103344: '12,64',
+      20103484: '6,72',
+      20103492: '12,00',
+      20103506: '6,72',
+      20103514: '12,00',
+      20103522: '25,28',
+      20103646: '156,48',
+      20103662: '11,38',
+      50000144: '30,36',
+      50000160: '12,64',
+    };
+
+    return codeMap[code] || null;
   },
 };
