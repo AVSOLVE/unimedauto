@@ -105,9 +105,8 @@ module.exports = {
   },
 
   matchCode: async (code) => {
-    console.log(code);
     if (code.toString().length !== 8) {
-      return false;
+      return null;
     }
 
     const codeMap = {

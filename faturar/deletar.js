@@ -33,7 +33,7 @@ async function loginAndNavigate() {
   }
 }
 
-async function getFrame(page) {
+async function getMainFrame(page) {
   return page
     .frameLocator('iframe >> nth=0')
     .frameLocator('#principal')
@@ -43,7 +43,7 @@ async function getFrame(page) {
 
 (async () => {
   const { page, browser } = await loginAndNavigate();
-  const frame = await getFrame(page);
+  const frame = await getMainFrame(page);
   let limit = 90;
   while (limit > 0) {
     try {

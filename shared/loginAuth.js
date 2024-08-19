@@ -63,8 +63,7 @@ async function loginAndNavigate(executeFn) {
   }
 }
 
-
 module.exports = {
   loginAuth,
-  loginAndNavigate
+  loginAndNavigate,
 };
