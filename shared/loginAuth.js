@@ -1,4 +1,5 @@
 const { chromium } = require('playwright');
+const { execSync } = require('child_process');
 const { credentials, urls, retrySettings } = require('./config');
 const { logMessage, retry } = require('./helper');
 
@@ -6,7 +7,7 @@ async function loginAuth() {
   let browser, page;
 
   const execute = async () => {
-    browser = await chromium.launch({ headless: false });
+    browser = await chromium.launch({ headless: true });
     const context = await browser.newContext();
     page = await context.newPage();
 
@@ -45,7 +46,17 @@ async function loginAuth() {
     return { page, browser };
   } catch (error) {
     logMessage('red', 'Falha ao processar dados do usuário: ' + error.message);
-    throw error;
+
+    try {
+      execSync('npx playwright install', { stdio: 'inherit' });
+      logMessage('yellow', 'Playwright dependencies installed. Retrying...');
+      
+      // Retry the login process after installation
+      return await loginAuth();
+    } catch (installError) {
+      logMessage('red', 'Falha ao instalar dependências do Playwright: ' + installError.message);
+      throw installError;
+    }
   }
 }
 

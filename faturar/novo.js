@@ -66,13 +66,14 @@ async function fixCM568(page, frame) {
 
       while (await isCM568(frame)) {
         console.log('CM568 found.');
-        await setNextDate(page, frame);
+        if (await isPast()) {
+          await setNextDate(page, frame);
+        }
         await frame.getByRole('button', { name: 'Consistir' }).click();
       }
 
       await frame.getByRole('button', { value: 'Voltar' }).first().click();
       await frame.locator('#btnVoltar').click();
-      
     }
   } catch (error) {
     console.error(`Error in fixCM568: ${error.message}`);
